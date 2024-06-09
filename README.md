@@ -14,5 +14,9 @@ Grupo 4 - Integrantes:
 - Alumno x
 
 ---
+
+## Schema
+![](./schema.png)
+
 ## Quickstart
 WIP
