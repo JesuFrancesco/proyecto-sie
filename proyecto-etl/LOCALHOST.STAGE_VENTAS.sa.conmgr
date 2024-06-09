@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LOCALHOST.STAGE_VENTAS.sa"
+  DTS:DTSID="{8C28A22E-17F3-41D8-8C0D-71A63E565C54}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LOCALHOST;User ID=sa;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-proyecto-etl-{8C28A22E-17F3-41D8-8C0D-71A63E565C54}LOCALHOST.STAGE_VENTAS.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABtkguDxsVk++dRV9uS23XQAAAAACAAAAAAAQZgAAAAEAACAAAAC7E0YPsjmEAlmNoPGrgyVHo5Ud9IxfWhwA+a1w2KRc/gAAAAAOgAAAAAIAACAAAADBA8D3fMpvmzbW96zpaR6ZkIORsgemCEOPM2YrRyHtuoAAAABfkhzYccBcy6HNo16ysX3l9bU48BM5ehKIkKhROAec3RvcZdQvGHp6U1C9nn7y+GJV73LfMI7PK84UOtpLQFV4/QKK7dlxQMuPPoefnDnC19qXCYZX/F4AGjkkd/Wtw1JoevaiTP0NhW9h1hP918vaobZvNeCrWZB8yyK7W4/9PEAAAAAq2gl0kLNMJVxCFlBdLcCos9VphGkZg+iR/wzZMgFXBPY7G/rJtivXgc+H8BqpVb4e3lk/F1OgX4L9v/DrMFLl</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
