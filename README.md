@@ -6,12 +6,12 @@ Repositorio para el proyecto del curso de Sistemas de Inteligencia Empresarial d
 </p>
 
 Grupo 4 - Integrantes:
-- Alumno x
-- Alumno x
-- Alumno x
-- Alumno x
-- Alumno x
-- Alumno x
+- Jesu Amoretti
+- Cesar Lujan
+- Fabrizio Romero
+- Gerson Oviedo
+- Erick Valderrama
+<!-- - Frank Tapia Aquino -->
 
 ---
 
