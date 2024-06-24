@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS"
   DTS:PackageType="5"
-  DTS:VersionBuild="166"
-  DTS:VersionGUID="{7CCE67F6-6F8C-4AA3-91F4-D3655D4D4DDB}">
+  DTS:VersionBuild="182"
+  DTS:VersionGUID="{82BE3277-7A11-47FE-8E22-6A93BCA0D1AC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -316,6 +316,191 @@
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
               DTS:DTSID="{D3B82205-B015-4DE8-A426-4AA04FD79DEA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ERROR_PROMOTOR]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{583AD3ED-4DB2-46D0-B4F4-ED5143B363D7}"
+      DTS:ObjectName="ERROR_PROMOTOR">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_promotor.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROMOTOR"
+              DTS:DTSID="{C27F2E80-111B-4AC9-93DC-57C86C8CDCA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FEC_CREACION"
+              DTS:DTSID="{04EED23D-E134-43CF-82EA-B6F8C1B3FB15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USU_CREACION"
+              DTS:DTSID="{F3D5708C-4428-45DA-9F94-62CF18352FB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_FEC_CREACION"
+              DTS:DTSID="{3D68DC37-8B64-44DB-922D-D79AE533035F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_USU_CREACION"
+              DTS:DTSID="{E581DCE8-FB63-49F9-821E-E0F1E4F0E6E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_PROMOTOR"
+              DTS:DTSID="{00F2D4A3-1DA1-417C-BE3F-5E7EFABAA2EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{D3816FEA-7D72-48DD-ABD4-16F4BD86831C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{ABDD57CC-7E11-4A2D-A21F-4FA51159E559}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ERROR_TIPOPAGO]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{E28A14E6-164C-42D9-9216-87CDBDA4EEAE}"
+      DTS:ObjectName="ERROR_TIPOPAGO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_tipopago.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="init"
+              DTS:DTSID="{0C7E84B6-1033-4DBE-83DB-F106C5407DFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FEC_CREACION"
+              DTS:DTSID="{8435A2B1-6ACE-431B-A4DE-FF547A84B069}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USU_CREACION"
+              DTS:DTSID="{EF992938-6446-4266-8033-A93D291D155E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_TIPOPAGO"
+              DTS:DTSID="{F017A383-DCA1-455D-BD20-36ACDE0F7D55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_FEC_CREACION"
+              DTS:DTSID="{831EE5BA-FD03-42C3-9F48-0DEB8BE475F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_USU_CREACION"
+              DTS:DTSID="{7476F4A0-03F9-4383-BB33-9EBDC020CFF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_TIPOPAGO"
+              DTS:DTSID="{E040A39D-F532-4666-844E-EC283AC50603}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{65434CE3-2BBF-4B12-84CF-DE0E1228834E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{4A58DA37-7EB6-45C9-8355-E4BE39087EAB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2281,13 +2466,13 @@
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">#{Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source.Outputs[Excel Source Output].Columns[CATE]}</property>
+                              name="Expression">[TRIM](#{Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source.Outputs[Excel Source Output].Columns[CATE]})</property>
                             <property
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Friendly Expression"
                               expressionType="Notify"
-                              name="FriendlyExpression">CATE</property>
+                              name="FriendlyExpression">TRIM(CATE)</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -3870,6 +4055,1735 @@
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{71215f22-143f-4a70-8d15-b9278bd19f55}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Carga DIM_PROMOTOR"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="Conditional Split"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input].Columns[PROMOTOR]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="PROMOTOR"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].Columns[PROMOTOR]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[promotor no valido]"
+                      description="Output 2 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="promotor no valido"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[ISNULL](#{Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].Columns[PROMOTOR]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL(PROMOTOR)</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[valido]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="valido"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input].Columns[FEC_CREACION]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="FEC_CREACION"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input].Columns[USU_CREACION]"
+                          cachedDataType="wstr"
+                          cachedLength="11"
+                          cachedName="USU_CREACION"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input].Columns[D_PROMOTOR]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="D_PROMOTOR"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[D_PROMOTOR]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="IgnoreFailure"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
+                          name="ETL_FEC_CREACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="IgnoreFailure"
+                          length="11"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
+                          name="ETL_USU_CREACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="255"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]"
+                          name="ETL_PROMOTOR"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[D_PROMOTOR]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Inputs[Derived Column Input].Columns[PROMOTOR]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="PROMOTOR"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].Columns[PROMOTOR]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
+                          name="FEC_CREACION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[GETDATE]()</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">GETDATE()</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="11"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
+                          name="USU_CREACION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">"ETL inicial"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">"ETL inicial"</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[D_PROMOTOR]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="255"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[D_PROMOTOR]"
+                          name="D_PROMOTOR"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[TRIM]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE]([REPLACE](#{Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].Columns[PROMOTOR]},"0",""),"1",""),"2",""),"3",""),"4",""),"5",""),"6",""),"7",""),"8",""),"9",""))</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">TRIM(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(PROMOTOR,"0",""),"1",""),"2",""),"3",""),"4",""),"5",""),"6",""),"7",""),"8",""),"9",""))</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable">User::SheetName</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">1</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].Columns[PROMOTOR]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[PROMOTOR]"
+                          length="255"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].Columns[PROMOTOR]"
+                          name="PROMOTOR"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[APELLIDOS Y NOMBRES]"
+                          dataType="wstr"
+                          length="255"
+                          name="APELLIDOS Y NOMBRES" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[DNI]"
+                          dataType="r8"
+                          name="DNI" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[CATE]"
+                          dataType="wstr"
+                          length="255"
+                          name="CATE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[VALORES DE VISTA]"
+                          dataType="wstr"
+                          length="255"
+                          name="VALORES DE VISTA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[PAGO]"
+                          dataType="wstr"
+                          length="255"
+                          name="PAGO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[INGRESO]"
+                          dataType="wstr"
+                          length="255"
+                          name="INGRESO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[PROMOTOR]"
+                          dataType="wstr"
+                          length="255"
+                          name="PROMOTOR" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[HORA DE IINICIO]"
+                          dataType="date"
+                          name="HORA DE IINICIO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[HORA DE FIN]"
+                          dataType="date"
+                          name="HORA DE FIN" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[TIPO DE SANGRE]"
+                          dataType="date"
+                          name="TIPO DE SANGRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[F13]"
+                          dataType="date"
+                          name="F13" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[PSICOLOGIA]"
+                          dataType="date"
+                          name="PSICOLOGIA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[F15]"
+                          dataType="date"
+                          name="F15" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[OFTALMOLOGIA_INICIO / CIERRE]"
+                          dataType="date"
+                          name="OFTALMOLOGIA_INICIO / CIERRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[F17]"
+                          dataType="date"
+                          name="F17" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[OTORRINO INICIO / CIERRE]"
+                          dataType="date"
+                          name="OTORRINO INICIO / CIERRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[F19]"
+                          dataType="date"
+                          name="F19" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[CLINICO _INICIO CIERRE]"
+                          dataType="date"
+                          name="CLINICO _INICIO CIERRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[F21]"
+                          dataType="date"
+                          name="F21" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[N°]"
+                          dataType="wstr"
+                          length="255"
+                          name="N°" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output].ExternalColumns[F2]"
+                          dataType="wstr"
+                          length="255"
+                          name="F2" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output].Columns[PROMOTOR]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Error Output].Columns[PROMOTOR]"
+                          name="PROMOTOR" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="10250"
+                  name="Flat File Destination"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ERROR_PROMOTOR]"
+                      connectionManagerRefId="Package.ConnectionManagers[ERROR_PROMOTOR]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[FEC_CREACION]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[USU_CREACION]"
+                          cachedDataType="wstr"
+                          cachedLength="11"
+                          cachedName="USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_FEC_CREACION]"
+                          cachedDataType="dbDate"
+                          cachedName="ETL_FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_USU_CREACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="11"
+                          cachedName="ETL_USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_PROMOTOR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="ETL_PROMOTOR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_PROMOTOR]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[D_PROMOTOR]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="D_PROMOTOR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PROMOTOR]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[D_PROMOTOR]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
+                          dataType="dbTimeStamp"
+                          name="FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
+                          dataType="wstr"
+                          length="11"
+                          name="USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
+                          dataType="dbDate"
+                          name="ETL_FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="11"
+                          name="ETL_USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_PROMOTOR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ETL_PROMOTOR" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PROMOTOR]"
+                          dataType="wstr"
+                          length="255"
+                          name="PROMOTOR" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DIM_PROMOTOR]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="RedirectRow"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_FEC_CREACION]"
+                          cachedDataType="dbDate"
+                          cachedName="ETL_FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_USU_CREACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="11"
+                          cachedName="ETL_USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_PROMOTOR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="ETL_PROMOTOR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTOR]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
+                          dataType="wstr"
+                          length="10"
+                          name="FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_PROMOTOR]"
+                          dataType="i4"
+                          name="PK_PROMOTOR" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTOR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PROMOTOR" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Data Conversion Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Derived Column Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Derived Column Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Excel Source Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input]"
+                  name="Excel Source Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[OLE DB Destination Error Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input]"
+                  name="OLE DB Destination Error Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[valido]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Inputs[Derived Column Input]"
+                  name="valido"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Outputs[valido]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{d1709dca-ed43-467d-9d86-875184e9171a}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Carga DIM_TIPOPAGO"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="Conditional Split"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Inputs[Conditional Split Input].Columns[PAGO]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="PAGO"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[pago no valido]"
+                      description="Output 2 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="pago no valido"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[ISNULL](#{Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL(PAGO)</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[valido]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="valido"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input].Columns[FEC_CREACION]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="FEC_CREACION"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input].Columns[USU_CREACION]"
+                          cachedDataType="wstr"
+                          cachedLength="11"
+                          cachedName="USU_CREACION"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input].Columns[D_TIPOPAGO]"
+                          cachedDataType="wstr"
+                          cachedLength="8"
+                          cachedName="D_TIPOPAGO"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[D_TIPOPAGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="IgnoreFailure"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
+                          name="ETL_FEC_CREACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="IgnoreFailure"
+                          length="11"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
+                          name="ETL_USU_CREACION"
+                          truncationRowDisposition="IgnoreFailure">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_TIPOPAGO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="8"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_TIPOPAGO]"
+                          name="ETL_TIPOPAGO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[D_TIPOPAGO]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Inputs[Derived Column Input].Columns[PAGO]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="PAGO"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
+                          name="FEC_CREACION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[GETDATE]()</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">GETDATE()</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="11"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
+                          name="USU_CREACION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">"ETL inicial"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">"ETL inicial"</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[D_TIPOPAGO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="8"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[D_TIPOPAGO]"
+                          name="D_TIPOPAGO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">[FINDSTRING]([LOWER](#{Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]}),"ya",1) != 0 ? "YAPE" : [FINDSTRING]([LOWER](#{Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]}),"pl",1) != 0 ? "PLIN" : "EFECTIVO"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">FINDSTRING(LOWER(PAGO),"ya",1) != 0 ? "YAPE" : FINDSTRING(LOWER(PAGO),"pl",1) != 0 ? "PLIN" : "EFECTIVO"</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable">User::SheetName</property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">1</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[PAGO]"
+                          length="255"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].Columns[PAGO]"
+                          name="PAGO"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[APELLIDOS Y NOMBRES]"
+                          dataType="wstr"
+                          length="255"
+                          name="APELLIDOS Y NOMBRES" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[DNI]"
+                          dataType="r8"
+                          name="DNI" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[CATE]"
+                          dataType="wstr"
+                          length="255"
+                          name="CATE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[VALORES DE VISTA]"
+                          dataType="wstr"
+                          length="255"
+                          name="VALORES DE VISTA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[PAGO]"
+                          dataType="wstr"
+                          length="255"
+                          name="PAGO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[INGRESO]"
+                          dataType="wstr"
+                          length="255"
+                          name="INGRESO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[PROMOTOR]"
+                          dataType="wstr"
+                          length="255"
+                          name="PROMOTOR" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[HORA DE IINICIO]"
+                          dataType="date"
+                          name="HORA DE IINICIO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[HORA DE FIN]"
+                          dataType="date"
+                          name="HORA DE FIN" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[TIPO DE SANGRE]"
+                          dataType="date"
+                          name="TIPO DE SANGRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[F13]"
+                          dataType="date"
+                          name="F13" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[PSICOLOGIA]"
+                          dataType="date"
+                          name="PSICOLOGIA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[F15]"
+                          dataType="date"
+                          name="F15" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[OFTALMOLOGIA_INICIO / CIERRE]"
+                          dataType="date"
+                          name="OFTALMOLOGIA_INICIO / CIERRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[F17]"
+                          dataType="date"
+                          name="F17" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[OTORRINO INICIO / CIERRE]"
+                          dataType="date"
+                          name="OTORRINO INICIO / CIERRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[F19]"
+                          dataType="date"
+                          name="F19" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[CLINICO _INICIO CIERRE]"
+                          dataType="date"
+                          name="CLINICO _INICIO CIERRE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[F21]"
+                          dataType="date"
+                          name="F21" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[N°]"
+                          dataType="wstr"
+                          length="255"
+                          name="N°" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output].ExternalColumns[F2]"
+                          dataType="wstr"
+                          length="255"
+                          name="F2" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output].Columns[PAGO]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Error Output].Columns[PAGO]"
+                          name="PAGO" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="10250"
+                  name="Flat File Destination"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ERROR_TIPOPAGO]"
+                      connectionManagerRefId="Package.ConnectionManagers[ERROR_TIPOPAGO]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[FEC_CREACION]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[USU_CREACION]"
+                          cachedDataType="wstr"
+                          cachedLength="11"
+                          cachedName="USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_FEC_CREACION]"
+                          cachedDataType="dbDate"
+                          cachedName="ETL_FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_USU_CREACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="11"
+                          cachedName="ETL_USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_TIPOPAGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="8"
+                          cachedName="ETL_TIPOPAGO"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_TIPOPAGO]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_TIPOPAGO]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[D_TIPOPAGO]"
+                          cachedDataType="wstr"
+                          cachedLength="8"
+                          cachedName="D_TIPOPAGO"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_TIPOPAGO]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[D_TIPOPAGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
+                          dataType="dbTimeStamp"
+                          name="FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
+                          dataType="wstr"
+                          length="11"
+                          name="USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
+                          dataType="dbDate"
+                          name="ETL_FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="11"
+                          name="ETL_USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[init]"
+                          dataType="wstr"
+                          length="255"
+                          name="init" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_TIPOPAGO]"
+                          dataType="wstr"
+                          length="8"
+                          name="D_TIPOPAGO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_TIPOPAGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="8"
+                          name="ETL_TIPOPAGO" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DIM_TIPOPAGO]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="RedirectRow"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_FEC_CREACION]"
+                          cachedDataType="dbDate"
+                          cachedName="ETL_FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_USU_CREACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="11"
+                          cachedName="ETL_USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_TIPOPAGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="8"
+                          cachedName="ETL_TIPOPAGO"
+                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPOPAGO]"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_TIPOPAGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
+                          dataType="wstr"
+                          length="10"
+                          name="FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_TIPOPAGO]"
+                          dataType="i4"
+                          name="PK_TIPOPAGO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPOPAGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="TIPOPAGO" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Data Conversion Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Derived Column Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Derived Column Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Excel Source Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Inputs[Conditional Split Input]"
+                  name="Excel Source Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[OLE DB Destination Error Output]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input]"
+                  name="OLE DB Destination Error Output"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
+                <path
+                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[valido]"
+                  endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Inputs[Derived Column Input]"
+                  name="valido"
+                  startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split.Outputs[valido]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
       </DTS:Executables>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
@@ -3938,12 +5852,20 @@
         <NodeLayout
           Size="176,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE"
-          TopLeft="48,18" />
+          TopLeft="69,28" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR"
+          TopLeft="69,130" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO"
+          TopLeft="374,136" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="652,217"
-          Size="652,260"
+          PanelSize="652,226"
+          Size="652,269"
           Id="Package\Para cada página del excel,,,"
           TopLeft="48,298" />
         <EdgeLayout
@@ -4815,6 +6737,460 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination"
+          TopLeft="680,537" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column"
+          TopLeft="448,327" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion"
+          TopLeft="574,431" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination"
+          TopLeft="886,656" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split"
+          TopLeft="237,190" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source"
+          TopLeft="114,71" />
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Excel Source Output]"
+          TopLeft="183.5,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="131,77"
+              Start="0,0"
+              End="131,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="127,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="127,38.5"
+                    Point2="131,38.5"
+                    Point3="131,42.5" />
+                  <mssgle:LineSegment
+                    End="131,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Derived Column Output]"
+          TopLeft="525,369">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="127,62"
+              Start="0,0"
+              End="127,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="123,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="123,31"
+                    Point2="127,31"
+                    Point3="127,35" />
+                  <mssgle:LineSegment
+                    End="127,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Data Conversion Output]"
+          TopLeft="652,473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113.5,64"
+              Start="0,0"
+              End="113.5,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="109.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="109.5,32"
+                    Point2="113.5,32"
+                    Point3="113.5,36" />
+                  <mssgle:LineSegment
+                    End="113.5,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[OLE DB Destination Error Output]"
+          TopLeft="765.5,579">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="206.5,77"
+              Start="0,0"
+              End="206.5,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="202.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="202.5,38.5"
+                    Point2="206.5,38.5"
+                    Point3="206.5,42.5" />
+                  <mssgle:LineSegment
+                    End="206.5,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="30.04109375,43.5,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[valido]"
+          TopLeft="314.5,232">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="210.5,95"
+              Start="0,0"
+              End="210.5,87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.5"
+                    Point2="0,47.5"
+                    Point3="4,47.5" />
+                  <mssgle:LineSegment
+                    End="206.5,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="206.5,47.5"
+                    Point2="210.5,47.5"
+                    Point3="210.5,51.5" />
+                  <mssgle:LineSegment
+                    End="210.5,87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="91.51896484375,52.5,27.4620703125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination"
+          TopLeft="680,537" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column"
+          TopLeft="448,327" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion"
+          TopLeft="574,431" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination"
+          TopLeft="886,656" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split"
+          TopLeft="237,190" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source"
+          TopLeft="114,71" />
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[OLE DB Destination Error Output]"
+          TopLeft="765.5,579">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="206.5,77"
+              Start="0,0"
+              End="206.5,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="202.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="202.5,38.5"
+                    Point2="206.5,38.5"
+                    Point3="206.5,42.5" />
+                  <mssgle:LineSegment
+                    End="206.5,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="30.04109375,43.5,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Excel Source Output]"
+          TopLeft="183.5,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="131,77"
+              Start="0,0"
+              End="131,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="127,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="127,38.5"
+                    Point2="131,38.5"
+                    Point3="131,42.5" />
+                  <mssgle:LineSegment
+                    End="131,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Derived Column Output]"
+          TopLeft="525,369">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="127,62"
+              Start="0,0"
+              End="127,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="123,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="123,31"
+                    Point2="127,31"
+                    Point3="127,35" />
+                  <mssgle:LineSegment
+                    End="127,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Data Conversion Output]"
+          TopLeft="652,473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113.5,64"
+              Start="0,0"
+              End="113.5,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="109.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="109.5,32"
+                    Point2="113.5,32"
+                    Point3="113.5,36" />
+                  <mssgle:LineSegment
+                    End="113.5,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[valido]"
+          TopLeft="314.5,232">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="210.5,95"
+              Start="0,0"
+              End="210.5,87.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.5"
+                    Point2="0,47.5"
+                    Point3="4,47.5" />
+                  <mssgle:LineSegment
+                    End="206.5,47.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="206.5,47.5"
+                    Point2="210.5,47.5"
+                    Point3="210.5,51.5" />
+                  <mssgle:LineSegment
+                    End="210.5,87.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="91.51896484375,52.5,27.4620703125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
