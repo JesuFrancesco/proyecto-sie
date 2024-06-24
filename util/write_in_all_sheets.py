@@ -13,6 +13,6 @@ def write_to_a1_in_all_sheets(file_path, text):
     workbook.save(file_path)
 
 # Usage example
-file_path = "static\cleansing_laos_ventas_2024.xlsx"
+file_path = "..\\static\\cleansing_laos_ventas_2024.xlsx"
 text = "N°"
 write_to_a1_in_all_sheets(file_path, text)

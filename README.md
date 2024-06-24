@@ -11,7 +11,7 @@ Grupo 4 - Integrantes:
 - Fabrizio Romero
 - Gerson Oviedo
 - Erick Valderrama
-<!-- - Frank Tapia Aquino -->
+<!-- - Frank Tapia Aquino o7 -->
 
 ---
 

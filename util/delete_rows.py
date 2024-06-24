@@ -28,5 +28,5 @@ def delete_rows_after_condition(file_path):
     workbook.close()
 
 # Ejemplo de uso
-file_path = 'static\cleansing_laos_ventas_2024.xlsx'
+file_path = '..\\static\\cleansing_laos_ventas_2024.xlsx'
 delete_rows_after_condition(file_path)
