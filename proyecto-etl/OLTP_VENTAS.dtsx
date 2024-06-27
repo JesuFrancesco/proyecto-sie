@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS"
   DTS:PackageType="5"
-  DTS:VersionBuild="182"
-  DTS:VersionGUID="{82BE3277-7A11-47FE-8E22-6A93BCA0D1AC}">
+  DTS:VersionBuild="184"
+  DTS:VersionGUID="{383692C0-F4BE-430D-B7E2-105D3D0CC6F4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2102,6 +2102,21 @@
               startId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output]" />
           </paths>
         </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Carga FACT_VENTAS"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F55A3373-850C-4C0D-BC59-68C784B23252}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga FACT_VENTAS"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5820,6 +5835,30 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 2"
       DTS:To="Package\Carga DIM_HORA" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{AC2F93D1-1BEA-4E3C-8B76-61E2BF0C70BA}"
+      DTS:From="Package\Para cada página del excel,,,"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\Carga FACT_VENTAS" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{E86FD4A8-6912-4F38-BFCA-DC59B7B26A21}"
+      DTS:From="Package\Carga DIM_FECHA"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\Carga FACT_VENTAS" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{630D2FF2-B732-4DF7-B731-674F4D3A9A5B}"
+      DTS:From="Package\Carga DIM_HORA"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\Carga FACT_VENTAS" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -5962,6 +6001,112 @@
                     Point3="287.25,36.9606003752345" />
                   <mssgle:LineSegment
                     End="287.25,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Carga FACT_VENTAS"
+          TopLeft="726,639" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="374,567">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="398.5,72"
+              Start="0,0"
+              End="398.5,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.2915129151291" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.2915129151291"
+                    Point2="0,47.2915129151291"
+                    Point3="4,47.2915129151291" />
+                  <mssgle:LineSegment
+                    End="394.5,47.2915129151291" />
+                  <mssgle:CubicBezierSegment
+                    Point1="394.5,47.2915129151291"
+                    Point2="398.5,47.2915129151291"
+                    Point3="398.5,51.2915129151291" />
+                  <mssgle:LineSegment
+                    End="398.5,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="907,367">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-92,272"
+              Start="0,0"
+              End="-92,264.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,132" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,132"
+                    Point2="0,136"
+                    Point3="-4,136" />
+                  <mssgle:LineSegment
+                    End="-88,136" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88,136"
+                    Point2="-92,136"
+                    Point3="-92,140" />
+                  <mssgle:LineSegment
+                    End="-92,264.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="1107.5,370">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-250,269"
+              Start="0,0"
+              End="-250,261.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,172.686346863469" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,172.686346863469"
+                    Point2="0,176.686346863469"
+                    Point3="-4,176.686346863469" />
+                  <mssgle:LineSegment
+                    End="-246,176.686346863469" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-246,176.686346863469"
+                    Point2="-250,176.686346863469"
+                    Point3="-250,180.686346863469" />
+                  <mssgle:LineSegment
+                    End="-250,261.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6496,14 +6641,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination">
     <Properties>
       <Property>
@@ -6513,6 +6650,14 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
