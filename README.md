@@ -37,7 +37,7 @@ Grupo 4 - Integrantes:
 - OLEDB para Excel
   - Clic derecho en bucle for each > Editar > Colección > Conexión > Nueva Conexión > Nueva...
   - Proveedores .NET de OLEDB > Microsoft Office 16.0 Access Database Engine...
-    - Pegar la ruta del excel de [OLTP_VENTAS]((./static/cleansing_laos_ventas_2024.xlsx)) y aceptar
+    - Pegar la ruta del excel de [OLTP_VENTAS](./static/cleansing_laos_ventas_2024.xlsx) y aceptar
   - Verificar si la variable SheetName ha sido asignada con el valor "2"
 
 - Conexiones con Excel
