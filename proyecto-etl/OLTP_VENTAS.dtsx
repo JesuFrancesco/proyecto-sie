@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS"
   DTS:PackageType="5"
-  DTS:VersionBuild="184"
-  DTS:VersionGUID="{383692C0-F4BE-430D-B7E2-105D3D0CC6F4}">
+  DTS:VersionBuild="186"
+  DTS:VersionGUID="{734EA9AA-708D-4C24-B151-2D21C12C89CF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5803,8 +5803,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{509CB924-4B41-42EB-8411-48280C3C6AA6}"
-          DTS:ObjectName="{509CB924-4B41-42EB-8411-48280C3C6AA6}"
+          DTS:DTSID="{86CB58E4-3F45-470C-8B69-AD135D401262}"
+          DTS:ObjectName="{86CB58E4-3F45-470C-8B69-AD135D401262}"
           DTS:ValueIndex="2"
           DTS:VariableName="User::SheetName" />
       </DTS:ForEachVariableMappings>
@@ -5880,6 +5880,10 @@
           Size="163,42"
           Id="Package\Carga DIM_HORA"
           TopLeft="1026,328" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Carga FACT_VENTAS"
+          TopLeft="726,639" />
         <NodeLayout
           Size="175,42"
           Id="Package\Limpiar dimensiones"
@@ -6009,10 +6013,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="178,42"
-          Id="Package\Carga FACT_VENTAS"
-          TopLeft="726,639" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
           TopLeft="374,567">
