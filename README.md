@@ -45,4 +45,10 @@ Grupo 4 - Integrantes:
   - [Excel de DIM_FECHA](./seeders/dim_fecha.xlsx)
   - [Excel de DIM_HORA](./seeders/dim_hora.xlsx)
 
+- Conexiones de texto plano
+  - [ERROR_CATEGORIA](./logs/error_categoria.txt)
+  - [ERROR_CLIENTE](./logs/error_cliente.txt)
+  - [ERROR_PROMOTOR](./logs/error_promotor.txt)
+  - [ERROR_TIPOPAGO](./logs/error_tipopago.txt)
+
 5. Ejecutar el proyecto.
