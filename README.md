@@ -16,7 +16,33 @@ Grupo 4 - Integrantes:
 ---
 
 ## Schema
-![](./schema.png)
+![](./images/schema.png)
+
+## Schema SSIS
+![](./images/ssis.png)
 
 ## Quickstart
-WIP
+1. Crear una base de datos SQL Server con los siguientes parámetros: 
+- User: sa
+- Password: ul1m4@2024$1
+
+2. Cargar el [script inicial](./seeders/initital_script.sql) para crear las dimensiones en la instancia SQL Server
+
+3. Abrir la solución del [proyecto](./proyecto-etl/proyecto-etl.sln) con Visual Studio 2022 (SSIS)
+
+4. Configurar las siguientes conexiones:
+- OLEDB para SQL Server:
+  - Usar la base datos SQL Server previamente creada
+
+- OLEDB para Excel
+  - Clic derecho en bucle for each > Editar > Colección > Conexión > Nueva Conexión > Nueva...
+  - Proveedores .NET de OLEDB > Microsoft Office 16.0 Access Database Engine...
+    - Pegar la ruta del excel de [OLTP_VENTAS]((./static/cleansing_laos_ventas_2024.xlsx)) y aceptar
+  - Verificar si la variable SheetName ha sido asignada con el valor "2"
+
+- Conexiones con Excel
+  - [Excel de OLTP_VENTAS](./static/cleansing_laos_ventas_2024.xlsx)
+  - [Excel de DIM_FECHA](./seeders/dim_fecha.xlsx)
+  - [Excel de DIM_HORA](./seeders/dim_hora.xlsx)
+
+5. Ejecutar el proyecto.
