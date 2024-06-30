@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="49"
-  DTS:VersionGUID="{E0F60818-AFFC-43E8-AB77-AE5B06D6558E}">
+  DTS:VersionBuild="74"
+  DTS:VersionGUID="{444470B9-C423-4BED-BB73-67D240EEE7F0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -339,6 +339,23 @@
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Limpiar FACT_VENTAS"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{23D99BCC-278A-410F-A7CE-248B32C57CA9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpiar FACT_VENTAS"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{447FE81E-8B87-40B3-99B6-7388B6A76550}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE FACT_VENTAS;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Para cada página del excel,,, 2"
       DTS:CreationName="STOCK:FOREACHLOOP"
@@ -862,206 +879,1003 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,"
-                  usesDispositions="true"
-                  version="4">
+                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;13"
+                  description="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma."
+                  name="Conversion de hora a string"
+                  version="13">
                   <properties>
                     <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
+                      dataType="System.String"
+                      description="Almacena el código fuente del componente"
+                      isArray="true"
+                      name="SourceCode"
+                      state="cdata">
+                      <arrayElements
+                        arrayElementCount="30">
+                        <arrayElement
+                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Entrada 0", StringComparison.Ordinal))
+        {
+            Entrada0_ProcessInput(new Entrada0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Entrada0_ProcessInput(Entrada0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Entrada0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Entrada0_ProcessInputRow(Entrada0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Entrada0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Entrada0_ProcessInputRow(Entrada0Buffer Row)
+    {
+
+        try
+        {
+            var ini = Row.ETLHORAINI;
+            var fin = Row.ETLHORAFIN;
+            Row.HORAINISTR = ini.ToString(@"hhmmss");
+            Row.HORAFINSTR = fin.ToString(@"hhmmss");
+        } catch (Exception)
+        {
+            Row.HORAINISTR = "080000";
+            Row.HORAFINSTR = "100000";
+        }
+
+
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Entrada0Buffer: ScriptBuffer
+
+{
+    public Entrada0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public TimeSpan ETLHORAINI
+    {
+        get
+        {
+            return Buffer.GetTime(BufferColumnIndexes[0]);
+        }
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool ETLHORAINI_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("La propiedad IsNull no puede establecerse en False. En su lugar, asigne un valor a la columna.");
+            }
+        }
+    }
+
+    public TimeSpan ETLHORAFIN
+    {
+        get
+        {
+            return Buffer.GetTime(BufferColumnIndexes[1]);
+        }
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool ETLHORAFIN_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("La propiedad IsNull no puede establecerse en False. En su lugar, asigne un valor a la columna.");
+            }
+        }
+    }
+
+    public String HORAINISTR
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool HORAINISTR_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("La propiedad IsNull no puede establecerse en False. En su lugar, asigne un valor a la columna.");
+            }
+        }
+    }
+
+    public String HORAFINSTR
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool HORAFINSTR_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("La propiedad IsNull no puede establecerse en False. En su lugar, asigne un valor a la columna.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties.Settings.get_Default():SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties.Sett" +
+    "ings")]
+
+namespace SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[SC_9db192d70e564e3b9f9a8e3b5e49df3b.csproj]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BB07379-D449-441D-969B-8B3AE451F631}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_9db192d70e564e3b9f9a8e3b5e49df3b</RootNamespace>
+    <AssemblyName>SC_9db192d70e564e3b9f9a8e3b5e49df3b</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptComponent" IconIndex="0" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Project]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_9db192d70e564e3b9f9a8e3b5e49df3b</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_9db192d70e564e3b9f9a8e3b5e49df3b</msb:DisplayName>
+    <msb:ProjectId>{67C67E25-BC1A-4DF5-B629-D079E3C4AA5B}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_9db192d70e564e3b9f9a8e3b5e49df3b.csproj" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_9db192d70e564e3b9f9a8e3b5e49df3b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_9db192d70e564e3b9f9a8e3b5e49df3b")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                      </arrayElements>
+                    </property>
                     <property
                       dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[FACT_VENTAS]</property>
+                      description="Almacena la representación binaria del componente"
+                      isArray="true"
+                      name="BinaryCode"
+                      state="cdata">
+                      <arrayElements
+                        arrayElementCount="2">
+                        <arrayElement
+                          dataType="System.String"><![CDATA[SC_9db192d70e564e3b9f9a8e3b5e49df3b.dll]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJi/gGYAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAAgjQA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAADA0AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAiBQAAAAgAAAAFgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAYAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABk
+NAAAAAAAAEgAAAACAAUAkCIAAOgQAAABAAAAAAAAAHgzAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAMATgAAAAEAABEDbwYAAAYK
+A28KAAAGCwMSAHIBAABwKBIAAApvDgAABgMSAXIBAABwKBIAAApvEAAABt4ZJgNyDwAAcG8OAAAG
+A3IdAABwbxAAAAbeACoAAAEQAAAAAAAANDQAGQ8AAAEeAigUAAAGKioCAwQFKBMAAAoqUgJ7FAAA
+CgJ7FQAAChaUbxYAAAoqOgIWA4wOAAABKBcAAAoqIgIWKBgAAAoqWgMsCAIWKBkAAAoqcisAAHBz
+GgAACnpSAnsUAAAKAnsVAAAKF5RvFgAACio6AhcDjA4AAAEoFwAACioiAhcoGAAACipaAywIAhco
+GQAACipyKwAAcHMaAAAKeiYCGAMoFwAACipaAywIAhgoGQAACipyKwAAcHMaAAAKeiYCGQMoFwAA
+CipaAywIAhkoGQAACipyKwAAcHMaAAAKeh4CKBsAAAoqHgIoHAAACip+AigdAAAKAgJzGAAABn0B
+AAAEAgJzGQAABn0CAAAEKpIEcuoAAHAabx4AAAosFQIFAgMoHwAACg4EcwUAAAZvFgAABipKKwcC
+A28XAAAGA28SAAAGLfEqBio6AiggAAAKAgN9AwAABCo6AiggAAAKAgN9BAAABCoeAiggAAAKKq5+
+BQAABC0ecv4AAHDQBwAAAighAAAKbyIAAApzIwAACoAFAAAEfgUAAAQqGn4GAAAEKh4CgAYAAAQq
+Gn4HAAAEKh4CKCQAAAoqLnMfAAAGgAcAAAQqAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAA
+AAUAbAAAAFgGAAAjfgAAxAYAAOgGAAAjU3RyaW5ncwAAAACsDQAAcAEAACNVUwAcDwAAEAAAACNH
+VUlEAAAALA8AALwBAAAjQmxvYgAAAAAAAAACAAABVxWiAQkBAAAA+gEzABYAAAEAAAAhAAAACAAA
+AAcAAAAgAAAAFQAAACQAAAAQAAAAAQAAAAMAAAALAAAAEAAAAAEAAAAEAAAAAQAAAAAATgMBAAAA
+AAAGAEYCHAUGANoCHAUGAJIBCQUPAJAFAAAGAL8BXAQGACkCXAQGAAoCXAQGAMECXAQGAGYCXAQG
+AH8CXAQGANYBXAQGAPEBFQMKAJoC3wAGAB4ECwQGAH4ECwQKANsE3wAOAMwE3wAKAKUE3wAKAFYG
+3wAGABkGCwQGAHUBCQUGAOwEPAUGAJkERwQSAEUBOAMSAKYBOAMSAC0BMgQGAFoBHAUGAG4ECwQG
+ADEDCwQGAIgECwQGAAABCwQGAKkACwQGAN8GXAQAAAAAAQAAAAAAAQABAAEAEAAnBAAAEAABAAEA
+AQAQAL0EAABBAAEABQABABAAOAYAAE0AAQAUAAEAEAANBgAAUQADABgAAQAQAM4FAABRAAQAGQAA
+ABAAQwWfBVEABQAaAAABEAD9BZ8FaQAHAB4ABgANBoMABgDOBYcAAQBGBosAAQBGBosAEQASBI8A
+EQAdAZMAEQCZAJcAUCAAAAAAxgD4AgYAAQBYIAAAAADGAAMDBgABAGAgAAAAAMYAugabAAEAzCAA
+AAAAhhj8BAYAAgDUIAAAAACGGPwEJwACAN8gAAAAAIYIEgChAAUA9CAAAAAAhgghAKYABQADIQAA
+AACGCHYDSgAGAAwhAAAAAIYIjAOsAAYAIyEAAAAAhggwAKEABwA4IQAAAACGCD8ApgAHAEchAAAA
+AIYIogNKAAgAUCEAAAAAhgi4A6wACABnIQAAAACGCE4AEAAJAHEhAAAAAIYIzgOsAAoAiCEAAAAA
+hghdABAACwCSIQAAAACGCOQDrAAMAKkhAAAAAIYA0wZKAA0AsSEAAAAAhgAgBkoADQC5IQAAAACG
+GPwEBgANANkhAAAAAMYArQaxAA0A/iEAAAAAxgGkBpsAEQARIgAAAADGAboGmwASABMiAAAAAIYY
+/AS7ABMAIiIAAAAAhhj8BLsAFAAxIgAAAACDGPwEBgAVADkiAAAAAJMI6ATBABUAZSIAAAAAkwgF
+AcYAFQBsIgAAAACTCBEBywAVAHQiAAAAAJYILAbRABYAeyIAAAAAhhj8BAYAFgCDIgAAAACRGAIF
+1gAWAAAAAQDXBgAAAQDhBAAAAgDYBQAAAwCzBAAAAQAPAwAAAQAPAwAAAQAPAwAAAQAPAwAAAQAP
+AwAAAQAPAwAAAQAPAwAAAQAPAwAAAQAKAAAAAgDNAAAAAwDhBAAABACzBAAAAQDhBAAAAQDXBgAA
+AQBcBgAAAQBcBgAAAQAPAwkA/AQBABEA/AQGABkA/AQKACkA/AQQADEA/AQQADkA/AQQAEEA/AQQ
+AEkA/AQQAFEA/AQQAFkA/AQQAGEA/AQQAGkA/AQGAKkA/AQGAMkA/AQVANkA/AQGAJkA+AIGAJkA
+AwMGAHEALwMiAIEA/AQnAIEA4QQxAIEA2AU1AIkA1wA5AIEAAgQ/AIEA8wNFAIEA+gMBAOEA/AQQ
+AIEA0wZKAIEAIAZKAJkA/AQGAOkABgZOAJkA7AVVAKEA/AQGAPkAuwBbAPkA2wZjALEA/ARpANEA
+/AQGAC4ACwD2AC4AEwD/AC4AGwAeAS4AIwAnAS4AKwBQAS4AMwBQAS4AOwBQAS4AQwAnAS4ASwBW
+AS4AUwBQAS4AWwBtAUMAYwC3AeEAewC3AeMAawC3ASkBcwAeAUkBcwAeARsAAwABAAcACQAIAAsA
+AAAlANoAAACQA98AAABDANoAAAC8A98AAABSAOMAAADSA98AAABhAOMAAADoA98AAADsBOcAAAAl
+AewAAAAwBvEAAgAGAAMAAQAHAAMAAgAIAAUAAQAJAAUAAgAKAAcAAQALAAcAAgAMAAkAAQANAAkA
+AQAOAAsAAQAPAA0AAQAQAA8AAQARABEAAgAbABMAAgAcABUAAQAdABUAAgAeABcABIAAAAEAAAAA
+AAAAAAAAAAAAbAAAAAQAAAAAAAAAAAAAAHEAkAAAAAAAEAAAAAAAAAAAAAAAegBmBgAAAAAQAAAA
+AAAAAAAAAAB6AIMGAAAAAAQAAAAAAAAAAAAAAHEACwQAAAAAAAAAAAEAAABNBQAAAAAAPE1vZHVs
+ZT4ASW5wdXRJRABnZXRfRVRMSE9SQUlOSQBzZXRfRVRMSE9SQUlOSQBnZXRfRVRMSE9SQUZJTgBz
+ZXRfRVRMSE9SQUZJTgBzZXRfSE9SQUlOSVNUUgBzZXRfSE9SQUZJTlNUUgBTQ185ZGIxOTJkNzBl
+NTY0ZTNiOWY5YThlM2I1ZTQ5ZGYzYgBtc2NvcmxpYgBkZWZhdWx0SW5zdGFuY2UAUnVudGltZVR5
+cGVIYW5kbGUAR2V0VHlwZUZyb21IYW5kbGUASW5wdXROYW1lAEdldFRpbWUATWljcm9zb2Z0LlNx
+bFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJj
+ZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29t
+cGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1
+Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0
+cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0
+ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJp
+YnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJp
+YnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQ
+b2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxp
+dHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5W
+ZXJzaW9uaW5nAFRvU3RyaW5nAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ185ZGIxOTJkNzBlNTY0
+ZTNiOWY5YThlM2I1ZTQ5ZGYzYi5kbGwAZ2V0X0VUTEhPUkFJTklfSXNOdWxsAHNldF9FVExIT1JB
+SU5JX0lzTnVsbABnZXRfRVRMSE9SQUZJTl9Jc051bGwAc2V0X0VUTEhPUkFGSU5fSXNOdWxsAHNl
+dF9IT1JBSU5JU1RSX0lzTnVsbABzZXRfSE9SQUZJTlNUUl9Jc051bGwAU2V0TnVsbABzZXRfSXRl
+bQBTeXN0ZW0AcmVzb3VyY2VNYW4AVGltZVNwYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJh
+dGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0
+aW9uRXhjZXB0aW9uAFN0cmluZ0NvbXBhcmlzb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABP
+dXRwdXRNYXAARW50cmFkYTBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9S
+ZXNvdXJjZU1hbmFnZXIALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0ZW0uUnVu
+dGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU0NfOWRiMTkyZDcwZTU2NGUz
+YjlmOWE4ZTNiNWU0OWRmM2IuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2lu
+Z01vZGVzAFNDXzlkYjE5MmQ3MGU1NjRlM2I5ZjlhOGUzYjVlNDlkZjNiLlByb3BlcnRpZXMAVmFy
+aWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0Q29sdW1uSW5kZXhlcwBTZXR0aW5ncwBFcXVh
+bHMAQ29ubmVjdGlvbnMAT2JqZWN0AEVuZE9mUm93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25l
+bnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4
+U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AEVudHJhZGEwX1Byb2Nlc3NJ
+bnB1dABFbnRyYWRhMF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBnZXRfQXNzZW1ibHkAAA1oAGgA
+bQBtAHMAcwAADTAAOAAwADAAMAAwAAANMQAwADAAMAAwADAAAIC9TABhACAAcAByAG8AcABpAGUA
+ZABhAGQAIABJAHMATgB1AGwAbAAgAG4AbwAgAHAAdQBlAGQAZQAgAGUAcwB0AGEAYgBsAGUAYwBl
+AHIAcwBlACAAZQBuACAARgBhAGwAcwBlAC4AIABFAG4AIABzAHUAIABsAHUAZwBhAHIALAAgAGEA
+cwBpAGcAbgBlACAAdQBuACAAdgBhAGwAbwByACAAYQAgAGwAYQAgAGMAbwBsAHUAbQBuAGEALgAA
+E0UAbgB0AHIAYQBkAGEAIAAwAABxUwBDAF8AOQBkAGIAMQA5ADIAZAA3ADAAZQA1ADYANABlADMA
+YgA5AGYAOQBhADgAZQAzAGIANQBlADQAOQBkAGYAMwBiAC4AUAByAG8AcABlAHIAdABpAGUAcwAu
+AFIAZQBzAG8AdQByAGMAZQBzAADF8qUPMSmVTIsVg/t9z03PAAQgAQEIAyAAAQUgAQEREQQgAQEO
+BSABARFhBgcCETkROQQgAQ4OCSADARJFHQgSSQMGEkUDBh0IBSABETkIBSACAQgcBCABAggDIAAC
+BiACAg4ReQUgAR0ICAcAARJ9EYCBBSAAEoCFByACAQ4SgIUIt3pcVhk04IkIiYRdzYCAzJEDBhIU
+AwYSGAMGEk0DBhJZAwYSXQMGEiAFIAEBEgwEIAAROQUgAQEROQQgAQECCSAEAQgOEkUSSQUgAQES
+TQQAABJZBAAAEl0FAAEBEl0EAAASIAMAAAEEKAAROQMoAAIDKAAOBAgAElkECAASXQQIABIgCAEA
+CAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ185ZGIx
+OTJkNzBlNTY0ZTNiOWY5YThlM2I1ZTQ5ZGYzYgAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI0
+AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1l
+Ei5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2Vz
+LlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRy
+YWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50
+aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAFg0AAAAAAAAAAAAAHI0AAAAIAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAABkNAAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxs
+AAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABI
+AAAAWEAAAOwDAAAAAAAAAAAAAOwDNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAA
+AAC9BO/+AAABAAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
+AAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4A
+AAAAAAAAsARMAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAAoAwAAAQAwADAAMAAw
+ADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4A
+eQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAA
+AFMAQwBfADkAZABiADEAOQAyAGQANwAwAGUANQA2ADQAZQAzAGIAOQBmADkAYQA4AGUAMwBiADUA
+ZQA0ADkAZABmADMAYgAAADAACAABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgAw
+AC4AMAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AOQBkAGIAMQA5ADIA
+ZAA3ADAAZQA1ADYANABlADMAYgA5AGYAOQBhADgAZQAzAGIANQBlADQAOQBkAGYAMwBiAC4AZABs
+AGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgA
+dAAgAEAAIAAgADIAMAAyADQAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABlAG0AYQByAGsAcwAA
+AAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAEMAXwA5AGQA
+YgAxADkAMgBkADcAMABlADUANgA0AGUAMwBiADkAZgA5AGEAOABlADMAYgA1AGUANAA5AGQAZgAz
+AGIALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AOQBkAGIA
+MQA5ADIAZAA3ADAAZQA1ADYANABlADMAYgA5AGYAOQBhADgAZQAzAGIANQBlADQAOQBkAGYAMwBi
+AAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAADgA
+CAABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAACENAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
+                      </arrayElements>
+                    </property>
                     <property
                       dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
+                      description="Especifica el nombre del proyecto de Microsoft Visual Studio Tools para Aplicaciones. Los nombres de proyecto deben ser únicos en el paquete."
+                      name="VSTAProjectName"
+                      typeConverter="NOTBROWSABLE">SC_9db192d70e564e3b9f9a8e3b5e49df3b</property>
                     <property
                       dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">0</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
+                      description="Especifica el lenguaje de programación que utiliza el script."
+                      name="ScriptLanguage"
+                      typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
                     <property
                       dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                      description="Especifica una lista separada por comas de variables de solo lectura."
+                      name="ReadOnlyVariables"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
                     <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      dataType="System.String"
+                      description="Especifica una lista separada por comas de variables de lectura/escritura."
+                      name="ReadWriteVariables"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                    <property
+                      dataType="System.String"
+                      description="Lista de puntos de interrupción presentes en el script."
+                      isArray="true"
+                      name="BreakpointCollection"
+                      typeConverter="NOTBROWSABLE">
+                      <arrayElements
+                        arrayElementCount="0" />
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Suma de comprobación para comparar los metadatos del componente con los códigos compilados."
+                      name="MetadataChecksum140"
+                      typeConverter="NOTBROWSABLE">2F</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
                   </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Connections[OleDbConnection]"
-                      connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
                   <inputs>
                     <input
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="RedirectRow"
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Inputs[Entrada 0]"
                       hasSideEffects="true"
-                      name="OLE DB Destination Input">
+                      name="Entrada 0">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[PK_PROMOTOR]"
-                          cachedDataType="i4"
-                          cachedName="PK_PROMOTOR"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_PROMOTOR]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor.Outputs[Lookup Match Output].Columns[PK_PROMOTOR]" />
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Inputs[Entrada 0].Columns[ETL_HORAINI]"
+                          cachedDataType="dbTime"
+                          cachedName="ETL_HORAINI"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAINI]"
+                          usageType="readWrite" />
                         <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[PK_CATEGORIA]"
-                          cachedDataType="i4"
-                          cachedName="PK_CATEGORIA"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_CATEGORIA]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria.Outputs[Lookup Match Output].Columns[PK_CATEGORIA]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[PK_TIPOPAGO]"
-                          cachedDataType="i4"
-                          cachedName="PK_TIPOPAGO"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_TIPOPAGO]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago.Outputs[Lookup Match Output].Columns[PK_TIPOPAGO]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[MontoPago]"
-                          cachedDataType="i4"
-                          cachedName="MontoPago"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[ETL_FEC_CREACION]"
-                          cachedDataType="dbDate"
-                          cachedName="ETL_FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[ETL_USU_CREACION]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="11"
-                          cachedName="ETL_USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[PK_CLIENTE]"
-                          cachedDataType="i4"
-                          cachedName="PK_CLIENTE"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_CLIENTE]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente.Outputs[Lookup Match Output].Columns[PK_CLIENTE]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[PK_HORAFIN]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="6"
-                          cachedName="PK_HORAFIN"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Match Output].Columns[PK_HORAFIN]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].Columns[PK_FECHA]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="8"
-                          cachedName="PK_FECHA"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha.Outputs[Lookup Match Output].Columns[PK_FECHA]" />
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Inputs[Entrada 0].Columns[ETL_HORAFIN]"
+                          cachedDataType="dbTime"
+                          cachedName="ETL_HORAFIN"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAFIN]"
+                          usageType="readWrite" />
                       </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_CLIENTE]"
-                          dataType="i4"
-                          name="PK_CLIENTE" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
-                          dataType="wstr"
-                          length="10"
-                          name="FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_VENTA]"
-                          dataType="i4"
-                          name="PK_VENTA" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_PROMOTOR]"
-                          dataType="i4"
-                          name="PK_PROMOTOR" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_CATEGORIA]"
-                          dataType="i4"
-                          name="PK_CATEGORIA" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_TIPOPAGO]"
-                          dataType="i4"
-                          name="PK_TIPOPAGO" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
-                          dataType="i4"
-                          name="PK_FECHA" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA]"
-                          dataType="i4"
-                          name="PK_HORA" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
-                          dataType="i4"
-                          name="MONTO" />
-                      </externalMetadataColumns>
+                      <externalMetadataColumns />
                     </input>
                   </inputs>
                   <outputs>
                     <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input]">
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0]"
+                      name="Salida 0"
+                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Inputs[Entrada 0]">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAINI_STR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAINI_STR]"
+                          name="HORAINI_STR" />
                         <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAFIN_STR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAFIN_STR]"
+                          name="HORAFIN_STR" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -1207,9 +2021,9 @@ public class ScriptMain : UserComponent
     /// <param name="Row">The row that is currently passing through the component</param>
     public override void Entrada0_ProcessInputRow(Entrada0Buffer Row)
     {
-        // Mock values
-        //Row.TipoDePago = "YAPE";
-        //Row.MontoPago = 0;
+        // Default values
+        Row.TipoDePago = "EFECTIVO";
+        Row.MontoPago = 100;
 
         string input = Row.Pago;
         var validTypes = new Dictionary<string, string>
@@ -1234,33 +2048,19 @@ public class ScriptMain : UserComponent
             }
         }
 
-        // Output results
+        // results
         if (amount != null)
         {
-            Console.WriteLine("Amount: " + amount);
-            Row.MontoPago = int.Parse(amount);
-        }
-        else
-        {
-            Row.MontoPago = 0;
-            Console.WriteLine("No valid amount found.");
+             Row.MontoPago = int.Parse(amount);
         }
 
         if (type != null && validTypes.TryGetValue(type, out string tipoDePago))
         {
             Row.TipoDePago = tipoDePago;
-            Row.MontoPago = int.Parse(amount);
         }
         else
         {
-            Console.WriteLine("TipoDePago: EFECTIVO");
             Row.TipoDePago = "EFECTIVO"; 
-
-            if (amount != null)
-            {
-                Console.WriteLine("MontoPago: " + int.Parse(amount));
-                Row.MontoPago = int.Parse(amount);
-            }
         }
     }
 
@@ -1707,7 +2507,7 @@ public class Variables
     <msb:CodeName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:DisplayName>
-    <msb:ProjectId>{2FB2D39D-4CA4-48C7-A18B-AEE9E4542331}</msb:ProjectId>
+    <msb:ProjectId>{492E0D77-FBE7-4A6F-AEC1-456D724FCE15}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_8b6283ab8c2d4157a05721470b51fe02.csproj" />
@@ -1854,118 +2654,118 @@ namespace SC_8b6283ab8c2d4157a05721470b51fe02.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDACemgGYAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAAMjcA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDACKxgGYAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAAHjYA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAOA2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMw1AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAOBcAAAAgAAAAGAAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAJBYAAAAgAAAAGAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAaAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAU
-NwAAAAAAAEgAAAACAAUASCMAAOASAAABAAAAAAAAACg2AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAQASQEAAAEAABEDbwYAAAYK
-cxIAAAolcgEAAHByBwAAcG8TAAAKJXIRAABwchcAAHBvEwAACiVyIQAAcHIpAABwbxMAAAoLBnI7
-AABwKBQAAAoMCG8VAAAKLQMUKwYIbxYAAAoNFBMEB28XAAAKbxgAAAoTBispEgYoGQAAChMHBnJL
-AABwEQdyUQAAcCgaAAAKFygbAAAKLAYRBxME3hkSBigcAAAKLc7eDhIG/hYDAAAbbx0AAArcCSwe
-cl0AAHAJKB4AAAooHwAACgMJKCAAAApvDAAABisRAxZvDAAABnJvAABwKB8AAAoRBCwhBxEEEgVv
-IQAACiwVAxEFbwoAAAYDCSggAAAKbwwAAAYqcp0AAHAoHwAACgNyKQAAcG8KAAAGCSwqcscAAHAJ
-KCAAAAoTCBIIKCIAAAooHgAACigfAAAKAwkoIAAACm8MAAAGKgAAAAEQAAACAGsANqEADgAAAAAe
-AigQAAAGKioCAwQFKCMAAAoqUgJ7JAAACgJ7JQAAChaUbyYAAAoqJgIWAygnAAAKKiICFigoAAAK
-KloDLAgCFigpAAAKKnLfAABwcyoAAAp6JgIXAygnAAAKKloDLAgCFygpAAAKKnLfAABwcyoAAAp6
-OgIYA4wlAAABKCcAAAoqWgMsCAIYKCkAAAoqct8AAHBzKgAACnoeAigrAAAKKh4CKCwAAAoqfgIo
-LQAACgICcxQAAAZ9AQAABAICcxUAAAZ9AgAABCqSBHKeAQBwGm8uAAAKLBUCBQIDKC8AAAoOBHMF
-AAAGbxIAAAYqSisHAgNvEwAABgNvDgAABi3xKgYqOgIoMAAACgIDfQMAAAQqOgIoMAAACgIDfQQA
-AAQqHgIoMAAACiqufgUAAAQtHnKyAQBw0AcAAAIoMQAACm8yAAAKczMAAAqABQAABH4FAAAEKhp+
-BgAABCoeAoAGAAAEKhp+BwAABCoeAig0AAAKKi5zGwAABoAHAAAEKgBCU0pCAQABAAAAAAAMAAAA
-djQuMC4zMDMxOQAAAAAFAGwAAACQBgAAI34AAPwGAACIBwAAI1N0cmluZ3MAAAAAhA4AACQCAAAj
-VVMAqBAAABAAAAAjR1VJRAAAALgQAAAoAgAAI0Jsb2IAAAAAAAAAAgAAAVcVogkJAQAAAPoBMwAW
-AAABAAAAKgAAAAgAAAAHAAAAHAAAABMAAAA0AAAAEAAAAAEAAAADAAAACQAAAAwAAAADAAAAAQAA
-AAQAAAABAAAAAAB6AwEAAAAAAAYASgJXBQYA3gJXBQYAlgFEBQ8AywUAAAYAwwFGBAYALQJGBAYA
-DgJGBAYAxQJGBAYAagJGBAYAgwJGBAYA2gFGBAYA9QEvAwoAngLNAAYAKwBSAA4AXgNIBjsAWAQA
-AEMALAUAAAoACAXNABIA+QTNAAoAzATNAAoA2QbNAAYAnAb+AwYAeQFEBQYAGQV3BQYAkQQxBA4A
-SQFkAw4AqgFkAw4AIwEcBAYAXgFXBQ4AcwdIBg4A5ARIBg4AGwFIBgYAVQP+Aw4AcwZIBgYAgQD+
-AwYAsQD+AwYAJQD+AwYAZgT+AwYAgAT+AwYA7gD+AwYAjQD+AwYAfQdGBAAAAAA4AAAAAAABAAEA
-AQAQABEEAAAQAAEAAQABABAA6gQAAEkAAQAFAAEAEAC7BgAAVQABABAAAQAQAGcGAABZAAMAFAAB
-ABAACQYAAFkABAAVAAAAEAB+BdoFWQAFABYAAAEQADgG2gVxAAcAGgAGAGcG+wAGAAkG/wABAMkG
-AwEBAMkGAwERAAUEBwERAAsBCwERAHEADwFQIAAAAADGAPwCBgABAFggAAAAAMYABwMGAAEAYCAA
-AAAAxgBSBxMBAQDIIQAAAACGGDcFBgACANAhAAAAAIYYNwWiAAIA2yEAAAAAhgidBEwABQDwIQAA
-AACGCKYEEAAFAPohAAAAAIYIogNIAAYAAyIAAAAAhgiyAxkBBgAaIgAAAACGCK8EEAAHACQiAAAA
-AIYIwgMZAQgAOyIAAAAAhgi+BAEACQBKIgAAAACGCNgDGQEKAGEiAAAAAIYAawdIAAsAaSIAAAAA
-hgCjBkgACwBxIgAAAACGGDcFBgALAJEiAAAAAMYAPAceAQsAtiIAAAAAxgEzBxMBDwDJIgAAAADG
-AVIHEwEQAMsiAAAAAIYYNwUoAREA2iIAAAAAhhg3BSgBEgDpIgAAAACDGDcFBgATAPEiAAAAAJMI
-FQUuARMAHSMAAAAAkwjzADMBEwAkIwAAAACTCP8AOAETACwjAAAAAJYIrwY+ARQAMyMAAAAAhhg3
-BQYAFAA7IwAAAACRGD0FQwEUAAAAAQBvBwAAAQAOBQAAAgATBgAAAwDaBAAAAQApAwAAAQApAwAA
-AQApAwAAAQApAwAAAQApAwAAAQApAwAAAQBBAAAAAgC5AAAAAwAOBQAABADaBAAAAQAOBQAAAQBv
-BwAAAQDfBgAAAQDfBgAAAQApAwkANwUBABEANwUGABkANwUKACkANwUQADEANwUQADkANwUQAEEA
-NwUQAEkANwUQAFEANwUQAFkANwUQAGEANwUQAGkANwUGALkANwUGANkANwUVAOkANwUGAKkA/AIG
-AKkABwMGAAwANwUGAAwAbQA5APEAXgNBAPkAgAZIAAEBEwNMAAwAjAZQABQAKQViABwA6QZ0AAkB
-lQZ5APEAXAOAABwASQdIABkBOwEGAAkBlQaJACEBwwCPACkBQwGUAAwAHQOZACkBSQNMAJEANwWi
-AJEADgWsAJEAEwawAJkAUgO0AJEA9QO5AJEA5gO/AJEA7QMBADEBNwUQAJEAawdIAJEAowZIAKkA
-NwUGAAkBQQbEAKkAJwbMALEANwUGAEEBnwDSAEEBeQfbAMEANwXhAOEANwUGAC4ACwBiAS4AEwBr
-AS4AGwCKAS4AIwCTAS4AKwC8AS4AMwC8AS4AOwC8AS4AQwCTAS4ASwDCAS4AUwC8AS4AWwDZAUMA
-YwAjAuEAewAjAuMAawAjAukAcwCKAQkBcwCKARsAAwABAAcABwAIAAkAAADHBEcBAADhA0sBAACz
-BEcBAADGA0sBAADCBE8BAADcA0sBAAAZBVMBAAATAVgBAACzBl0BAgAGAAMAAQAHAAMAAgAIAAUA
-AQAJAAUAAQAKAAcAAQALAAkAAQAMAAsAAQANAA0AAgAXAA8AAgAYABEAAQAZABEAAgAaABMAMgBb
-AG0ABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAOkASQAAAAAAEAAAAAAAAAAAAAAA
-8gD1BgAAAAAEAAAAAAAAAAAAAADpAP4DAAAAABAAAAAAAAAAAAAAAPIAEgcAAAAAAAAAAAEAAACI
-BQAAAAAAU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIASW50MzIARGljdGlvbmFy
-eWAyADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIAU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMA
-QWRkAGRlZmF1bHRJbnN0YW5jZQBJRGlzcG9zYWJsZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBl
-RnJvbUhhbmRsZQBDb25zb2xlAElucHV0TmFtZQBXcml0ZUxpbmUATWljcm9zb2Z0LlNxbFNlcnZl
-ci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1
-cmUAQ2FwdHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAFBhcnNlAEVkaXRvckJy
-b3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNv
-ZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUA
-QXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRG
-cmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5
-RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3Nl
-bWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1Njcmlw
-dENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1
-bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAZ2V0X1Zh
-bHVlAFRyeUdldFZhbHVlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAVG9TdHJpbmcA
-R2V0U3RyaW5nAElzTWF0Y2gAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzhiNjI4M2FiOGMyZDQx
-NTdhMDU3MjE0NzBiNTFmZTAyLmRsbABnZXRfUGFnb19Jc051bGwAc2V0X1BhZ29fSXNOdWxsAHNl
-dF9UaXBvRGVQYWdvX0lzTnVsbABzZXRfTW9udG9QYWdvX0lzTnVsbABTZXROdWxsAHNldF9JdGVt
-AFN5c3RlbQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3Rl
-bS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEtleUNvbGxlY3Rpb24ASW52YWxpZE9w
-ZXJhdGlvbkV4Y2VwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAGdldF9QYWdvAHNl
-dF9QYWdvAHNldF9UaXBvRGVQYWdvAHNldF9Nb250b1BhZ28AT3V0cHV0TmFtZU1hcABPdXRwdXRN
-YXAAR3JvdXAARW50cmFkYTBCdWZmZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9S
-ZXNvdXJjZU1hbmFnZXIAR2V0RW51bWVyYXRvcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0
-aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ184
-YjYyODNhYjhjMmQ0MTU3YTA1NzIxNDcwYjUxZmUwMi5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNv
-dXJjZXMARGVidWdnaW5nTW9kZXMAU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIu
-UHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVz
-AFNldHRpbmdzAEVxdWFscwBTeXN0ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnMAQ29ubmVjdGlv
-bnMAUmVnZXhPcHRpb25zAGdldF9TdWNjZXNzAGdldF9LZXlzAENvbmNhdABPYmplY3QARW5kT2ZS
-b3dzZXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29t
-cG9uZW50AGdldF9DdXJyZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0
-LlNxbFNlcnZlci5QaXBlbGluZUhvc3QARW50cmFkYTBfUHJvY2Vzc0lucHV0AE1vdmVOZXh0AEVu
-dHJhZGEwX1Byb2Nlc3NJbnB1dFJvdwBOZXh0Um93AFJlZ2V4AGdldF9Bc3NlbWJseQAAAAAFeQBh
-AAAJWQBBAFAARQAABXAAbAAACVAATABJAE4AAAdlAGYAZQAAEUUARgBFAEMAVABJAFYATwAAD1wA
-YgBcAGQAKwBcAGIAAAVcAGIAAAtcAHcAKgBcAGIAABFBAG0AbwB1AG4AdAA6ACAAAC1OAG8AIAB2
-AGEAbABpAGQAIABhAG0AbwB1AG4AdAAgAGYAbwB1AG4AZAAuAAApVABpAHAAbwBEAGUAUABhAGcA
-bwA6ACAARQBGAEUAQwBUAEkAVgBPAAAXTQBvAG4AdABvAFAAYQBnAG8AOgAgAACAvUwAYQAgAHAA
-cgBvAHAAaQBlAGQAYQBkACAASQBzAE4AdQBsAGwAIABuAG8AIABwAHUAZQBkAGUAIABlAHMAdABh
-AGIAbABlAGMAZQByAHMAZQAgAGUAbgAgAEYAYQBsAHMAZQAuACAARQBuACAAcwB1ACAAbAB1AGcA
-YQByACwAIABhAHMAaQBnAG4AZQAgAHUAbgAgAHYAYQBsAG8AcgAgAGEAIABsAGEAIABjAG8AbAB1
-AG0AbgBhAC4AABNFAG4AdAByAGEAZABhACAAMAAAcVMAQwBfADgAYgA2ADIAOAAzAGEAYgA4AGMA
-MgBkADQAMQA1ADcAYQAwADUANwAyADEANAA3ADAAYgA1ADEAZgBlADAAMgAuAFAAcgBvAHAAZQBy
-AHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAyNBZiqAdK0u07ShZKG0ntAAEIAEBCAMgAAEF
-IAEBEREEIAEBDgUgAQERaRYHCQ4VEjkCDg4SPQ4ODhURRQIODg4IBhUSOQIODgcgAgETABMBBgAC
-Ej0ODgMgAAIDIAAOCiAAFRJBAhMAEwEGFRJBAg4OCiAAFRFFAhMAEwEGFRFFAg4OBCAAEwAGAAMO
-Dg4OCAADAg4OEYCJBQACDg4OBAABAQ4EAAEIDgggAgITABATAQkgAwESTR0IElEDBhJNAwYdCAQg
-AQ4IBSACAQgcBCABAggHIAICDhGAnQUgAR0ICAgAARKAoRGApQUgABKAqQcgAgEOEoCpCLd6XFYZ
-NOCJCImEXc2AgMyRAwYSFAMGEhgDBhJVAwYSYQMGEmUDBhIgBSABARIMBCABAQIJIAQBCA4STRJR
-BSABARJVBAAAEmEEAAASZQUAAQESZQQAABIgAwAAAQMoAA4DKAACAygACAQIABJhBAgAEmUECAAS
-IAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0Nf
-OGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAg
-MjAyNAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5
-TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJlc291
-cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1u
-ZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMu
-UnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAAINwAAAAAAAAAAAAAiNwAA
-ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFDcAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVl
-LmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAA
+NgAAAAAAAEgAAAACAAUA9CIAACASAAABAAAAAAAAABQ1AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAQA9gAAAAEAABEDcgEAAHBv
+CgAABgMfZG8MAAAGA28GAAAGCnMSAAAKJXITAABwchkAAHBvEwAACiVyIwAAcHIpAABwbxMAAAol
+cjMAAHByAQAAcG8TAAAKCwZyOwAAcCgUAAAKDAhvFQAACi0DFCsGCG8WAAAKDRQTBAdvFwAACm8Y
+AAAKEwYrKRIGKBkAAAoTBwZySwAAcBEHclEAAHAoGgAAChcoGwAACiwGEQcTBN4ZEgYoHAAACi3O
+3g4SBv4WAwAAG28dAAAK3AksDAMJKB4AAApvDAAABhEELBUHEQQSBW8fAAAKLAkDEQVvCgAABioD
+cgEAAHBvCgAABioAAAEQAAACAH4ANrQADgAAAAAeAigQAAAGKioCAwQFKCAAAAoqUgJ7IQAACgJ7
+IgAAChaUbyMAAAoqJgIWAygkAAAKKiICFiglAAAKKloDLAgCFigmAAAKKnJdAABwcycAAAp6JgIX
+AygkAAAKKloDLAgCFygmAAAKKnJdAABwcycAAAp6OgIYA4wkAAABKCQAAAoqWgMsCAIYKCYAAAoq
+cl0AAHBzJwAACnoeAigoAAAKKh4CKCkAAAoqfgIoKgAACgICcxQAAAZ9AQAABAICcxUAAAZ9AgAA
+BCqSBHIcAQBwGm8rAAAKLBUCBQIDKCwAAAoOBHMFAAAGbxIAAAYqSisHAgNvEwAABgNvDgAABi3x
+KgYqOgIoLQAACgIDfQMAAAQqOgIoLQAACgIDfQQAAAQqHgIoLQAACiqufgUAAAQtHnIwAQBw0AcA
+AAIoLgAACm8vAAAKczAAAAqABQAABH4FAAAEKhp+BgAABCoeAoAGAAAEKhp+BwAABCoeAigxAAAK
+Ki5zGwAABoAHAAAEKgBCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAAB4BgAAI34A
+AOQGAABsBwAAI1N0cmluZ3MAAAAAUA4AAKQBAAAjVVMA9A8AABAAAAAjR1VJRAAAAAQQAAAcAgAA
+I0Jsb2IAAAAAAAAAAgAAAVcVogkJAQAAAPoBMwAWAAABAAAAKQAAAAgAAAAHAAAAHAAAABMAAAAx
+AAAAEAAAAAEAAAADAAAACQAAAAwAAAADAAAAAQAAAAQAAAABAAAAAABfAwEAAAAAAAYAOAI8BQYA
+zAI8BQYAhAEpBQ8AsAUAAAYAsQErBAYAGwIrBAYA/AErBAYAswIrBAYAWAIrBAYAcQIrBAYAyAEr
+BAYA4wEdAwoAjAK7AAYAKwBSAA4AQwMtBjsAPQQAAEMAEQUAAAoA7QS7ABIA3gS7AAoAsQS7AAoA
+vga7AAYAgQbjAwYAZwEpBQYA/gRcBQYAdgQWBA4ANwFJAw4AmAFJAw4AEQEBBAYATAE8BQ4AWAct
+Bg4AyQQtBg4ACQEtBgYAOgPjAw4AWAYtBgYAgQDjAwYAJQDjAwYASwTjAwYAZQTjAwYA3ADjAwYA
+jQDjAwYAYgcrBAAAAAA4AAAAAAABAAEAAQAQAPYDAAAQAAEAAQABABAAzwQAAEkAAQAFAAEAEACg
+BgAAVQABABAAAQAQAEwGAABZAAMAFAABABAA7gUAAFkABAAVAAAAEABjBb8FWQAFABYAAAEQAB0G
+vwVxAAcAGgAGAEwG7wAGAO4F8wABAK4G9wABAK4G9wARAOoD+wARAPkA/wARAHEAAwFQIAAAAADG
+AOoCBgABAFggAAAAAMYA9QIGAAEAYCAAAAAAxgA3BwcBAQB0IQAAAACGGBwFBgACAHwhAAAAAIYY
+HAWWAAIAhyEAAAAAhgiCBEsABQCcIQAAAACGCIsEEAAFAKYhAAAAAIYIhwNHAAYAryEAAAAAhgiX
+Aw0BBgDGIQAAAACGCJQEEAAHANAhAAAAAIYIpwMNAQgA5yEAAAAAhgijBAEACQD2IQAAAACGCL0D
+DQEKAA0iAAAAAIYAUAdHAAsAFSIAAAAAhgCIBkcACwAdIgAAAACGGBwFBgALAD0iAAAAAMYAIQcS
+AQsAYiIAAAAAxgEYBwcBDwB1IgAAAADGATcHBwEQAHciAAAAAIYYHAUcAREAhiIAAAAAhhgcBRwB
+EgCVIgAAAACDGBwFBgATAJ0iAAAAAJMI+gQiARMAySIAAAAAkwjhACcBEwDQIgAAAACTCO0ALAET
+ANgiAAAAAJYIlAYyARQA3yIAAAAAhhgcBQYAFADnIgAAAACRGCIFNwEUAAAAAQBUBwAAAQDzBAAA
+AgD4BQAAAwC/BAAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQBBAAAAAgCx
+AAAAAwDzBAAABAC/BAAAAQDzBAAAAQBUBwAAAQDEBgAAAQDEBgAAAQAXAwkAHAUBABEAHAUGABkA
+HAUKACkAHAUQADEAHAUQADkAHAUQAEEAHAUQAEkAHAUQAFEAHAUQAFkAHAUQAGEAHAUQAGkAHAUG
+ALkAHAUGANkAHAUVAOkAHAUGAKkA6gIGAKkA9QIGAAwAHAUGAAwAbQA4APEAQwNAAPkAZQZHAAEB
+AQNLAAwAcQZPABQADgVhABwAzgZzAAkBegZ4APEAQQN/ABwALgdHABkBKQEGACEBMQGIAAwACwON
+AJEAHAWWAJEA8wSgAJEA+AWkAJkANwOoAJEA2gOtAJEAywOzAJEA0gMBACkBHAUQAJEAUAdHAJEA
+iAZHAKkAHAUGAAkBJga4AKkADAbAALEAHAUGADkBnwDGADkBXgfPAMEAHAXVAOEAHAUGAC4ACwBW
+AS4AEwBfAS4AGwB+AS4AIwCHAS4AKwCwAS4AMwCwAS4AOwCwAS4AQwCHAS4ASwC2AS4AUwCwAS4A
+WwDNAUMAYwAXAuEAewAXAuMAawAXAukAcwB+AQkBcwB+ARsAAwABAAcABwAIAAkAAACsBDsBAADG
+Az8BAACYBDsBAACrAz8BAACnBEMBAADBAz8BAAD+BEcBAAABAUwBAACYBlEBAgAGAAMAAQAHAAMA
+AgAIAAUAAQAJAAUAAQAKAAcAAQALAAkAAQAMAAsAAQANAA0AAgAXAA8AAgAYABEAAQAZABEAAgAa
+ABMAMQBaAGwABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAN0ASQAAAAAAEAAAAAAA
+AAAAAAAA5gDaBgAAAAAEAAAAAAAAAAAAAADdAOMDAAAAABAAAAAAAAAAAAAAAOYA9wYAAAAAAAAA
+AAEAAABtBQAAAAAAU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIASW50MzIARGlj
+dGlvbmFyeWAyADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIAU3lzdGVtLkNvbGxlY3Rpb25zLkdl
+bmVyaWMAQWRkAGRlZmF1bHRJbnN0YW5jZQBJRGlzcG9zYWJsZQBSdW50aW1lVHlwZUhhbmRsZQBH
+ZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxp
+bmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQ2FwdHVyZQBB
+cHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAFBhcnNlAEVkaXRvckJyb3dzYWJsZVN0YXRl
+AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
+RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
+aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
+dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
+dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
+dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
+YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAZ2V0X1ZhbHVlAFRyeUdldFZh
+bHVlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAElzTWF0Y2gAU3lz
+dGVtLkNvbXBvbmVudE1vZGVsAFNDXzhiNjI4M2FiOGMyZDQxNTdhMDU3MjE0NzBiNTFmZTAyLmRs
+bABnZXRfUGFnb19Jc051bGwAc2V0X1BhZ29fSXNOdWxsAHNldF9UaXBvRGVQYWdvX0lzTnVsbABz
+ZXRfTW9udG9QYWdvX0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNvdXJjZU1hbgBT
+Y3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3Rl
+bS5SZWZsZWN0aW9uAEtleUNvbGxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJp
+bmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAGdldF9QYWdvAHNldF9QYWdvAHNldF9UaXBvRGVQYWdv
+AHNldF9Nb250b1BhZ28AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAAR3JvdXAARW50cmFkYTBCdWZm
+ZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAR2V0RW51
+bWVyYXRvcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNv
+bXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ184YjYyODNhYjhjMmQ0MTU3YTA1NzIx
+NDcwYjUxZmUwMi5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMA
+U0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIuUHJvcGVydGllcwBWYXJpYWJsZXMA
+QnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBTeXN0
+ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnMAQ29ubmVjdGlvbnMAUmVnZXhPcHRpb25zAGdldF9T
+dWNjZXNzAGdldF9LZXlzAENvbmNhdABPYmplY3QARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNl
+ckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AGdldF9DdXJyZW50AE1p
+Y3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhv
+c3QARW50cmFkYTBfUHJvY2Vzc0lucHV0AE1vdmVOZXh0AEVudHJhZGEwX1Byb2Nlc3NJbnB1dFJv
+dwBOZXh0Um93AFJlZ2V4AGdldF9Bc3NlbWJseQAAABFFAEYARQBDAFQASQBWAE8AAAV5AGEAAAlZ
+AEEAUABFAAAFcABsAAAJUABMAEkATgAAB2UAZgBlAAAPXABiAFwAZAArAFwAYgAABVwAYgAAC1wA
+dwAqAFwAYgAAgL1MAGEAIABwAHIAbwBwAGkAZQBkAGEAZAAgAEkAcwBOAHUAbABsACAAbgBvACAA
+cAB1AGUAZABlACAAZQBzAHQAYQBiAGwAZQBjAGUAcgBzAGUAIABlAG4AIABGAGEAbABzAGUALgAg
+AEUAbgAgAHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkAZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIA
+IABhACAAbABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBuAHQAcgBhAGQAYQAgADAAAHFTAEMAXwA4
+AGIANgAyADgAMwBhAGIAOABjADIAZAA0ADEANQA3AGEAMAA1ADcAMgAxADQANwAwAGIANQAxAGYA
+ZQAwADIALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAA1JySW59o
+q0K1dn6Z0DuZHAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERaRUHCA4VEjkCDg4SPQ4ODhURRQIO
+Dg4GFRI5Ag4OByACARMAEwEGAAISPQ4OAyAAAgMgAA4KIAAVEkECEwATAQYVEkECDg4KIAAVEUUC
+EwATAQYVEUUCDg4EIAATAAYAAw4ODg4IAAMCDg4RgIkEAAEIDgggAgITABATAQkgAwESTR0IElED
+BhJNAwYdCAQgAQ4IBSACAQgcBCABAggHIAICDhGAmQUgAR0ICAgAARKAnRGAoQUgABKApQcgAgEO
+EoClCLd6XFYZNOCJCImEXc2AgMyRAwYSFAMGEhgDBhJVAwYSYQMGEmUDBhIgBSABARIMBCABAQIJ
+IAQBCA4STRJRBSABARJVBAAAEmEEAAASZQUAAQESZQQAABIgAwAAAQMoAA4DKAACAygACAQIABJh
+BAgAEmUECAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAA
+AAAoAQAjU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIAAAUBAAAAABYBABFDb3B5
+cmlnaHQgQCAgMjAyNAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdv
+cmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAALQAAADOyu++AQAAAJEAAABsU3lz
+dGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwg
+Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5S
+ZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAD0NQAAAAAA
+AAAAAAAONgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAABfQ29yRGxsTWFp
+bgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1995,7 +2795,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAADQ3AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAACA2AAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2080,6 +2880,228 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           dataType="i4"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]"
                           name="MontoPago" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Instancia SQL Server destino"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[FACT_VENTAS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Connections[OleDbConnection]"
+                      connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="RedirectRow"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[PK_PROMOTOR]"
+                          cachedDataType="i4"
+                          cachedName="PK_PROMOTOR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_PROMOTOR]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor.Outputs[Lookup Match Output].Columns[PK_PROMOTOR]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[PK_CATEGORIA]"
+                          cachedDataType="i4"
+                          cachedName="PK_CATEGORIA"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_CATEGORIA]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria.Outputs[Lookup Match Output].Columns[PK_CATEGORIA]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[PK_TIPOPAGO]"
+                          cachedDataType="i4"
+                          cachedName="PK_TIPOPAGO"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_TIPOPAGO]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago.Outputs[Lookup Match Output].Columns[PK_TIPOPAGO]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[MontoPago]"
+                          cachedDataType="i4"
+                          cachedName="MontoPago"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[ETL_FEC_CREACION]"
+                          cachedDataType="dbDate"
+                          cachedName="ETL_FEC_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[ETL_USU_CREACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="11"
+                          cachedName="ETL_USU_CREACION"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[PK_CLIENTE]"
+                          cachedDataType="i4"
+                          cachedName="PK_CLIENTE"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_CLIENTE]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente.Outputs[Lookup Match Output].Columns[PK_CLIENTE]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[PK_FECHA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="8"
+                          cachedName="PK_FECHA"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha.Outputs[Lookup Match Output].Columns[PK_FECHA]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[HORAINI_STR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="HORAINI_STR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA_INICIO]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAINI_STR]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[HORAFIN_STR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="HORAFIN_STR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA_FIN]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAFIN_STR]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_CLIENTE]"
+                          dataType="i4"
+                          name="PK_CLIENTE" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
+                          dataType="wstr"
+                          length="10"
+                          name="FEC_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_VENTA]"
+                          dataType="i4"
+                          name="PK_VENTA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_PROMOTOR]"
+                          dataType="i4"
+                          name="PK_PROMOTOR" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_CATEGORIA]"
+                          dataType="i4"
+                          name="PK_CATEGORIA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_TIPOPAGO]"
+                          dataType="i4"
+                          name="PK_TIPOPAGO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
+                          dataType="i4"
+                          name="PK_FECHA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
+                          dataType="i4"
+                          name="MONTO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA_INICIO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="PK_HORA_INICIO" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA_FIN]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="PK_HORA_FIN" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -2305,13 +3327,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           cachedDataType="i4"
                           cachedName="ErrorCode"
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
                           cachedDataType="i4"
                           cachedName="ErrorColumn"
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2576,7 +3598,7 @@ where [refTable].[CATEGORIA] = ?</property>
                     <output
                       refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       exclusionGroup="1"
                       name="Lookup Match Output"
                       synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria.Inputs[Lookup Input]">
@@ -2953,328 +3975,6 @@ where [refTable].[PK_FECHA] = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin"
-                  componentClassID="Microsoft.Lookup"
-                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                  name="Lookup hora fin"
-                  usesDispositions="true"
-                  version="6">
-                  <properties>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the SQL statement that generates the lookup table."
-                      expressionType="Notify"
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_HORA]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                      expressionType="Notify"
-                      name="SqlCommandParam"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_HORA]) [refTable]
-where [refTable].[MINUTO] = ?</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the type of connection used to access the reference dataset."
-                      name="ConnectionType"
-                      typeConverter="LookupConnectionType">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the cache type of the lookup table."
-                      name="CacheType"
-                      typeConverter="CacheType">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                      name="NoMatchBehavior"
-                      typeConverter="LookupNoMatchBehavior">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                      name="NoMatchCachePercentage">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                      name="MaxMemoryUsage">25</property>
-                    <property
-                      dataType="System.Int64"
-                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                      name="MaxMemoryUsage64">25</property>
-                    <property
-                      dataType="System.String"
-                      description="Indicates whether to reference metadata in an XML format."
-                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PK_HORA" dataType="DT_STR" length="6" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MINUTO" dataType="DT_WSTR" length="16" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HORA24" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PARTE_DEL_DIA" dataType="DT_STR" length="8" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="FEC_CREACION" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="USU_CREACION" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAFIN]};</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                      name="TreatDuplicateKeysAsError">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Connections[OleDbConnection]"
-                      connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
-                      description="Connection manager used to access lookup data."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Inputs[Lookup Input]"
-                      name="Lookup Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Inputs[Lookup Input].Columns[ETL_HORAFIN]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="ETL_HORAFIN"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAFIN]">
-                          <properties>
-                            <property
-                              dataType="System.String"
-                              description="Specifies the column in the reference table that a column joins."
-                              name="JoinToReferenceColumn">MINUTO</property>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn" />
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Match Output]"
-                      errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
-                      exclusionGroup="1"
-                      name="Lookup Match Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Inputs[Lookup Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Match Output].Columns[PK_HORAFIN]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Copy Column"
-                          length="6"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Match Output].Columns[PK_HORAFIN]"
-                          name="PK_HORAFIN"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.String"
-                              description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn">PK_HORA</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup No Match Output]"
-                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                      exclusionGroup="1"
-                      name="Lookup No Match Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Inputs[Lookup Input]">
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Lookup Error Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Inputs[Lookup Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio"
-                  componentClassID="Microsoft.Lookup"
-                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                  name="Lookup hora inicio"
-                  usesDispositions="true"
-                  version="6">
-                  <properties>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the SQL statement that generates the lookup table."
-                      expressionType="Notify"
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DIM_HORA]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                      expressionType="Notify"
-                      name="SqlCommandParam"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DIM_HORA]) [refTable]
-where [refTable].[MINUTO] = ?</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the type of connection used to access the reference dataset."
-                      name="ConnectionType"
-                      typeConverter="LookupConnectionType">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the cache type of the lookup table."
-                      name="CacheType"
-                      typeConverter="CacheType">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                      name="NoMatchBehavior"
-                      typeConverter="LookupNoMatchBehavior">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                      name="NoMatchCachePercentage">0</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                      name="MaxMemoryUsage">25</property>
-                    <property
-                      dataType="System.Int64"
-                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                      name="MaxMemoryUsage64">25</property>
-                    <property
-                      dataType="System.String"
-                      description="Indicates whether to reference metadata in an XML format."
-                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PK_HORA" dataType="DT_STR" length="6" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MINUTO" dataType="DT_WSTR" length="16" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HORA24" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PARTE_DEL_DIA" dataType="DT_STR" length="8" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="FEC_CREACION" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="USU_CREACION" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                    <property
-                      containsID="true"
-                      dataType="System.String"
-                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAINI]};</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                      name="TreatDuplicateKeysAsError">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Connections[OleDbConnection]"
-                      connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
-                      description="Connection manager used to access lookup data."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Inputs[Lookup Input]"
-                      name="Lookup Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Inputs[Lookup Input].Columns[ETL_HORAINI]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="ETL_HORAINI"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAINI]">
-                          <properties>
-                            <property
-                              dataType="System.String"
-                              description="Specifies the column in the reference table that a column joins."
-                              name="JoinToReferenceColumn">MINUTO</property>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn" />
-                          </properties>
-                        </inputColumn>
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Match Output]"
-                      errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
-                      exclusionGroup="1"
-                      name="Lookup Match Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Inputs[Lookup Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Match Output].Columns[PK_HORAINI]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Copy Column"
-                          length="6"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Match Output].Columns[PK_HORAINI]"
-                          name="PK_HORAINI"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              dataType="System.String"
-                              description="Specifies the column in the reference table from which a column is copied."
-                              name="CopyFromReferenceColumn">PK_HORA</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup No Match Output]"
-                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                      exclusionGroup="1"
-                      name="Lookup No Match Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Inputs[Lookup Input]">
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Lookup Error Output"
-                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Inputs[Lookup Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
                   refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor"
                   componentClassID="Microsoft.Lookup"
                   contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
@@ -3380,7 +4080,7 @@ where [refTable].[PROMOTOR] = ?</property>
                     <output
                       refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       exclusionGroup="1"
                       name="Lookup Match Output"
                       synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor.Inputs[Lookup Input]">
@@ -4770,10 +5470,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                         </outputColumn>
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAINI]"
-                          dataType="wstr"
+                          dataType="dbTime"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          length="50"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAINI]"
                           name="ETL_HORAINI"
                           truncationRowDisposition="FailComponent">
@@ -4791,10 +5490,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                         </outputColumn>
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAFIN]"
-                          dataType="wstr"
+                          dataType="dbTime"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          length="50"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAFIN]"
                           name="ETL_HORAFIN"
                           truncationRowDisposition="FailComponent">
@@ -5166,6 +5864,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           cachedLength="255"
                           cachedName="Promotor"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Promotor]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Inputs[Conditional Split Input].Columns[Categoria]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Categoria"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Categoria]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -5228,12 +5932,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[dni invalido]"
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[dni invalid]"
                       description="Output 2 of the Conditional Split Transformation"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       exclusionGroup="1"
-                      name="dni invalido"
+                      name="dni invalid"
                       synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Inputs[Conditional Split Input]"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -5256,12 +5960,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       <externalMetadataColumns />
                     </output>
                     <output
-                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[promotor invalido]"
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[promotor invalid 1]"
                       description="Output 4 of the Conditional Split Transformation"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
                       exclusionGroup="1"
-                      name="promotor invalido"
+                      name="promotor invalid 1"
                       synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Inputs[Conditional Split Input]"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -5280,6 +5984,90 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           dataType="System.Int32"
                           description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
                           name="EvaluationOrder">3</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[promotor invalid 2]"
+                      description="Output 5 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="promotor invalid 2"
+                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[FINDSTRING](#{Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Promotor]},"Column",1) != 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">FINDSTRING(Promotor,"Column",1) != 0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">4</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[categoria invalid 1]"
+                      description="Output 7 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="categoria invalid 1"
+                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[ISNULL](#{Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Categoria]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">ISNULL(Categoria)</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">5</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Outputs[categoria invalid 2]"
+                      description="Output 6 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="categoria invalid 2"
+                      synchronousInputId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[FINDSTRING](#{Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Categoria]},"Column",1) != 0</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">FINDSTRING(Categoria,"Column",1) != 0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">6</property>
                       </properties>
                       <externalMetadataColumns />
                     </output>
@@ -5325,7 +6113,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
               <paths>
                 <path
                   refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Data Conversion Output]"
-                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente.Inputs[Lookup Input]"
+                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Inputs[Entrada 0]"
                   name="Data Conversion Output"
                   startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output]" />
                 <path
@@ -5365,24 +6153,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output4]"
-                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Inputs[OLE DB Destination Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output5]"
-                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Inputs[Lookup Input]"
+                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Inputs[OLE DB Destination Input]"
                   name="Lookup Match Output"
                   startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output6]"
-                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[OLE DB Destination Error Output]"
                   endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input]"
                   name="OLE DB Destination Error Output"
-                  startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,.Outputs[OLE DB Destination Error Output]" />
+                  startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino.Outputs[OLE DB Destination Error Output]" />
                 <path
                   refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 0]"
                   endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Cleansing de division de pago.Inputs[Conditional Split Input]"
@@ -5393,6 +6171,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Inputs[Data Conversion Input]"
                   name="Salida 0"
                   startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Obtencion de fecha.Outputs[Salida 0]" />
+                <path
+                  refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 02]"
+                  endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente.Inputs[Lookup Input]"
+                  name="Salida 0"
+                  startId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0]" />
                 <path
                   refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[valido]"
                   endId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX).Inputs[Entrada 0]"
@@ -5418,6 +6201,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{77894C04-314F-4BCB-95FA-51D84E5F0860}"
+      DTS:From="Package\Limpiar FACT_VENTAS"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Para cada página del excel,,, 2" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
 <!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
@@ -5429,7 +6222,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Limpiar FACT_VENTAS"
+          TopLeft="322,104" />
         <NodeLayout
           Size="178,42"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS"
@@ -5440,7 +6237,41 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           PanelSize="315,139"
           Size="315,182"
           Id="Package\Para cada página del excel,,, 2"
-          TopLeft="168,124" />
+          TopLeft="265,219" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="414.5,146">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8,73"
+              Start="0,0"
+              End="8,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="4,36.5" />
+                  <mssgle:LineSegment
+                    End="4,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4,36.5"
+                    Point2="8,36.5"
+                    Point3="8,40.5" />
+                  <mssgle:LineSegment
+                    End="8,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -5448,341 +6279,289 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores"
+          TopLeft="941,753" />
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino"
+          TopLeft="905,626" />
         <NodeLayout
           Size="170,42"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Obtencion de fecha"
           TopLeft="687,286" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente"
-          TopLeft="65,379" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types"
-          TopLeft="894,286" />
         <NodeLayout
           Size="219,42"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Cleansing de division de pago"
           TopLeft="826,171" />
         <NodeLayout
           Size="160,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor"
-          TopLeft="606,377" />
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha"
-          TopLeft="65,476" />
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria"
+          TopLeft="208,617" />
         <NodeLayout
           Size="193,42"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas"
           TopLeft="69,172" />
         <NodeLayout
-          Size="145,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores"
-          TopLeft="901,656" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS"
-          TopLeft="68,55" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago"
-          TopLeft="888,375" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria"
-          TopLeft="329,377" />
+          Size="142,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha"
+          TopLeft="742,520" />
         <NodeLayout
           Size="233,42"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX)"
-          TopLeft="467,173" />
+          TopLeft="465,173" />
         <NodeLayout
-          Size="981,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Destino final,,, sql server,,,,,,,,,,,,,,,,,,,,"
-          TopLeft="63,574" />
+          Size="154,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types"
+          TopLeft="894,286" />
         <NodeLayout
-          Size="246,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Artificio de conversion alfanumerica"
-          TopLeft="370,286" />
+          Size="157,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago"
+          TopLeft="546,625" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente"
+          TopLeft="67,517" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS"
+          TopLeft="76,54" />
         <NodeLayout
           Size="231,42"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup"
           TopLeft="67,284" />
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[valido1]"
-          TopLeft="935.5,213">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-753,71"
-              Start="0,0"
-              End="-753,63.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5"
-                    Point2="0,35.5"
-                    Point3="-4,35.5" />
-                  <mssgle:LineSegment
-                    End="-749,35.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-749,35.5"
-                    Point2="-753,35.5"
-                    Point3="-753,39.5" />
-                  <mssgle:LineSegment
-                    End="-753,63.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-390.23103515625,40.5,27.4620703125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[valido]"
-          TopLeft="262,193.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="205,0"
-              Start="0,0"
-              End="197.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="197.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="85.01896484375,5,27.4620703125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 01]"
-          TopLeft="857,307">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="37,0"
-              Start="0,0"
-              End="29.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="29.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 0]"
-          TopLeft="700,193">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="126,0"
-              Start="0,0"
-              End="118.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="118.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor"
+          TopLeft="375,515" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string"
+          TopLeft="497,397" />
+        <NodeLayout
+          Size="246,42"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Artificio de conversion alfanumerica"
+          TopLeft="370,286" />
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[OLE DB Destination Error Output]"
-          TopLeft="553.5,616">
+          TopLeft="1013,668">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="420,40"
+              EndConnector="0,85"
               Start="0,0"
-              End="420,32.5">
+              End="0,77.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16"
-                    Point2="0,20"
-                    Point3="4,20" />
-                  <mssgle:LineSegment
-                    End="416,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="416,20"
-                    Point2="420,20"
-                    Point3="420,24" />
-                  <mssgle:LineSegment
-                    End="420,32.5" />
+                    End="0,77.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="136.79109375,25,146.4178125,11.43359375"
+              BoundingBox="-73.20890625,33.033203125,146.4178125,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output4]"
+          TopLeft="835.333333333333,562">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="177.166666666667,64"
+              Start="0,0"
+              End="177.166666666667,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.0278551532033" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.0278551532033"
+                    Point2="0,26.0278551532033"
+                    Point3="4,26.0278551532033" />
+                  <mssgle:LineSegment
+                    End="173.166666666667,26.0278551532033" />
+                  <mssgle:CubicBezierSegment
+                    Point1="173.166666666667,26.0278551532033"
+                    Point2="177.166666666667,26.0278551532033"
+                    Point3="177.166666666667,30.0278551532033" />
+                  <mssgle:LineSegment
+                    End="177.166666666667,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="40.3919466145833,31.0278551532033,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output3]"
-          TopLeft="766,397">
+          TopLeft="480.333333333333,557">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="122,0"
+              EndConnector="144.166666666667,68"
               Start="0,0"
-              End="114.5,0">
+              End="144.166666666667,60.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="114.5,0" />
+                    End="0,23.6039603960396" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.6039603960396"
+                    Point2="0,27.6039603960396"
+                    Point3="4,27.6039603960396" />
+                  <mssgle:LineSegment
+                    End="140.166666666667,27.6039603960396" />
+                  <mssgle:CubicBezierSegment
+                    Point1="140.166666666667,27.6039603960396"
+                    Point2="144.166666666667,27.6039603960396"
+                    Point3="144.166666666667,31.6039603960396" />
+                  <mssgle:LineSegment
+                    End="144.166666666667,60.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="9.05861328125,5,96.3827734375,11.609375"
+              BoundingBox="23.8919466145833,32.6039603960396,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output2]"
-          TopLeft="966.5,417">
+          TopLeft="649.333333333333,625">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-830.5,59"
+              EndConnector="141.333333333333,-63"
               Start="0,0"
-              End="-830.5,51.5">
+              End="141.333333333333,-55.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.5" />
+                    End="0,-27.4587192032151" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.5"
-                    Point2="0,29.5"
-                    Point3="-4,29.5" />
+                    Point1="0,-27.4587192032151"
+                    Point2="0,-31.4587192032151"
+                    Point3="4,-31.4587192032151" />
                   <mssgle:LineSegment
-                    End="-826.5,29.5" />
+                    End="137.333333333333,-31.4587192032151" />
                   <mssgle:CubicBezierSegment
-                    Point1="-826.5,29.5"
-                    Point2="-830.5,29.5"
-                    Point3="-830.5,33.5" />
+                    Point1="137.333333333333,-31.4587192032151"
+                    Point2="141.333333333333,-31.4587192032151"
+                    Point3="141.333333333333,-35.4587192032151" />
                   <mssgle:LineSegment
-                    End="-830.5,51.5" />
+                    End="141.333333333333,-55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-463.44138671875,34.5,96.3827734375,11.609375"
+              BoundingBox="22.4752799479166,-26.4587192032151,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output1]"
-          TopLeft="489,398">
+          TopLeft="313.333333333333,617">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="117,0"
+              EndConnector="141.666666666667,-60"
               Start="0,0"
-              End="109.5,0">
+              End="141.666666666667,-52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="109.5,0" />
+                    End="0,-20.3564356435644" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-20.3564356435644"
+                    Point2="0,-24.3564356435644"
+                    Point3="4,-24.3564356435644" />
+                  <mssgle:LineSegment
+                    End="137.666666666667,-24.3564356435644" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137.666666666667,-24.3564356435644"
+                    Point2="141.666666666667,-24.3564356435644"
+                    Point3="141.666666666667,-28.3564356435644" />
+                  <mssgle:LineSegment
+                    End="141.666666666667,-52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="6.55861328125,5,96.3827734375,11.609375"
+              BoundingBox="22.6419466145833,-19.3564356435644,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output]"
-          TopLeft="212,399">
+          TopLeft="140.5,559">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="117,0"
+              EndConnector="122.166666666667,58"
               Start="0,0"
-              End="109.5,0">
+              End="122.166666666667,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="109.5,0" />
+                    End="0,30.4554455445545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.4554455445545"
+                    Point2="0,34.4554455445545"
+                    Point3="4,34.4554455445545" />
+                  <mssgle:LineSegment
+                    End="118.166666666667,34.4554455445545" />
+                  <mssgle:CubicBezierSegment
+                    Point1="118.166666666667,34.4554455445545"
+                    Point2="122.166666666667,34.4554455445545"
+                    Point3="122.166666666667,38.4554455445545" />
+                  <mssgle:LineSegment
+                    End="122.166666666667,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="6.55861328125,5,96.3827734375,11.609375"
+              BoundingBox="12.8919466145833,39.4554455445545,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Excel Source Output]"
-          TopLeft="155,97">
+          TopLeft="164.25,96">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="10.5,75"
+              EndConnector="0,76"
               Start="0,0"
-              End="10.5,67.5">
+              End="0,68.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5"
-                    Point2="0,37.5"
-                    Point3="4,37.5" />
-                  <mssgle:LineSegment
-                    End="6.5,37.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6.5,37.5"
-                    Point2="10.5,37.5"
-                    Point3="10.5,41.5" />
-                  <mssgle:LineSegment
-                    End="10.5,67.5" />
+                    End="0,68.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5841,26 +6620,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-832.5,51"
+              EndConnector="-369.5,69"
               Start="0,0"
-              End="-832.5,43.5">
+              End="-369.5,61.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5" />
+                    End="0,30.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.5"
-                    Point2="0,25.5"
-                    Point3="-4,25.5" />
+                    Point1="0,30.5"
+                    Point2="0,34.5"
+                    Point3="-4,34.5" />
                   <mssgle:LineSegment
-                    End="-828.5,25.5" />
+                    End="-365.5,34.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-828.5,25.5"
-                    Point2="-832.5,25.5"
-                    Point3="-832.5,29.5" />
+                    Point1="-365.5,34.5"
+                    Point2="-369.5,34.5"
+                    Point3="-369.5,38.5" />
                   <mssgle:LineSegment
-                    End="-832.5,43.5" />
+                    End="-369.5,61.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5869,103 +6648,162 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora fin"
-          TopLeft="626,477" />
         <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output4]"
-          TopLeft="702.5,519">
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[valido1]"
+          TopLeft="935.5,213">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-149,55"
+              EndConnector="-753,71"
               Start="0,0"
-              End="-149,47.5">
+              End="-753,63.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
+                    End="0,31.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,23.5"
-                    Point2="0,27.5"
-                    Point3="-4,27.5" />
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="-4,35.5" />
                   <mssgle:LineSegment
-                    End="-145,27.5" />
+                    End="-749,35.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-145,27.5"
-                    Point2="-149,27.5"
-                    Point3="-149,31.5" />
+                    Point1="-749,35.5"
+                    Point2="-753,35.5"
+                    Point3="-753,39.5" />
                   <mssgle:LineSegment
-                    End="-149,47.5" />
+                    End="-753,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-122.69138671875,32.5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="165,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup hora inicio"
-          TopLeft="336,477" />
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output5]"
-          TopLeft="207,497.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="129,0"
-              Start="0,0"
-              End="121.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="121.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="12.55861328125,5,96.3827734375,11.609375"
+              BoundingBox="-390.23103515625,40.5,27.4620703125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Lookup Match Output6]"
-          TopLeft="501,498">
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[valido]"
+          TopLeft="262,193.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="125,0"
+              EndConnector="203,0"
               Start="0,0"
-              End="117.5,0">
+              End="195.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="117.5,0" />
+                    End="195.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="10.55861328125,5,96.3827734375,11.609375"
+              BoundingBox="84.01896484375,5,27.4620703125,9.7490234375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 02]"
+          TopLeft="601.5,439">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-461,78"
+              Start="0,0"
+              End="-461,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35"
+                    Point2="0,39"
+                    Point3="-4,39" />
+                  <mssgle:LineSegment
+                    End="-457,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-457,39"
+                    Point2="-461,39"
+                    Point3="-461,43" />
+                  <mssgle:LineSegment
+                    End="-461,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 01]"
+          TopLeft="857,307">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="37,0"
+              Start="0,0"
+              End="29.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="29.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 0]"
+          TopLeft="698,193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="128,0"
+              Start="0,0"
+              End="120.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="120.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha">
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -5975,10 +6813,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS">
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha">
     <Properties>
       <Property>
-        <Name>DataSourceViewID</Name>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -6002,6 +6842,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

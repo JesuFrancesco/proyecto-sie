@@ -51,4 +51,4 @@ Grupo 4 - Integrantes:
   - [ERROR_PROMOTOR](./logs/error_promotor.txt)
   - [ERROR_TIPOPAGO](./logs/error_tipopago.txt)
 
-5. Ejecutar el proyecto.
+5. Ejecutar primero el paquete OLTP_VENTAS y luego CARGA_FACT.
