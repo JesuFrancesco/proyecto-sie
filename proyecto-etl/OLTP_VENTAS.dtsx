@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS"
   DTS:PackageType="5"
-  DTS:VersionBuild="289"
-  DTS:VersionGUID="{9794CACC-EA21-425B-A35A-7ED8CCEF6D23}">
+  DTS:VersionBuild="301"
+  DTS:VersionGUID="{476471A7-17C1-4D0B-A30E-AA0EBD3C3DCB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,62 +23,7 @@
       DTS:ObjectName="Conector OLE.DB para Excel spreadsheets">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=&quot;E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx&quot;;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CSV_HORA]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{A3523389-CE59-4F21-9F80-AF4A30D98554}"
-      DTS:ObjectName="CSV_HORA">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="10250"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\Copia de dim_hora.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="pk_hora"
-              DTS:DTSID="{ADD1E7DF-19ED-4117-9E24-D1E646E01BC0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="134"
-              DTS:TextQualified="True"
-              DTS:ObjectName="minuto"
-              DTS:DTSID="{0E32A947-F244-4758-BA83-74ABE3F08423}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="hora24"
-              DTS:DTSID="{5E03EAEE-1D77-4D89-AFE6-26431C529516}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="parte_del_dia"
-              DTS:DTSID="{59487B1E-F6D3-4DBB-A764-7C95CC5D86D5}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -95,7 +40,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_categoria.txt">
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_categoria.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +49,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{36516194-A805-4B1A-8418-13E7642EA734}"
+              DTS:DTSID="{80912CF5-F94A-4101-8422-E72C0949B07F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +57,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{51AB74BA-2386-443D-8B72-6FE7917735C1}"
+              DTS:DTSID="{7D0F8E37-03E0-44FA-BE03-BB819C1D9B9C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{2161CF8B-7FDD-4E13-9529-CA6603A1E318}"
+              DTS:DTSID="{72A2195D-1AA1-4554-9CF2-DE5952EE7BAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CATEGORIA"
-              DTS:DTSID="{F552E4E9-6CB0-4D47-85D6-4E5A2DDB30BE}"
+              DTS:DTSID="{989DA58C-6C69-48DB-94DC-3274E3B1F0D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +83,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{BB1C9F91-44E5-4BCE-BB6A-6999E63A9627}"
+              DTS:DTSID="{8F9BCFEF-81C5-4B33-B3E2-81649C2AACA5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{23EF413E-35DA-4598-8DC1-AE434F45A01A}"
+              DTS:DTSID="{577B8EE3-AA2F-4A80-AAE1-612A5FE80B03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{36DDF35C-FBBB-497E-B8C9-B2B854FF400B}"
+              DTS:DTSID="{0DF2B5FF-E2EF-4A4E-9B8E-466789CB5345}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -164,7 +109,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{44427226-CF3D-4948-89F9-FF2DDD413395}"
+              DTS:DTSID="{342470F9-A1B0-4C1C-9FDF-08F80D72C126}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -172,7 +117,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{FBC826F5-E465-4E6E-8F34-1E1F7A4EFB01}"
+              DTS:DTSID="{AE4D0740-D54E-4553-AAF8-BE2F5635E15A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -193,7 +138,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_cliente.txt">
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_cliente.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -202,7 +147,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{E66FC169-6C3D-44F5-8E27-06C5AEA306B5}"
+              DTS:DTSID="{B82B31E3-3305-4688-AF4A-4D1E7687DA0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -211,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{91B1E72E-5E7B-4C2E-A6B2-B0290EC4B2FD}"
+              DTS:DTSID="{2A098CA4-CB5D-4785-AB57-FC6D51A05786}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -220,7 +165,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="N°"
-              DTS:DTSID="{3FC1579F-4768-42B2-832F-20413BB02939}"
+              DTS:DTSID="{19182D7D-9ADF-4E39-AF3A-D43F799ED698}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +174,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="F2"
-              DTS:DTSID="{3B85C70C-EC47-4B72-A79C-F1C103A792A6}"
+              DTS:DTSID="{57AAFE2D-C097-4250-8F72-CF802CF98A87}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -238,7 +183,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{D69323EE-822F-4957-B8C3-304DDACACB11}"
+              DTS:DTSID="{78DE8291-540F-42D5-9D46-0A9B0A8272CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,7 +192,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_NOMBRE"
-              DTS:DTSID="{6501C336-4549-40A3-8C44-CB373DDD1447}"
+              DTS:DTSID="{B290F7B2-4E61-418D-8094-5E1142F036D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -255,7 +200,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{88F1D92B-D5C4-4B0D-A5DB-5B60BE59AD16}"
+              DTS:DTSID="{DBE23A61-D030-4679-8504-62595024F1B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -264,7 +209,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACION"
-              DTS:DTSID="{33415255-1132-472D-A603-81039A5ABE10}"
+              DTS:DTSID="{456BBFEC-7386-45D7-A2E1-82434907655E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -273,7 +218,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{B3FD72C7-1526-4340-8223-D7AB6734124F}"
+              DTS:DTSID="{9D64975A-61F7-4E97-832D-29E56EE970A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -282,7 +227,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{8FFE16D1-1F2B-4235-B5DF-242CEF1E7E8F}"
+              DTS:DTSID="{D61F16B9-8492-4C75-A513-B1D70A63AF12}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -290,7 +235,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{AB164D9E-C8FF-4FFF-AC25-CC2F4865E2EA}"
+              DTS:DTSID="{3C1B84C3-9795-4FCD-9669-C98882FAE756}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -299,7 +244,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{68349769-E27E-4909-8FA2-83BF92D0AFA6}"
+              DTS:DTSID="{FC698D1E-86DC-40E0-929F-FE4E05F5FFD8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +252,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{F05A378F-2E02-4D0B-A913-E15A0F304423}"
+              DTS:DTSID="{826EF3B8-4A87-4990-926C-1E9DAC798DE2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -315,7 +260,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{D3B82205-B015-4DE8-A426-4AA04FD79DEA}"
+              DTS:DTSID="{22A9FCE7-D95C-4524-B286-222CE021B7DE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -335,7 +280,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_fact_ventas.txt">
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_fact_ventas.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -344,7 +289,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{4CA2C9AC-4E00-47BC-86CF-0E1CEE99C01E}"
+              DTS:DTSID="{66AE2182-14AB-4646-A5D5-70C8F5DFACC4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -353,7 +298,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{ACC96E9D-99B1-40BC-BB9F-D4143810BD32}"
+              DTS:DTSID="{A4065925-1825-4712-8ECC-74AE0F88A7E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -362,7 +307,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Indice"
-              DTS:DTSID="{EEFCB524-3463-44AB-A156-5DC1EB3BD51E}"
+              DTS:DTSID="{2B0889FE-E26C-4185-86EA-C06BB6FDDCC2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -371,7 +316,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{C2971FFF-308A-40A4-8730-E4F79A9354A9}"
+              DTS:DTSID="{78C04072-4C26-41A5-B9E0-B4DB2243CBC4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -380,7 +325,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Pago"
-              DTS:DTSID="{EB7358BE-2DDF-4006-93F7-8F05DE3608DE}"
+              DTS:DTSID="{01AC238C-E784-4490-B97B-772B18DEF178}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -389,7 +334,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Promotor"
-              DTS:DTSID="{B4565F30-BD20-4F39-ACE2-FC5B9E73284E}"
+              DTS:DTSID="{5E7D3216-749C-4641-8000-1966618ED17F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -397,7 +342,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraInicio"
-              DTS:DTSID="{4EB737C9-F36A-4864-8ED2-C28F66395B64}"
+              DTS:DTSID="{0F6832C7-C0C2-4360-AE17-6C4F6F95DE5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -405,7 +350,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraFin"
-              DTS:DTSID="{0289E054-8A37-4F8C-9DDF-5CC62FF31DEA}"
+              DTS:DTSID="{AB800F04-DED0-44E8-82AA-FEB6A279DA94}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -414,7 +359,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DummyColumn1"
-              DTS:DTSID="{05399F55-7A42-4F73-8497-8667DEEDFE5E}"
+              DTS:DTSID="{F5B13B2B-ADE7-4561-886B-178947E1FE29}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -423,7 +368,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TipoDePago"
-              DTS:DTSID="{73F78AB8-C58D-4718-82F4-CB39F2C9A34E}"
+              DTS:DTSID="{B7A15CF3-B2FE-44FC-826D-8779915AC6C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -431,7 +376,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="MontoPago"
-              DTS:DTSID="{863B44E0-570A-4643-BF9B-1736316FA961}"
+              DTS:DTSID="{F458AD2C-5588-4B17-9680-AEB2159C227D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -440,7 +385,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{CF6ABC44-24A3-4459-BBA3-F8EE0F208A15}"
+              DTS:DTSID="{F2AD7906-3861-4A50-9EC3-3727074A8D2A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -449,7 +394,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_CATEGORIA"
-              DTS:DTSID="{7D03467C-3EEE-4D2D-8764-BFF9A24F187E}"
+              DTS:DTSID="{E8088B3C-7CA6-4856-8665-1C7F012D9232}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -458,7 +403,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_PROMOTOR"
-              DTS:DTSID="{E2E9730E-2BC0-4C3E-8145-C01CD18ADDE4}"
+              DTS:DTSID="{D2421FB2-7D77-4BD7-A4C9-3E44F3C27E9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -467,7 +412,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{FC2E4E0D-D659-4E3A-9587-A1601D0A0968}"
+              DTS:DTSID="{D79569C6-AB99-4552-9094-9FB19BF58C26}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -475,7 +420,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{C5E553E0-4AEF-44C7-8E91-09E829079B20}"
+              DTS:DTSID="{99C0645D-FFD8-43C0-AFD1-9568C1AFD0A7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -484,7 +429,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACIOn"
-              DTS:DTSID="{DEE103D2-DAF3-4A9F-98E4-730134CB50F4}"
+              DTS:DTSID="{030DCC07-1DBF-4C75-A4C6-5588436D05AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -493,7 +438,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{952C38C2-7B56-4768-926B-1F0B278B5B68}"
+              DTS:DTSID="{49660546-B703-458D-A5A2-0B3C483C683E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -502,7 +447,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{97DB9B2F-6B5D-4011-BC1F-C1A857E0F681}"
+              DTS:DTSID="{CEB95455-6B9E-44E5-9114-A28830D4D1C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -511,7 +456,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{409F14E6-9C71-4DA6-B12C-A81CFB9E0C07}"
+              DTS:DTSID="{FE77CDD3-9CE8-4836-BF87-902F35B845CE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -520,7 +465,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{D4728C35-8761-4043-B18C-9C5010820231}"
+              DTS:DTSID="{BAA1ED67-A5D0-48F9-8A45-68BE0FCD75CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -528,7 +473,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{E055926C-730D-484B-808E-D231B0E92C39}"
+              DTS:DTSID="{917D4FF4-768B-4FE2-9C48-07904094C96A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -537,7 +482,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{8CD7F414-28FA-4E4B-8D29-ABF8C817EA95}"
+              DTS:DTSID="{5D73A4B4-BFEA-474C-AA70-A4ACD282BA2D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -545,7 +490,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CLIENTE"
-              DTS:DTSID="{CBAE9E01-DC97-406D-BF81-F12C5B17ADAC}"
+              DTS:DTSID="{166EEB63-F7E5-48FC-8A20-F35DBC5BCA9E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -553,7 +498,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CATEGORIA"
-              DTS:DTSID="{5EC81740-ACAC-4CEC-8649-93B140DA0A4A}"
+              DTS:DTSID="{7AA47326-7742-454A-88FE-D2EB8064BB12}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -561,7 +506,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_PROMOTOR"
-              DTS:DTSID="{217BC026-3059-424E-803D-842A5E20B4F2}"
+              DTS:DTSID="{FEDB2066-3767-45FC-8F31-8F25E071CE92}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -569,7 +514,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_TIPOPAGO"
-              DTS:DTSID="{75F09AD2-765D-4CA7-A377-E1F3F2947EE6}"
+              DTS:DTSID="{2FC5D8F3-1022-4505-B9F7-6BC7101DD84B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -577,7 +522,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{FC925F3C-631F-428B-A3F3-49893A0B6B82}"
+              DTS:DTSID="{0478E172-DF22-44C1-A9FD-FD2BC36D6E67}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -585,7 +530,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{44121264-8B7F-4CB7-8FCC-3417314FDEBE}"
+              DTS:DTSID="{B38C93AB-A0A7-4980-967A-5064E3B99E6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -594,7 +539,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="F2"
-              DTS:DTSID="{BA543885-EED0-4EFE-9E67-B839E1C1F3A7}"
+              DTS:DTSID="{DE7B745E-0217-4D1E-8E31-C9AECC968786}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -603,7 +548,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{488BC01B-8A9D-44BC-9293-987829EE4BAB}"
+              DTS:DTSID="{52899F79-4D33-48C7-B9B5-E320F06C5135}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -623,7 +568,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_promotor.txt">
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_promotor.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -632,7 +577,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROMOTOR"
-              DTS:DTSID="{C27F2E80-111B-4AC9-93DC-57C86C8CDCA6}"
+              DTS:DTSID="{A6CA0A46-E93A-4B76-A7F5-C025C4E5D1DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -640,7 +585,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{04EED23D-E134-43CF-82EA-B6F8C1B3FB15}"
+              DTS:DTSID="{089DEE2D-F840-4135-908E-A2F7D0792D72}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -649,7 +594,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{F3D5708C-4428-45DA-9F94-62CF18352FB0}"
+              DTS:DTSID="{6DDC598F-01CA-462D-A511-DD2C8B1C2C3A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -657,7 +602,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{3D68DC37-8B64-44DB-922D-D79AE533035F}"
+              DTS:DTSID="{C8A08207-B510-4435-AD7B-567C97D4759E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -666,7 +611,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{E581DCE8-FB63-49F9-821E-E0F1E4F0E6E4}"
+              DTS:DTSID="{A1469B4B-1343-4112-B651-FBB9A95BAA82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -675,7 +620,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{00F2D4A3-1DA1-417C-BE3F-5E7EFABAA2EC}"
+              DTS:DTSID="{AD90E009-7C22-4F90-861B-8A373B22487D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -683,7 +628,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{D3816FEA-7D72-48DD-ABD4-16F4BD86831C}"
+              DTS:DTSID="{447168D5-61BD-440B-9765-35A40F0F4D4F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -691,7 +636,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{ABDD57CC-7E11-4A2D-A21F-4FA51159E559}"
+              DTS:DTSID="{41C36C3C-B0E1-47D3-974E-5320AE45F063}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -711,7 +656,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_tipopago.txt">
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_tipopago.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -720,7 +665,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{0C7E84B6-1033-4DBE-83DB-F106C5407DFD}"
+              DTS:DTSID="{7FBBE114-BA21-4C5B-92DB-2D78E132F62A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -728,7 +673,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{8435A2B1-6ACE-431B-A4DE-FF547A84B069}"
+              DTS:DTSID="{46CB3389-2A63-4B4E-9169-BA54C4CE078E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -737,7 +682,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{EF992938-6446-4266-8033-A93D291D155E}"
+              DTS:DTSID="{C684047D-9378-45AA-9A47-274E99B708A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -746,7 +691,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{F017A383-DCA1-455D-BD20-36ACDE0F7D55}"
+              DTS:DTSID="{83A0E68B-800A-4C76-86E2-D6E586F37AB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -754,7 +699,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{831EE5BA-FD03-42C3-9F48-0DEB8BE475F9}"
+              DTS:DTSID="{7C8C7493-F4CE-427E-89A0-62E529299250}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -763,7 +708,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{7476F4A0-03F9-4383-BB33-9EBDC020CFF1}"
+              DTS:DTSID="{7E021DE4-56A2-4AD1-B3F3-939BD96869B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -772,7 +717,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{E040A39D-F532-4666-844E-EC283AC50603}"
+              DTS:DTSID="{626F8EC5-C98C-4044-A756-383F78EC12C8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -780,7 +725,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{65434CE3-2BBF-4B12-84CF-DE0E1228834E}"
+              DTS:DTSID="{59D33133-F0E5-4BEB-B73E-9FB249BFB839}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -788,7 +733,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{4A58DA37-7EB6-45C9-8355-E4BE39087EAB}"
+              DTS:DTSID="{54826BE3-B828-479B-AD01-982223D90F74}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -803,7 +748,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -815,7 +760,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -827,7 +772,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1102,7 +1047,7 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="255"
+                      length="8"
                       lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PK_FECHA]"
                       name="ETL_PK_FECHA"
                       truncationRowDisposition="FailComponent">
@@ -1617,7 +1562,7 @@
                       refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_PK_FECHA]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="255"
+                      cachedLength="8"
                       cachedName="ETL_PK_FECHA"
                       externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
                       lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PK_FECHA]" />
@@ -1815,7 +1760,7 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      length="10"
+                      length="8"
                       lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_parte_del_dia]"
                       name="ETL_parte_del_dia"
                       truncationRowDisposition="FailComponent">
@@ -2264,7 +2209,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -2308,7 +2253,7 @@
                       refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_parte_del_dia]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="10"
+                      cachedLength="8"
                       cachedName="ETL_parte_del_dia"
                       externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PARTE_DEL_DIA]"
                       lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_parte_del_dia]" />
@@ -2709,7 +2654,7 @@
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          length="255"
+                          length="25"
                           lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_CATEGORIA]"
                           name="ETL_CATEGORIA"
                           truncationRowDisposition="FailComponent">
@@ -3141,7 +3086,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_CATEGORIA]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="255"
+                          cachedLength="25"
                           cachedName="ETL_CATEGORIA"
                           externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_CATEGORIA]"
                           lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_CATEGORIA]" />
@@ -3297,7 +3242,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_CATEGORIA]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="255"
+                          cachedLength="25"
                           cachedName="ETL_CATEGORIA"
                           externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CATEGORIA]"
                           lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_CATEGORIA]" />
@@ -4353,7 +4298,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE]"
                           codePage="1252"
                           dataType="str"
-                          length="120"
+                          length="99"
                           name="NOMBRE" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DNI]"
@@ -4732,7 +4677,7 @@
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          length="255"
+                          length="50"
                           lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]"
                           name="ETL_PROMOTOR"
                           truncationRowDisposition="FailComponent">
@@ -5169,7 +5114,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_PROMOTOR]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="255"
+                          cachedLength="50"
                           cachedName="ETL_PROMOTOR"
                           externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_PROMOTOR]"
                           lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]" />
@@ -5315,7 +5260,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_PROMOTOR]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="255"
+                          cachedLength="50"
                           cachedName="ETL_PROMOTOR"
                           externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROMOTOR]"
                           lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]" />
@@ -6324,38 +6269,38 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="166,42"
+          Size="166.4,41.6"
           Id="Package\Carga DIM_FECHA"
           TopLeft="955,377" />
         <NodeLayout
-          Size="163,42"
+          Size="163.2,41.6"
           Id="Package\Carga DIM_HORA"
           TopLeft="1157,380" />
         <NodeLayout
-          Size="175,42"
+          Size="175.2,41.6"
           Id="Package\Limpiar dimensiones"
           TopLeft="822,242" />
         <NodeLayout
-          Size="192,42"
+          Size="192,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA"
           TopLeft="316,39" />
         <NodeLayout
-          Size="176,42"
+          Size="176,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE"
           TopLeft="109,38" />
         <NodeLayout
-          Size="191,42"
+          Size="191.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR"
           TopLeft="107,110" />
         <NodeLayout
-          Size="186,42"
+          Size="185.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO"
           TopLeft="313,111" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="681,233"
-          Size="681,276"
+          PanelSize="680.8,232.8"
+          Size="680.8,276"
           Id="Package\Para cada página del excel,,,"
           TopLeft="140,372" />
         <EdgeLayout
@@ -6467,21 +6412,21 @@
     design-time-name="Package\Carga DIM_FECHA">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Carga DIM_FECHA\Excel Source"
           TopLeft="267,67" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Carga DIM_FECHA\OLE DB Destination"
           TopLeft="629,424" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Carga DIM_FECHA\Derived Column"
           TopLeft="363,175" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Carga DIM_FECHA\Data Conversion"
           TopLeft="476,294" />
         <EdgeLayout
@@ -6515,9 +6460,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6551,9 +6494,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6587,9 +6528,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6625,21 +6564,21 @@
     design-time-name="Package\Carga DIM_HORA">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Carga DIM_HORA\Excel Source"
           TopLeft="333,69" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Carga DIM_HORA\Derived Column"
           TopLeft="454,239" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Carga DIM_HORA\OLE DB Destination"
           TopLeft="386,497" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Carga DIM_HORA\Data Conversion"
           TopLeft="319,346" />
         <EdgeLayout
@@ -6673,9 +6612,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6709,9 +6646,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6745,9 +6680,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6785,27 +6718,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination"
           TopLeft="886,656" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column"
           TopLeft="449,327" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Conditional Split"
           TopLeft="237,189" />
         <EdgeLayout
@@ -6911,9 +6844,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6947,9 +6878,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6983,9 +6912,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7018,27 +6945,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Derived Column"
           TopLeft="448,327" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Conditional Split"
           TopLeft="237,189" />
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination"
           TopLeft="835,637" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion"
           TopLeft="574,431" />
         <EdgeLayout
@@ -7144,9 +7071,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7180,9 +7105,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7216,9 +7139,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7251,31 +7172,31 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,42"
+          Size="172,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination"
           TopLeft="886,656" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column"
           TopLeft="337,327" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split"
           TopLeft="237,190" />
         <NodeLayout
-          Size="246,42"
+          Size="246.4,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Artificio de conversion alfanumérica"
           TopLeft="522,327" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source"
           TopLeft="114,71" />
         <EdgeLayout
@@ -7316,37 +7237,37 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[OLE DB Destination Error Output]"
-          TopLeft="765.5,579">
+          TopLeft="765.6,578.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="206.5,77"
+              EndConnector="206.4,77.4"
               Start="0,0"
-              End="206.5,69.5">
+              End="206.4,69.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.5" />
+                    End="0,34.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
+                    Point1="0,34.7"
+                    Point2="0,38.7"
+                    Point3="4,38.7" />
                   <mssgle:LineSegment
-                    End="202.5,38.5" />
+                    End="202.4,38.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="202.5,38.5"
-                    Point2="206.5,38.5"
-                    Point3="206.5,42.5" />
+                    Point1="202.4,38.7"
+                    Point2="206.4,38.7"
+                    Point3="206.4,42.7" />
                   <mssgle:LineSegment
-                    End="206.5,69.5" />
+                    End="206.4,69.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="30.04109375,43.5,146.4178125,11.43359375"
+              BoundingBox="29.99109375,43.7,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7430,30 +7351,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[Data Conversion Output]"
-          TopLeft="652,473">
+          TopLeft="652,472.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="113.5,64"
+              EndConnector="113.6,64.4"
               Start="0,0"
-              End="113.5,56.5">
+              End="113.6,56.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28" />
+                    End="0,28.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28"
-                    Point2="0,32"
-                    Point3="4,32" />
+                    Point1="0,28.2"
+                    Point2="0,32.2"
+                    Point3="4,32.2" />
                   <mssgle:LineSegment
-                    End="109.5,32" />
+                    End="109.6,32.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="109.5,32"
-                    Point2="113.5,32"
-                    Point3="113.5,36" />
+                    Point1="109.6,32.2"
+                    Point2="113.6,32.2"
+                    Point3="113.6,36.2" />
                   <mssgle:LineSegment
-                    End="113.5,56.5" />
+                    End="113.6,56.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

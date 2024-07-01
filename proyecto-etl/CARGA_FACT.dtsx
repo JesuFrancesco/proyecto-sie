@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="74"
-  DTS:VersionGUID="{444470B9-C423-4BED-BB73-67D240EEE7F0}">
+  DTS:VersionBuild="93"
+  DTS:VersionGUID="{2ABEA76D-E7E2-41F8-8F73-F9B7C8C6CB3B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,395 @@
       DTS:ObjectName="Conector OLEDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;" />
+          DTS:ConnectionString="Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ERROR_CARGA]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9E5AB514-2CCE-46C1-8D2B-C9DA9EBE0559}"
+      DTS:ObjectName="ERROR_CARGA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_fact_carga.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="N°"
+              DTS:DTSID="{1C8BEEA1-8521-4A13-8EAC-893D10EBD90A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="APELLIDOS Y NOMBRES"
+              DTS:DTSID="{8B2FD8ED-DE72-4CC2-B27F-F85DCDD1180E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DNI"
+              DTS:DTSID="{2B351BA3-F2AA-4822-BE62-AB6A180DFC55}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{8DFAD12E-2E65-4BA2-9013-E464FE6B8DB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{2FFB3517-A9AF-4103-8094-42EA76B881CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CATE"
+              DTS:DTSID="{A4AFED07-CEE3-4452-AFAE-3A38A1D81C40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PAGO"
+              DTS:DTSID="{1B62A050-6FB2-4277-9CD9-93B674325539}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROMOTOR"
+              DTS:DTSID="{A0E1CF6A-C122-4014-BF28-7E1BF74FAC33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORA DE IINICIO"
+              DTS:DTSID="{AEF5BA82-F753-4693-B2CB-ACBD52136857}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLINICO _INICIO CIERRE"
+              DTS:DTSID="{8E6A77D9-71F1-4237-B757-FAD48C56A2CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ApellidosNombres"
+              DTS:DTSID="{028C8F46-DCC7-4523-A515-367AB37F5BB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Indice"
+              DTS:DTSID="{5B544053-3A97-4137-A2FC-8ECB41211378}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{F90A2EAD-18BB-40CE-9732-4DB8A2776400}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HoraInicio"
+              DTS:DTSID="{5D985A8D-EC54-4A17-8992-C0C295CAF0FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HoraFin"
+              DTS:DTSID="{1B4ACCBF-28E8-41A6-BFEB-6500E82945E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TipoDePago"
+              DTS:DTSID="{C1F232A0-9B12-4914-A6D1-3DCA4BEE2C66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MontoPago"
+              DTS:DTSID="{023908B7-ED46-40CC-BE42-14A50407A326}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_DNI"
+              DTS:DTSID="{98C79001-EB0B-4F59-8143-31FDC34624F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_CATEGORIA"
+              DTS:DTSID="{6A38080D-4EE9-4AF9-B564-620008FB5CC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_PROMOTOR"
+              DTS:DTSID="{68D1642F-05F4-4AEF-91EA-3E678E2DF33C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_TIPOPAGO"
+              DTS:DTSID="{062790D1-5B17-4269-A8FF-55EFE30F4E56}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_FEC_CREACION"
+              DTS:DTSID="{6824333C-5ACD-46F7-8421-1DAA6C25EEC1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_USU_CREACION"
+              DTS:DTSID="{5773AF7C-D1A1-41CC-8120-23A1291C9AAD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VALORFECHA"
+              DTS:DTSID="{455B1FDC-FDDE-4F1F-8E55-ECFD00BA06AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_HORAINI"
+              DTS:DTSID="{88725144-286B-48F5-8BFB-CEFBF4ACE17F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_HORAFIN"
+              DTS:DTSID="{19D36E42-EE2F-442F-9FA4-3DBE75DAF4EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHAPARSEADA"
+              DTS:DTSID="{42FA54E0-E5D8-42F0-BC7F-5D5F503D93EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_DNI"
+              DTS:DTSID="{4E89210C-E140-44C8-8D8D-17146AA6730E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_CATEGORIA"
+              DTS:DTSID="{FCDC3030-7D11-4FB4-A833-FC319618E149}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_PROMOTOR"
+              DTS:DTSID="{131A0814-5526-42C5-A6A8-EDBB52958EDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_TIPOPAGO"
+              DTS:DTSID="{50ABC762-C2E6-4874-9D70-51723A4E0A8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_FEC_CREACION"
+              DTS:DTSID="{60A314D7-7AFF-4854-8528-2F1EBE970329}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_USU_CREACION"
+              DTS:DTSID="{2FDC3965-62CE-4D90-BC7B-E924B2D0D942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_FECHA"
+              DTS:DTSID="{CCEFBC9D-4EBF-476C-8F74-232044F3238B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_HORAINI"
+              DTS:DTSID="{DB1AC424-596C-470D-9106-60CEF366DFC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_HORAFIN"
+              DTS:DTSID="{8D08F95B-66BD-471C-A4D5-5A8DAC4ADFE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORAINI_STR"
+              DTS:DTSID="{B720C900-4DC9-416A-A054-66AA199D5D72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORAFIN_STR"
+              DTS:DTSID="{3777A4D0-E8A8-41C8-A648-F39B5A4BD9DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PK_CLIENTE"
+              DTS:DTSID="{3AD60C2A-470C-41F4-B274-FBCD1B60C628}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PK_CATEGORIA"
+              DTS:DTSID="{5FBE84D6-0373-4133-84DD-38DC6C110BD2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PK_PROMOTOR"
+              DTS:DTSID="{74797EA8-7FA4-4869-A27A-3B5CB01C46F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PK_TIPOPAGO"
+              DTS:DTSID="{DD265452-14FA-44A5-BA9C-37A17D4A9ED8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PK_FECHA"
+              DTS:DTSID="{58239866-C20C-44D4-B1FC-CBF4CE2F98C9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -40,7 +428,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_fact_ventas.txt">
+          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_fact_ventas.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,8 +436,8 @@
               DTS:MaximumWidth="255"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="init"
-              DTS:DTSID="{56040B39-7452-4687-9A0E-FBFEB418BAE1}"
+              DTS:ObjectName="ApellidosNombres"
+              DTS:DTSID="{B7BFE2A7-836F-4013-99DE-A6F8E16F7DD4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +446,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{799E91AC-08DE-4704-AECF-6F7CCFEB81FC}"
+              DTS:DTSID="{A51FD8C3-7F66-4BDE-B9C0-00DFED67601D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +455,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Indice"
-              DTS:DTSID="{610C1F69-F49D-4668-A691-85B23E23C9BF}"
+              DTS:DTSID="{5990BFE8-7ACC-4117-B8CE-65A4AF7C53D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +464,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{14CCB4CF-B2E6-44D8-A98F-7A96A4C96D3E}"
+              DTS:DTSID="{E0102319-7D6A-4809-A4DE-B80C619C9117}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +473,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Pago"
-              DTS:DTSID="{E3784136-926D-429A-9EF9-FDE6EEAF0BB0}"
+              DTS:DTSID="{A9C158EA-0A26-478F-B40D-D12350978EC3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Promotor"
-              DTS:DTSID="{BE5A8AEE-2B40-4E38-97F5-B5E77FF840AA}"
+              DTS:DTSID="{C7B3A07B-1697-48F2-91DD-BFAF28E0B7ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +490,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraInicio"
-              DTS:DTSID="{B769194F-0031-4DDA-B64E-A14CC575440D}"
+              DTS:DTSID="{5A263D45-5657-4EB0-8645-8D668FA9C57F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,16 +498,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraFin"
-              DTS:DTSID="{E3C29384-2D5B-4FF6-BDCB-EF72A2975FDB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DummyColumn1"
-              DTS:DTSID="{5BC9AABA-2527-4D4E-B3F6-1AE3AFD85386}"
+              DTS:DTSID="{6A3BD152-228C-449F-994A-AA7108F46EAF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -128,7 +507,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TipoDePago"
-              DTS:DTSID="{633BC680-87F6-4DDE-9E4A-1F1F82BCBE79}"
+              DTS:DTSID="{65104BDD-30A5-45BB-ABD9-6C0F3A5BCEE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +515,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="MontoPago"
-              DTS:DTSID="{17A28766-F613-4CE3-A37D-CCCA7E967273}"
+              DTS:DTSID="{7F9BEB91-C5F6-4E13-93FD-62958281AED1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -145,7 +524,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{C4201AE2-1301-4B9A-87B3-183FBF5ABFFB}"
+              DTS:DTSID="{2C0215F1-A426-41B4-B662-69233E2FD802}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -154,7 +533,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_CATEGORIA"
-              DTS:DTSID="{9A1BE962-EACE-469B-9F21-248B2A71EBEB}"
+              DTS:DTSID="{018A7E0F-72D1-414E-9FA4-8045A60AADBB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -163,7 +542,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_PROMOTOR"
-              DTS:DTSID="{16D28A40-2958-42BB-ABDE-BC39F275BD0E}"
+              DTS:DTSID="{E321CD09-7EA3-4EF6-BFCE-A8734D06BC0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -172,7 +551,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{4F232A12-58A2-4902-82A0-171C4C98D019}"
+              DTS:DTSID="{BF910B8D-5C9E-49E7-9301-D56CF8783C22}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -180,7 +559,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{E0901DA0-C871-4B95-8743-E4A6D98EE0B8}"
+              DTS:DTSID="{A5D705D1-B413-489C-91F0-87F6F7311916}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -188,8 +567,42 @@
               DTS:MaximumWidth="11"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="D_USU_CREACIOn"
-              DTS:DTSID="{868BBDE4-D6D4-444A-9D18-B74717FAE85E}"
+              DTS:ObjectName="D_USU_CREACION"
+              DTS:DTSID="{D8B558AD-9EE8-4D3B-B703-FEF6C95B0878}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VALORFECHA"
+              DTS:DTSID="{F08F9A4F-1A10-4C50-908C-3934FCD7BE4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_HORAINI"
+              DTS:DTSID="{0F7AD9AA-E37A-475C-B97D-FFF21029E411}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_HORAFIN"
+              DTS:DTSID="{E10D6F49-0159-4E39-9F12-C86BD2E017AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHAPARSEADA"
+              DTS:DTSID="{0F581EDA-4747-4799-A0CC-482A7D04AA71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -198,7 +611,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{BACDEA61-B2E7-4A40-AD93-978646F56DCB}"
+              DTS:DTSID="{248D81D7-7003-4002-920B-FEA57C0DD0CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -207,7 +620,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{DC383022-DC90-4763-B05E-274E8EDCCFEF}"
+              DTS:DTSID="{5E0C06FB-0F1F-45E3-8724-5D4176F5944F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -216,7 +629,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{BBC2E35F-FABB-42E2-937B-FC744BA851BF}"
+              DTS:DTSID="{EB3ABB63-37FD-470A-99F2-930C861C2113}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -225,7 +638,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{03238838-D266-4A07-81F8-34A61019ECD1}"
+              DTS:DTSID="{10E65797-F916-48F3-B112-17031A04FC51}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -233,7 +646,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{16F4ECB7-01F6-41AB-88FF-50CD6C7E4068}"
+              DTS:DTSID="{A0F469D4-0458-41E0-8FB4-E619A0DB194A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -242,7 +655,50 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{8915C672-3031-4F03-98CB-598609B2EF81}"
+              DTS:DTSID="{7D642FC7-3428-4195-AC87-E9062A995563}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_FECHA"
+              DTS:DTSID="{EDFA8EF5-1DC1-4C27-8E3D-1ACA24E39F10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_HORAINI"
+              DTS:DTSID="{83D014F8-72AE-439D-B89D-E89737D25ACC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ETL_HORAFIN"
+              DTS:DTSID="{1783E70D-ED0F-4544-8735-9B62CE729C2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORAINI_STR"
+              DTS:DTSID="{347101AA-0F99-4A47-A95D-BA1AE7042704}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HORAFIN_STR"
+              DTS:DTSID="{CEFB7BC0-5B6E-4C42-806D-26C86739ECAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -250,7 +706,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CLIENTE"
-              DTS:DTSID="{879113B1-B870-41B3-914C-2E60D3809572}"
+              DTS:DTSID="{F56C76AD-69A5-42BE-9F25-2B669160A329}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -258,7 +714,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CATEGORIA"
-              DTS:DTSID="{A1412F6F-E6FF-4B29-8B78-F4ABCBCF14BE}"
+              DTS:DTSID="{E6609F24-3A38-49F1-A463-CE970F43C3A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -266,7 +722,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_PROMOTOR"
-              DTS:DTSID="{2CC2E486-3D9C-4919-861B-A1DCD10F94F3}"
+              DTS:DTSID="{D4F1977F-04B0-4CE8-85BE-186F0E8CB0F4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -274,7 +730,16 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_TIPOPAGO"
-              DTS:DTSID="{A36AAB0E-0F3A-44C9-8AAC-49AE365E5ABC}"
+              DTS:DTSID="{158F3598-67AF-4E8B-9D30-3E563639A5B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PK_FECHA"
+              DTS:DTSID="{89ADD137-7C70-4FD3-B7AD-686A2F9BC8FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -282,7 +747,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{46FA8BA6-020A-487D-83F0-A8212E830237}"
+              DTS:DTSID="{654C51F3-485F-459C-8AB2-4DCAF9421133}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -290,25 +755,16 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{326FBD3E-6085-4580-8207-55C28791B5D1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="F2"
-              DTS:DTSID="{9CA75D89-B2A0-4F47-AC9A-41670D57E2EE}"
+              DTS:DTSID="{22FD9532-7A87-4819-AF7F-313FD9FE6D8D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{026F36B6-73B2-44FD-8E84-25FBBC500DAD}"
+              DTS:ObjectName="DummyColumn1"
+              DTS:DTSID="{BB35B1DE-40D5-4217-8B10-E493E2A3FFB5}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -323,7 +779,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -359,6 +815,7 @@
     <DTS:Executable
       DTS:refId="Package\Para cada página del excel,,, 2"
       DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:DelayValidation="True"
       DTS:Description="Contenedor de bucles Foreach"
       DTS:DTSID="{7bc94019-b385-45dc-8495-cf66f1f5c45d}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
@@ -379,6 +836,7 @@
         <DTS:Executable
           DTS:refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS"
           DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{caea568b-7ae6-406b-a1ab-c24291902ff1}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -533,7 +991,7 @@
                           length="255"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[ApellidosNombres]"
                           name="ApellidosNombres"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[DNI]"
                           dataType="wstr"
@@ -543,7 +1001,7 @@
                           length="255"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[DNI]"
                           name="DNI"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Indice]"
                           dataType="wstr"
@@ -553,7 +1011,7 @@
                           length="255"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Indice]"
                           name="Indice"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Categoria]"
                           dataType="wstr"
@@ -563,7 +1021,7 @@
                           length="255"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Categoria]"
                           name="Categoria"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Pago]"
                           dataType="wstr"
@@ -573,7 +1031,7 @@
                           length="255"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Pago]"
                           name="Pago"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Promotor]"
                           dataType="wstr"
@@ -583,7 +1041,7 @@
                           length="255"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[Promotor]"
                           name="Promotor"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[HoraInicio]"
                           dataType="date"
@@ -592,7 +1050,7 @@
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].ExternalColumns[HORA DE IINICIO]"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[HoraInicio]"
                           name="HoraInicio"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[HoraFin]"
                           dataType="date"
@@ -601,17 +1059,7 @@
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].ExternalColumns[CLINICO _INICIO CIERRE]"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[HoraFin]"
                           name="HoraFin"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[DummyColumn1]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].ExternalColumns[F2]"
-                          length="255"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[DummyColumn1]"
-                          name="DummyColumn1"
-                          truncationRowDisposition="FailComponent" />
+                          truncationRowDisposition="IgnoreFailure" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -771,12 +1219,6 @@
                           dataType="date"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Error Output].Columns[CLINICO _INICIO CIERRE]"
                           name="CLINICO _INICIO CIERRE" />
-                        <outputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Error Output].Columns[F2]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Error Output].Columns[F2]"
-                          name="F2" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -3144,6 +3586,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       name="Flat File Destination Input">
                       <inputColumns>
                         <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ApellidosNombres]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="ApellidosNombres"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ApellidosNombres]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[ApellidosNombres]" />
+                        <inputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[DNI]"
                           cachedDataType="wstr"
                           cachedLength="255"
@@ -3190,13 +3639,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           cachedName="HoraFin"
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[HoraFin]"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[HoraFin]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[DummyColumn1]"
-                          cachedDataType="wstr"
-                          cachedLength="255"
-                          cachedName="DummyColumn1"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[DummyColumn1]"
-                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS.Outputs[Excel Source Output].Columns[DummyColumn1]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[TipoDePago]"
                           cachedCodepage="1252"
@@ -3250,8 +3692,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           cachedDataType="wstr"
                           cachedLength="11"
                           cachedName="D_USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_USU_CREACIOn]"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_USU_CREACION]"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup.Outputs[Derived Column Output].Columns[D_USU_CREACION]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[VALORFECHA]"
+                          cachedDataType="wstr"
+                          cachedLength="30"
+                          cachedName="VALORFECHA"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[VALORFECHA]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup.Outputs[Derived Column Output].Columns[VALORFECHA]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[D_HORAINI]"
+                          cachedDataType="date"
+                          cachedName="D_HORAINI"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_HORAINI]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup.Outputs[Derived Column Output].Columns[D_HORAINI]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[D_HORAFIN]"
+                          cachedDataType="date"
+                          cachedName="D_HORAFIN"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_HORAFIN]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup.Outputs[Derived Column Output].Columns[D_HORAFIN]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[FECHAPARSEADA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FECHAPARSEADA"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[FECHAPARSEADA]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Obtencion de fecha.Outputs[Salida 0].Columns[FECHAPARSEADA]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ETL_DNI]"
                           cachedCodepage="1252"
@@ -3299,6 +3768,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
                         <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ETL_FECHA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ETL_FECHA"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_FECHA]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_FECHA]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ETL_HORAINI]"
+                          cachedDataType="dbTime"
+                          cachedName="ETL_HORAINI"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_HORAINI]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAINI]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ETL_HORAFIN]"
+                          cachedDataType="dbTime"
+                          cachedName="ETL_HORAFIN"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_HORAFIN]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types.Outputs[Data Conversion Output].Columns[ETL_HORAFIN]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[HORAINI_STR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="HORAINI_STR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[HORAINI_STR]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAINI_STR]" />
+                        <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[HORAFIN_STR]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="6"
+                          cachedName="HORAFIN_STR"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[HORAFIN_STR]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string.Outputs[Salida 0].Columns[HORAFIN_STR]" />
+                        <inputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[PK_CLIENTE]"
                           cachedDataType="i4"
                           cachedName="PK_CLIENTE"
@@ -3323,6 +3828,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[PK_TIPOPAGO]"
                           lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago.Outputs[Lookup Match Output].Columns[PK_TIPOPAGO]" />
                         <inputColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[PK_FECHA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="8"
+                          cachedName="PK_FECHA"
+                          externalMetadataColumnId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[PK_FECHA]"
+                          lineageId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha.Outputs[Lookup Match Output].Columns[PK_FECHA]" />
+                        <inputColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].Columns[ErrorCode]"
                           cachedDataType="i4"
                           cachedName="ErrorCode"
@@ -3338,10 +3851,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[init]"
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ApellidosNombres]"
                           dataType="wstr"
                           length="255"
-                          name="init" />
+                          name="ApellidosNombres" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[DNI]"
                           dataType="wstr"
@@ -3375,11 +3888,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[HoraFin]"
                           dataType="date"
                           name="HoraFin" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[DummyColumn1]"
-                          dataType="wstr"
-                          length="255"
-                          name="DummyColumn1" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[TipoDePago]"
                           codePage="1252"
@@ -3415,10 +3923,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           dataType="dbTimeStamp"
                           name="D_FEC_CREACION" />
                         <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_USU_CREACIOn]"
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_USU_CREACION]"
                           dataType="wstr"
                           length="11"
-                          name="D_USU_CREACIOn" />
+                          name="D_USU_CREACION" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[VALORFECHA]"
+                          dataType="wstr"
+                          length="30"
+                          name="VALORFECHA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_HORAINI]"
+                          dataType="date"
+                          name="D_HORAINI" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[D_HORAFIN]"
+                          dataType="date"
+                          name="D_HORAFIN" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[FECHAPARSEADA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FECHAPARSEADA" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_DNI]"
                           codePage="1252"
@@ -3454,6 +3981,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           length="11"
                           name="ETL_USU_CREACION" />
                         <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_FECHA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ETL_FECHA" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_HORAINI]"
+                          dataType="dbTime"
+                          name="ETL_HORAINI" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_HORAFIN]"
+                          dataType="dbTime"
+                          name="ETL_HORAFIN" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[HORAINI_STR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="HORAINI_STR" />
+                        <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[HORAFIN_STR]"
+                          codePage="1252"
+                          dataType="str"
+                          length="6"
+                          name="HORAFIN_STR" />
+                        <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[PK_CLIENTE]"
                           dataType="i4"
                           name="PK_CLIENTE" />
@@ -3470,6 +4023,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           dataType="i4"
                           name="PK_TIPOPAGO" />
                         <externalMetadataColumn
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[PK_FECHA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="8"
+                          name="PK_FECHA" />
+                        <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
                           dataType="i4"
                           name="ErrorCode" />
@@ -3478,16 +4037,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           dataType="i4"
                           name="ErrorColumn" />
                         <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[F2]"
+                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[DummyColumn1]"
                           dataType="wstr"
                           length="255"
-                          name="F2" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores.Inputs[Flat File Destination Input].ExternalColumns[ETL_NOMBRE]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="ETL_NOMBRE" />
+                          name="DummyColumn1" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -6194,8 +6747,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{AB6C4065-831E-4AF3-846A-449DC1BBB009}"
-          DTS:ObjectName="{AB6C4065-831E-4AF3-846A-449DC1BBB009}"
+          DTS:DTSID="{29401F23-4169-40A3-902B-EF068581EFA4}"
+          DTS:ObjectName="{29401F23-4169-40A3-902B-EF068581EFA4}"
           DTS:ValueIndex="2"
           DTS:VariableName="User::Sheetname" />
       </DTS:ForEachVariableMappings>
@@ -6224,18 +6777,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="185,42"
+          Size="184.8,41.6"
           Id="Package\Limpiar FACT_VENTAS"
           TopLeft="322,104" />
         <NodeLayout
-          Size="178,42"
+          Size="184,41.6"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS"
           TopLeft="62,39" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="315,139"
-          Size="315,182"
+          PanelSize="315.2,139.2"
+          Size="315.2,182.4"
           Id="Package\Para cada página del excel,,, 2"
           TopLeft="265,219" />
         <EdgeLayout
@@ -6281,91 +6834,107 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="145,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores"
-          TopLeft="941,753" />
-        <NodeLayout
-          Size="215,42"
+          Size="215.2,41.6"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Instancia SQL Server destino"
           TopLeft="905,626" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Obtencion de fecha"
-          TopLeft="687,286" />
-        <NodeLayout
-          Size="219,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Cleansing de division de pago"
-          TopLeft="826,171" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria"
-          TopLeft="208,617" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas"
-          TopLeft="69,172" />
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha"
-          TopLeft="742,520" />
-        <NodeLayout
-          Size="233,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX)"
-          TopLeft="465,173" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types"
-          TopLeft="894,286" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago"
-          TopLeft="546,625" />
-        <NodeLayout
-          Size="147,42"
+          Size="147.2,41.6"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup cliente"
           TopLeft="67,517" />
         <NodeLayout
-          Size="174,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS"
-          TopLeft="76,54" />
+          Size="219.2,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Cleansing de division de pago"
+          TopLeft="826,171" />
         <NodeLayout
-          Size="231,42"
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup"
-          TopLeft="67,284" />
-        <NodeLayout
-          Size="160,42"
+          Size="160,41.6"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor"
           TopLeft="375,515" />
         <NodeLayout
-          Size="209,42"
+          Size="160,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria"
+          TopLeft="208,617" />
+        <NodeLayout
+          Size="192.8,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Remover filas no válidas"
+          TopLeft="69,172" />
+        <NodeLayout
+          Size="231.2,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Preparación de vars para lookup"
+          TopLeft="67,284" />
+        <NodeLayout
+          Size="232.8,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Division de pago mediante Expresiones Regulares (REGEX)"
+          TopLeft="465,173" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Parseo de types"
+          TopLeft="894,286" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago"
+          TopLeft="546,625" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS"
+          TopLeft="76,54" />
+        <NodeLayout
+          Size="208.8,41.6"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Conversion de hora a string"
           TopLeft="497,397" />
         <NodeLayout
-          Size="246,42"
+          Size="246.4,41.6"
           Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Artificio de conversion alfanumerica"
           TopLeft="370,286" />
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Obtencion de fecha"
+          TopLeft="687,286" />
+        <NodeLayout
+          Size="142.4,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha"
+          TopLeft="742,520" />
         <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[OLE DB Destination Error Output]"
-          TopLeft="1013,668">
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 01]"
+          TopLeft="857,307">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,85"
+              EndConnector="37,0"
               Start="0,0"
-              End="0,77.5">
+              End="29.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,77.5" />
+                    End="29.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-73.20890625,33.033203125,146.4178125,11.43359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 0]"
+          TopLeft="698,193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="128,0"
+              Start="0,0"
+              End="120.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="120.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6400,7 +6969,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="40.3919466145833,31.0278551532033,96.3827734375,11.609375"
+              BoundingBox="40.3919466145835,31.0278551532033,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6436,7 +7005,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="23.8919466145833,32.6039603960396,96.3827734375,11.609375"
+              BoundingBox="23.8919466145835,32.6039603960396,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6472,7 +7041,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="22.4752799479166,-26.4587192032151,96.3827734375,11.609375"
+              BoundingBox="22.4752799479165,-26.4587192032151,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6508,7 +7077,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="22.6419466145833,-19.3564356435644,96.3827734375,11.609375"
+              BoundingBox="22.6419466145835,-19.3564356435644,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6544,7 +7113,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="12.8919466145833,39.4554455445545,96.3827734375,11.609375"
+              BoundingBox="12.8919466145835,39.4554455445545,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6742,48 +7311,44 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="142.4,41.6"
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\log de errores"
+          TopLeft="927.958286948297,725.166662131581" />
         <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 01]"
-          TopLeft="857,307">
+          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[OLE DB Destination Error Output]"
+          TopLeft="1012.6,667.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="37,0"
+              EndConnector="-13.441713051703,57.5666621315811"
               Start="0,0"
-              End="29.5,0">
+              End="-13.441713051703,50.0666621315811">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="29.5,0" />
+                    End="0,24.7833310657905" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7833310657905"
+                    Point2="0,28.7833310657905"
+                    Point3="-4,28.7833310657905" />
+                  <mssgle:LineSegment
+                    End="-9.441713051703,28.7833310657905" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.441713051703,28.7833310657905"
+                    Point2="-13.441713051703,28.7833310657905"
+                    Point3="-13.441713051703,32.7833310657905" />
+                  <mssgle:LineSegment
+                    End="-13.441713051703,50.0666621315811" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS.Paths[Salida 0]"
-          TopLeft="698,193">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="128,0"
-              Start="0,0"
-              End="120.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="120.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-79.9297627758515,33.7833310657905,146.4178125,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6803,7 +7368,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria">
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -6813,7 +7378,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha">
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -6854,7 +7419,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor">
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
