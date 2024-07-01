@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{2ABEA76D-E7E2-41F8-8F73-F9B7C8C6CB3B}">
+  DTS:VersionBuild="96"
+  DTS:VersionGUID="{2A7D05C6-99F3-464C-9D04-A23A0FCA0372}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,6 +23,7 @@
       DTS:ObjectName="Conector OLEDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:Retain="True"
           DTS:ConnectionString="Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -815,7 +816,6 @@
     <DTS:Executable
       DTS:refId="Package\Para cada página del excel,,, 2"
       DTS:CreationName="STOCK:FOREACHLOOP"
-      DTS:DelayValidation="True"
       DTS:Description="Contenedor de bucles Foreach"
       DTS:DTSID="{7bc94019-b385-45dc-8495-cf66f1f5c45d}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
@@ -836,7 +836,6 @@
         <DTS:Executable
           DTS:refId="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS"
           DTS:CreationName="Microsoft.Pipeline"
-          DTS:DelayValidation="True"
           DTS:Description="Data Flow Task"
           DTS:DTSID="{caea568b-7ae6-406b-a1ab-c24291902ff1}"
           DTS:ExecutableType="Microsoft.Pipeline"
@@ -7368,26 +7367,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup tipopago">
     <Properties>
       <Property>
@@ -7411,6 +7390,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Base de datos LAOS">
     <Properties>
       <Property>
@@ -7419,7 +7408,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup fecha">
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup promotor">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2\Carga FACT_VENTAS\Lookup categoria">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
