@@ -5,31 +5,31 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="PC-JESU"
   DTS:CreatorName="PC-JESU\Jesu"
-  DTS:DTSID="{E92923AD-1CC1-4FC7-8185-D33CE399958F}"
+  DTS:DTSID="{E916D46C-4453-4DD4-AFD5-E695183631C4}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="10250"
-  DTS:ObjectName="OLTP_VENTAS"
+  DTS:ObjectName="OLTP_VENTAS_2024"
   DTS:PackageType="5"
-  DTS:VersionBuild="301"
-  DTS:VersionGUID="{476471A7-17C1-4D0B-A30E-AA0EBD3C3DCB}">
+  DTS:VersionBuild="311"
+  DTS:VersionGUID="{44CF80BC-A93F-427E-989C-FDEA6C058C4C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Conector OLE.DB para Excel spreadsheets]"
+      DTS:refId="Package.ConnectionManagers[Conector OLE.DB 2024]"
       DTS:CreationName="ADO.NET:OLEDB"
-      DTS:DTSID="{72BE930E-B647-4DD6-A01C-86D1214C872A}"
-      DTS:ObjectName="Conector OLE.DB para Excel spreadsheets">
+      DTS:DTSID="{17E58BE3-2128-4CF3-A6CB-C6277D493F7F}"
+      DTS:ObjectName="Conector OLE.DB 2024">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
+          DTS:ConnectionString="Data Source=&quot;E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx&quot;;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ERROR_CATEGORIA]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F9F425E8-7A6E-4782-8B3E-77395E6ADFBD}"
+      DTS:DTSID="{4D7464BE-FC46-4CA7-9EEF-821CCA76C315}"
       DTS:ObjectName="ERROR_CATEGORIA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -40,7 +40,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_categoria.txt">
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_categoria.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +49,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{80912CF5-F94A-4101-8422-E72C0949B07F}"
+              DTS:DTSID="{984F2BA8-C08A-401A-9EF7-F256161D0159}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{7D0F8E37-03E0-44FA-BE03-BB819C1D9B9C}"
+              DTS:DTSID="{4669F831-C481-4E60-8DB1-4784AA8D695F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{72A2195D-1AA1-4554-9CF2-DE5952EE7BAC}"
+              DTS:DTSID="{604B7453-584E-4EC4-8F4C-FFDF6F4FD3A7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CATEGORIA"
-              DTS:DTSID="{989DA58C-6C69-48DB-94DC-3274E3B1F0D4}"
+              DTS:DTSID="{F9ECA674-CC6C-4A20-AEEF-1C6709E527E1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{8F9BCFEF-81C5-4B33-B3E2-81649C2AACA5}"
+              DTS:DTSID="{D6F3DCC8-0D1E-4046-9F3F-A92C00A45E46}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{577B8EE3-AA2F-4A80-AAE1-612A5FE80B03}"
+              DTS:DTSID="{81A46B8B-1990-4105-A370-AD1E258E6551}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{0DF2B5FF-E2EF-4A4E-9B8E-466789CB5345}"
+              DTS:DTSID="{A2F68D76-5367-4B53-A884-15CEF33BDB74}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{342470F9-A1B0-4C1C-9FDF-08F80D72C126}"
+              DTS:DTSID="{5FB6F92E-17F4-46BE-BF9B-BE1818406D65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -117,7 +117,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{AE4D0740-D54E-4553-AAF8-BE2F5635E15A}"
+              DTS:DTSID="{4EFC6C71-4D20-4483-8D5D-47CCA8D89F0B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -127,7 +127,7 @@
       DTS:refId="Package.ConnectionManagers[ERROR_CLIENTE]"
       DTS:CreationName="FLATFILE"
       DTS:Description="output para filas no validas"
-      DTS:DTSID="{9281FC75-D087-4B9A-A952-C4115501C2C4}"
+      DTS:DTSID="{0111FD31-ADC6-4885-8620-D712C73B161A}"
       DTS:ObjectName="ERROR_CLIENTE">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -138,7 +138,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_cliente.txt">
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_cliente.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{B82B31E3-3305-4688-AF4A-4D1E7687DA0E}"
+              DTS:DTSID="{3A0E3E20-B38D-4DE9-8252-46F262EBB7A8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{2A098CA4-CB5D-4785-AB57-FC6D51A05786}"
+              DTS:DTSID="{61178AF0-76E7-44BA-AAC3-B6AB3F7F3A88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="N°"
-              DTS:DTSID="{19182D7D-9ADF-4E39-AF3A-D43F799ED698}"
+              DTS:DTSID="{8EF389D5-861E-4BBC-A652-53250969C689}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="F2"
-              DTS:DTSID="{57AAFE2D-C097-4250-8F72-CF802CF98A87}"
+              DTS:DTSID="{0976E566-1FCE-4B49-855B-DDD6B1423704}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +183,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{78DE8291-540F-42D5-9D46-0A9B0A8272CF}"
+              DTS:DTSID="{BA2A6140-A064-441F-998C-16D6786F8FD5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_NOMBRE"
-              DTS:DTSID="{B290F7B2-4E61-418D-8094-5E1142F036D0}"
+              DTS:DTSID="{CF7BFFCD-6742-4872-A47B-23EC392BFD1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +200,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{DBE23A61-D030-4679-8504-62595024F1B1}"
+              DTS:DTSID="{27F27114-57FA-4F66-9D59-BCCA0E8CB530}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +209,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACION"
-              DTS:DTSID="{456BBFEC-7386-45D7-A2E1-82434907655E}"
+              DTS:DTSID="{712E28FC-6E96-4A11-B754-C921BBC480E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +218,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{9D64975A-61F7-4E97-832D-29E56EE970A3}"
+              DTS:DTSID="{90BB881C-9B9C-485C-960B-69E3312549D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +227,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{D61F16B9-8492-4C75-A513-B1D70A63AF12}"
+              DTS:DTSID="{971275DB-D200-40BB-8856-1F0143D50F01}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +235,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{3C1B84C3-9795-4FCD-9669-C98882FAE756}"
+              DTS:DTSID="{D3F49096-0B74-4AEF-89CD-C2F3306C8B75}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -244,7 +244,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{FC698D1E-86DC-40E0-929F-FE4E05F5FFD8}"
+              DTS:DTSID="{D72ABF81-8DC9-4541-ACD5-583545330F64}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -252,7 +252,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{826EF3B8-4A87-4990-926C-1E9DAC798DE2}"
+              DTS:DTSID="{072D514A-53B9-4C54-84DE-C876CDC63899}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -260,7 +260,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{22A9FCE7-D95C-4524-B286-222CE021B7DE}"
+              DTS:DTSID="{5A71B6A7-9DC7-4143-8B21-EAF1B447DC38}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -269,7 +269,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ERROR_FACT_VENTAS]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{FFD36D4E-1A81-4494-BA52-9E5825E96FF0}"
+      DTS:DTSID="{FE25F3B5-EB73-4136-8513-0C3CFE22B57F}"
       DTS:ObjectName="ERROR_FACT_VENTAS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -280,7 +280,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_fact_ventas.txt">
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_fact_ventas.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{66AE2182-14AB-4646-A5D5-70C8F5DFACC4}"
+              DTS:DTSID="{E1587E10-AC60-40F8-82BB-D5766FC83457}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{A4065925-1825-4712-8ECC-74AE0F88A7E8}"
+              DTS:DTSID="{F000411A-8197-4925-B1EE-3BF5E3B40381}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Indice"
-              DTS:DTSID="{2B0889FE-E26C-4185-86EA-C06BB6FDDCC2}"
+              DTS:DTSID="{A93C30EA-F228-441B-B7EF-80A7A3797009}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{78C04072-4C26-41A5-B9E0-B4DB2243CBC4}"
+              DTS:DTSID="{18B8D986-24BD-4257-B2B2-1E9810C4968A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -325,7 +325,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Pago"
-              DTS:DTSID="{01AC238C-E784-4490-B97B-772B18DEF178}"
+              DTS:DTSID="{02AF0018-87C4-408D-B470-07AB69630D55}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -334,7 +334,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Promotor"
-              DTS:DTSID="{5E7D3216-749C-4641-8000-1966618ED17F}"
+              DTS:DTSID="{C58C0B35-4BED-4875-8E2B-150D51156A0D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -342,7 +342,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraInicio"
-              DTS:DTSID="{0F6832C7-C0C2-4360-AE17-6C4F6F95DE5B}"
+              DTS:DTSID="{6EAA332F-AF25-4180-8467-B42803171599}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -350,7 +350,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraFin"
-              DTS:DTSID="{AB800F04-DED0-44E8-82AA-FEB6A279DA94}"
+              DTS:DTSID="{0B510FB9-DA31-48F8-80A4-EC3807997A77}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -359,7 +359,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DummyColumn1"
-              DTS:DTSID="{F5B13B2B-ADE7-4561-886B-178947E1FE29}"
+              DTS:DTSID="{A8C7C3E4-F977-4535-A951-E707621C6F8D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -368,7 +368,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TipoDePago"
-              DTS:DTSID="{B7A15CF3-B2FE-44FC-826D-8779915AC6C4}"
+              DTS:DTSID="{2E2A8637-86B4-4B95-A5F8-C484F82E7369}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -376,7 +376,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="MontoPago"
-              DTS:DTSID="{F458AD2C-5588-4B17-9680-AEB2159C227D}"
+              DTS:DTSID="{2AD295E3-3717-4A76-B642-4285F1399DDC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -385,7 +385,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{F2AD7906-3861-4A50-9EC3-3727074A8D2A}"
+              DTS:DTSID="{98CB2551-1298-47F1-85F4-A09AB19736AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -394,7 +394,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_CATEGORIA"
-              DTS:DTSID="{E8088B3C-7CA6-4856-8665-1C7F012D9232}"
+              DTS:DTSID="{10E4B52B-E8E5-42C0-BFA3-FB5CA85CCDB2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +403,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_PROMOTOR"
-              DTS:DTSID="{D2421FB2-7D77-4BD7-A4C9-3E44F3C27E9D}"
+              DTS:DTSID="{2C438830-1DD1-404D-BDED-54AD547F36AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -412,7 +412,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{D79569C6-AB99-4552-9094-9FB19BF58C26}"
+              DTS:DTSID="{B37FBA63-AD57-4B58-AD73-E7FEF8596D01}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -420,7 +420,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{99C0645D-FFD8-43C0-AFD1-9568C1AFD0A7}"
+              DTS:DTSID="{10EB2AF8-9555-4D50-926B-A0702A18E6E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -429,7 +429,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACIOn"
-              DTS:DTSID="{030DCC07-1DBF-4C75-A4C6-5588436D05AC}"
+              DTS:DTSID="{1F81F3C8-E7A6-4313-BD8B-5DF99693DA1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -438,7 +438,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{49660546-B703-458D-A5A2-0B3C483C683E}"
+              DTS:DTSID="{9E30D6DE-4D61-4B23-9BC2-E313279C2322}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -447,7 +447,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{CEB95455-6B9E-44E5-9114-A28830D4D1C0}"
+              DTS:DTSID="{F4574FC4-3870-4E0E-9B58-C7820632AD4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -456,7 +456,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{FE77CDD3-9CE8-4836-BF87-902F35B845CE}"
+              DTS:DTSID="{9AE32483-2076-4FB9-B7FA-353C336CDAB6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -465,7 +465,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{BAA1ED67-A5D0-48F9-8A45-68BE0FCD75CA}"
+              DTS:DTSID="{B4643A0B-AB6D-4B23-9649-D874A92B2E65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -473,7 +473,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{917D4FF4-768B-4FE2-9C48-07904094C96A}"
+              DTS:DTSID="{ADD8B2CE-2388-4138-99F6-D45C30462E45}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -482,7 +482,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{5D73A4B4-BFEA-474C-AA70-A4ACD282BA2D}"
+              DTS:DTSID="{B49EB9C8-C824-40D3-83E9-E7F29E87B644}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -490,7 +490,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CLIENTE"
-              DTS:DTSID="{166EEB63-F7E5-48FC-8A20-F35DBC5BCA9E}"
+              DTS:DTSID="{54E60A98-887D-444E-86CC-411E3C261F63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -498,7 +498,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CATEGORIA"
-              DTS:DTSID="{7AA47326-7742-454A-88FE-D2EB8064BB12}"
+              DTS:DTSID="{3844A916-EE1F-4781-959E-1772377EF53B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -506,7 +506,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_PROMOTOR"
-              DTS:DTSID="{FEDB2066-3767-45FC-8F31-8F25E071CE92}"
+              DTS:DTSID="{2E6199EF-D05F-41B3-9133-69A4C234F6C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -514,7 +514,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_TIPOPAGO"
-              DTS:DTSID="{2FC5D8F3-1022-4505-B9F7-6BC7101DD84B}"
+              DTS:DTSID="{F1936BBB-7FB0-49F3-A8EB-B5CDFBCC11B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -522,7 +522,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{0478E172-DF22-44C1-A9FD-FD2BC36D6E67}"
+              DTS:DTSID="{898E0F15-1B8A-4A95-A77A-13302943FBA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -530,7 +530,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{B38C93AB-A0A7-4980-967A-5064E3B99E6A}"
+              DTS:DTSID="{B725A594-2C46-46DF-BB66-1186529B71AE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -539,7 +539,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="F2"
-              DTS:DTSID="{DE7B745E-0217-4D1E-8E31-C9AECC968786}"
+              DTS:DTSID="{B5BFAC62-D026-44E8-AE5C-80022AC8973C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -548,7 +548,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{52899F79-4D33-48C7-B9B5-E320F06C5135}"
+              DTS:DTSID="{33E3728A-6A49-48D5-8D0A-FFDED5630CFE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -557,7 +557,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ERROR_PROMOTOR]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{583AD3ED-4DB2-46D0-B4F4-ED5143B363D7}"
+      DTS:DTSID="{80E97051-10C8-402B-9E35-40628356BE33}"
       DTS:ObjectName="ERROR_PROMOTOR">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -568,7 +568,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_promotor.txt">
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_promotor.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -577,7 +577,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROMOTOR"
-              DTS:DTSID="{A6CA0A46-E93A-4B76-A7F5-C025C4E5D1DF}"
+              DTS:DTSID="{540A8FB4-316E-40D1-8458-A0B822514F5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -585,7 +585,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{089DEE2D-F840-4135-908E-A2F7D0792D72}"
+              DTS:DTSID="{97F2369D-AEF7-49BB-BA9D-4C9294D53C3A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -594,7 +594,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{6DDC598F-01CA-462D-A511-DD2C8B1C2C3A}"
+              DTS:DTSID="{135DCC73-A988-492E-AC79-1550D2CB6805}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -602,7 +602,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{C8A08207-B510-4435-AD7B-567C97D4759E}"
+              DTS:DTSID="{CF250F1E-63CE-4158-BA5A-4F6889E7FCFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -611,7 +611,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{A1469B4B-1343-4112-B651-FBB9A95BAA82}"
+              DTS:DTSID="{596163D1-EC18-4EED-A3EF-0C73FD64FFF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -620,7 +620,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{AD90E009-7C22-4F90-861B-8A373B22487D}"
+              DTS:DTSID="{0B13CAB8-AD45-47F8-83F4-5BB51B72622E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -628,7 +628,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{447168D5-61BD-440B-9765-35A40F0F4D4F}"
+              DTS:DTSID="{850A2A46-77ED-4343-8B95-F4237A61C334}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -636,7 +636,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{41C36C3C-B0E1-47D3-974E-5320AE45F063}"
+              DTS:DTSID="{A14EE9B7-782E-4A63-8BBD-B1DC1220C90B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -645,7 +645,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ERROR_TIPOPAGO]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{E28A14E6-164C-42D9-9216-87CDBDA4EEAE}"
+      DTS:DTSID="{F6A1407D-F4D1-4A49-B76C-CDEA27E2FBBE}"
       DTS:ObjectName="ERROR_TIPOPAGO">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -656,7 +656,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_tipopago.txt">
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_tipopago.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -665,7 +665,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{7FBBE114-BA21-4C5B-92DB-2D78E132F62A}"
+              DTS:DTSID="{AC72C75B-47FA-4CA9-81D3-3157F7CB776E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -673,7 +673,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{46CB3389-2A63-4B4E-9169-BA54C4CE078E}"
+              DTS:DTSID="{BDE1950E-F571-4C1C-882B-CEDF507FAC3A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -682,7 +682,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{C684047D-9378-45AA-9A47-274E99B708A3}"
+              DTS:DTSID="{4D1AEFFC-E68A-42EB-A6DB-4FE5FE0BD902}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -691,7 +691,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{83A0E68B-800A-4C76-86E2-D6E586F37AB3}"
+              DTS:DTSID="{364210A1-92DF-4D7B-A8EF-8F45E5C9C359}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -699,7 +699,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{7C8C7493-F4CE-427E-89A0-62E529299250}"
+              DTS:DTSID="{F8BD83F2-F0C5-4F7E-9EB1-63CC568E4C9E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -708,7 +708,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{7E021DE4-56A2-4AD1-B3F3-939BD96869B6}"
+              DTS:DTSID="{135F0B97-91C4-4921-9DEA-A85775233C71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -717,7 +717,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{626F8EC5-C98C-4044-A756-383F78EC12C8}"
+              DTS:DTSID="{C8989F52-4502-4F4C-95BF-774552F37652}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -725,7 +725,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{59D33133-F0E5-4BEB-B73E-9FB249BFB839}"
+              DTS:DTSID="{559A42F8-6160-4D4E-9C80-2C7CFC0B40B3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -733,7 +733,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{54826BE3-B828-479B-AD01-982223D90F74}"
+              DTS:DTSID="{75A6262A-BD5A-432A-B785-32EB20E94E28}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -742,44 +742,44 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel_FECHA]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{9DDD1320-58B7-45F7-887B-2F8CD9D4ACE6}"
+      DTS:DTSID="{17C636B6-24BA-428C-B11C-2C904CDFC9DA}"
       DTS:ObjectName="Excel_FECHA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel_Hora]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{A88791CA-0F9E-460A-AE68-29A347504D23}"
+      DTS:DTSID="{29299D79-85F9-4990-A7DB-AA75526AEBB1}"
       DTS:ObjectName="Excel_Hora">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{FCA488C6-6770-4AB6-ABC4-A7B1D00997C4}"
+      DTS:DTSID="{C81D75B0-F08F-4CF6-A5C9-A4D3820CD26F}"
       DTS:ObjectName="Excel_OLTP_VENTAS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B375E921-471F-4372-895E-DC2E628B1279}"
+      DTS:DTSID="{FD2A5605-1E59-469F-89D6-E869CCA877E9}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SheetName">
@@ -789,1618 +789,20 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Carga DIM_FECHA"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{D4816565-57B8-4CBA-922A-6670ED784291}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Carga DIM_FECHA"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Carga DIM_FECHA\Data Conversion"
-              componentClassID="Microsoft.DataConvert"
-              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Data Conversion"
-              name="Data Conversion"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input]"
-                  name="Data Conversion Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[año]"
-                      cachedDataType="r8"
-                      cachedName="año"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[año]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[mes]"
-                      cachedDataType="r8"
-                      cachedName="mes"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[mes]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[dia]"
-                      cachedDataType="r8"
-                      cachedName="dia"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[dia]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[nombre_mes]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="nombre_mes"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_mes]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[nombre_dia]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="nombre_dia"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_dia]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[FEC_CREACION]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="FEC_CREACION"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[USU_CREACION]"
-                      cachedDataType="wstr"
-                      cachedLength="11"
-                      cachedName="USU_CREACION"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[PERIODO_DIA]"
-                      cachedDataType="wstr"
-                      cachedLength="10"
-                      cachedName="PERIODO_DIA"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[PERIODO_DIA]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input].Columns[periodo_dia]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="periodo_dia"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output]"
-                  exclusionGroup="1"
-                  name="Data Conversion Output"
-                  synchronousInputId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PERIODO_DIA]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PERIODO_DIA]"
-                      name="ETL_PERIODO_DIA"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[PERIODO_DIA]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
-                      name="ETL_FEC_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="11"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
-                      name="ETL_USU_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_nombre_mes]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="9"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_nombre_mes]"
-                      name="ETL_nombre_mes"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_mes]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_nombre_dia]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="9"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_nombre_dia]"
-                      name="ETL_nombre_dia"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_dia]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_mes]"
-                      dataType="ui2"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_mes]"
-                      name="ETL_mes"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[mes]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_dia]"
-                      dataType="ui2"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_dia]"
-                      name="ETL_dia"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[dia]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_año]"
-                      dataType="ui2"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_año]"
-                      name="ETL_año"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[año]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PK_FECHA]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="8"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PK_FECHA]"
-                      name="ETL_PK_FECHA"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Data Conversion Error Output"
-                  synchronousInputId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Carga DIM_FECHA\Derived Column"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Carga DIM_FECHA\Derived Column.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\Derived Column.Inputs[Derived Column Input].Columns[periodo_dia]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="periodo_dia"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Carga DIM_FECHA\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
-                      name="FEC_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[GETDATE]()</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">GETDATE()</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="11"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
-                      name="USU_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">"ETL inicial"</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">"ETL inicial"</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[PERIODO_DIA]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="10"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output].Columns[PERIODO_DIA]"
-                      name="PERIODO_DIA"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[SUBSTRING](#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]},1,4) + "-" + [SUBSTRING](#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]},5,2) + "-" + [SUBSTRING](#{Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]},7,2)</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">SUBSTRING(periodo_dia,1,4) + "-" + SUBSTRING(periodo_dia,5,2) + "-" + SUBSTRING(periodo_dia,7,2)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Carga DIM_FECHA\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Carga DIM_FECHA\Excel Source"
-              componentClassID="Microsoft.ExcelSource"
-              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Excel Source"
-              name="Excel Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">Hoja1$</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mapping from parameters in the SQL command to variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Carga DIM_FECHA\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel_FECHA]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel_FECHA]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output]"
-                  name="Excel Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[pk_fecha]"
-                      dataType="date"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[pk_fecha]"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[pk_fecha]"
-                      name="pk_fecha"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[periodo_dia]"
-                      length="255"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[periodo_dia]"
-                      name="periodo_dia"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[año]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[año]"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[año]"
-                      name="año"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[mes]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[mes]"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[mes]"
-                      name="mes"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[dia]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[dia]"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[dia]"
-                      name="dia"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_mes]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre_mes]"
-                      length="255"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_mes]"
-                      name="nombre_mes"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_dia]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre_dia]"
-                      length="255"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].Columns[nombre_dia]"
-                      name="nombre_dia"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[pk_fecha]"
-                      dataType="date"
-                      name="pk_fecha" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[periodo_dia]"
-                      dataType="wstr"
-                      length="255"
-                      name="periodo_dia" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[año]"
-                      dataType="r8"
-                      name="año" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[mes]"
-                      dataType="r8"
-                      name="mes" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[dia]"
-                      dataType="r8"
-                      name="dia" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre_mes]"
-                      dataType="wstr"
-                      length="255"
-                      name="nombre_mes" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre_dia]"
-                      dataType="wstr"
-                      length="255"
-                      name="nombre_dia" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output]"
-                  isErrorOut="true"
-                  name="Excel Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[pk_fecha]"
-                      dataType="date"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[pk_fecha]"
-                      name="pk_fecha" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[periodo_dia]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[periodo_dia]"
-                      name="periodo_dia" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[año]"
-                      dataType="r8"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[año]"
-                      name="año" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[mes]"
-                      dataType="r8"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[mes]"
-                      name="mes" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[dia]"
-                      dataType="r8"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[dia]"
-                      name="dia" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[nombre_mes]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[nombre_mes]"
-                      name="nombre_mes" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[nombre_dia]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[nombre_dia]"
-                      name="nombre_dia" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Carga DIM_FECHA\OLE DB Destination"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[DIM_FECHA]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Carga DIM_FECHA\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_USU_CREACION]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="11"
-                      cachedName="ETL_USU_CREACION"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_FEC_CREACION]"
-                      cachedDataType="dbDate"
-                      cachedName="ETL_FEC_CREACION"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_nombre_dia]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="9"
-                      cachedName="ETL_nombre_dia"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_DIA]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_nombre_dia]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_nombre_mes]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="9"
-                      cachedName="ETL_nombre_mes"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_MES]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_nombre_mes]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_dia]"
-                      cachedDataType="ui2"
-                      cachedName="ETL_dia"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIA]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_dia]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_mes]"
-                      cachedDataType="ui2"
-                      cachedName="ETL_mes"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MES]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_mes]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_año]"
-                      cachedDataType="ui2"
-                      cachedName="ETL_año"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANHO]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_año]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_PERIODO_DIA]"
-                      cachedDataType="dbDate"
-                      cachedName="ETL_PERIODO_DIA"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PERIODO_DIA]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_PK_FECHA]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="ETL_PK_FECHA"
-                      externalMetadataColumnId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
-                      lineageId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PK_FECHA]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_FECHA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="PK_FECHA" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANHO]"
-                      dataType="i2"
-                      name="ANHO" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MES]"
-                      dataType="i2"
-                      name="MES" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIA]"
-                      dataType="i2"
-                      name="DIA" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_MES]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      name="NOMBRE_MES" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_DIA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="20"
-                      name="NOMBRE_DIA" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
-                      dataType="wstr"
-                      length="10"
-                      name="FEC_CREACION" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USU_CREACION" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA]"
-                      dataType="wstr"
-                      length="10"
-                      name="FECHA" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_FECHA\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_FECHA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_FECHA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Carga DIM_FECHA.Paths[Data Conversion Output]"
-              endId="Package\Carga DIM_FECHA\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Data Conversion Output"
-              startId="Package\Carga DIM_FECHA\Data Conversion.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Carga DIM_FECHA.Paths[Derived Column Output]"
-              endId="Package\Carga DIM_FECHA\Data Conversion.Inputs[Data Conversion Input]"
-              name="Derived Column Output"
-              startId="Package\Carga DIM_FECHA\Derived Column.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Carga DIM_FECHA.Paths[Excel Source Output]"
-              endId="Package\Carga DIM_FECHA\Derived Column.Inputs[Derived Column Input]"
-              name="Excel Source Output"
-              startId="Package\Carga DIM_FECHA\Excel Source.Outputs[Excel Source Output]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Carga DIM_HORA"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{6B7D82E9-5D4C-4F62-ABEC-9515AF80BE6F}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Carga DIM_HORA"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Carga DIM_HORA\Data Conversion"
-              componentClassID="Microsoft.DataConvert"
-              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Data Conversion"
-              name="Data Conversion"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input]"
-                  name="Data Conversion Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input].Columns[hora24]"
-                      cachedDataType="r8"
-                      cachedName="hora24"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[hora24]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input].Columns[parte_del_dia]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="parte_del_dia"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[parte_del_dia]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input].Columns[FEC_CREACION]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="FEC_CREACION"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input].Columns[USU_CREACION]"
-                      cachedDataType="wstr"
-                      cachedLength="11"
-                      cachedName="USU_CREACION"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input].Columns[MINUTO]"
-                      cachedDataType="dbTime"
-                      cachedName="MINUTO"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[MINUTO]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input].Columns[pk_hora]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="pk_hora"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output]"
-                  exclusionGroup="1"
-                  name="Data Conversion Output"
-                  synchronousInputId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_hora24]"
-                      dataType="ui1"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_hora24]"
-                      name="ETL_hora24"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[hora24]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_parte_del_dia]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="8"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_parte_del_dia]"
-                      name="ETL_parte_del_dia"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[parte_del_dia]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]"
-                      name="ETL_FEC_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="11"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]"
-                      name="ETL_USU_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_MINUTO]"
-                      dataType="dbTime"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_MINUTO]"
-                      name="ETL_MINUTO"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[MINUTO]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_pk_hora]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="6"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_pk_hora]"
-                      name="ETL_pk_hora"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Data Conversion Error Output"
-                  synchronousInputId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Carga DIM_HORA\Derived Column"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Carga DIM_HORA\Derived Column.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\Derived Column.Inputs[Derived Column Input].Columns[pk_hora]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="pk_hora"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Carga DIM_HORA\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]"
-                      name="FEC_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[GETDATE]()</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">GETDATE()</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="11"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]"
-                      name="USU_CREACION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">"ETL Inicial"</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">"ETL Inicial"</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[MINUTO]"
-                      dataType="dbTime"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output].Columns[MINUTO]"
-                      name="MINUTO"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_DBTIME)([SUBSTRING](#{Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]},1,2) + ":" + [SUBSTRING](#{Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]},3,2) + ":" + [SUBSTRING](#{Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]},5,2))</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_DBTIME)(SUBSTRING(pk_hora,1,2) + ":" + SUBSTRING(pk_hora,3,2) + ":" + SUBSTRING(pk_hora,5,2))</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Carga DIM_HORA\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Carga DIM_HORA\Excel Source"
-              componentClassID="Microsoft.ExcelSource"
-              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Excel Source"
-              name="Excel Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">Hoja1$</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mapping from parameters in the SQL command to variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Carga DIM_HORA\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel_Hora]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel_Hora]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output]"
-                  name="Excel Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[pk_hora]"
-                      length="255"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[pk_hora]"
-                      name="pk_hora"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[minuto]"
-                      dataType="date"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[minuto]"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[minuto]"
-                      name="minuto"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[hora24]"
-                      dataType="r8"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[hora24]"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[hora24]"
-                      name="hora24"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[parte_del_dia]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[parte_del_dia]"
-                      length="255"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].Columns[parte_del_dia]"
-                      name="parte_del_dia"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[pk_hora]"
-                      dataType="wstr"
-                      length="255"
-                      name="pk_hora" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[minuto]"
-                      dataType="date"
-                      name="minuto" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[hora24]"
-                      dataType="r8"
-                      name="hora24" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output].ExternalColumns[parte_del_dia]"
-                      dataType="wstr"
-                      length="255"
-                      name="parte_del_dia" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output]"
-                  isErrorOut="true"
-                  name="Excel Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[pk_hora]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[pk_hora]"
-                      name="pk_hora" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[minuto]"
-                      dataType="date"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[minuto]"
-                      name="minuto" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[hora24]"
-                      dataType="r8"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[hora24]"
-                      name="hora24" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[parte_del_dia]"
-                      dataType="wstr"
-                      length="255"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[parte_del_dia]"
-                      name="parte_del_dia" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Carga DIM_HORA\OLE DB Destination"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[DIM_HORA]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Carga DIM_HORA\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_hora24]"
-                      cachedDataType="ui1"
-                      cachedName="ETL_hora24"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HORA24]"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_hora24]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_parte_del_dia]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="ETL_parte_del_dia"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PARTE_DEL_DIA]"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_parte_del_dia]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_FEC_CREACION]"
-                      cachedDataType="dbDate"
-                      cachedName="ETL_FEC_CREACION"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_USU_CREACION]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="11"
-                      cachedName="ETL_USU_CREACION"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_MINUTO]"
-                      cachedDataType="dbTime"
-                      cachedName="ETL_MINUTO"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MINUTO]"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_MINUTO]" />
-                    <inputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ETL_pk_hora]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="6"
-                      cachedName="ETL_pk_hora"
-                      externalMetadataColumnId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA]"
-                      lineageId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_pk_hora]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      name="PK_HORA" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MINUTO]"
-                      dataType="wstr"
-                      length="16"
-                      name="MINUTO" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HORA24]"
-                      dataType="i2"
-                      name="HORA24" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PARTE_DEL_DIA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="8"
-                      name="PARTE_DEL_DIA" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FEC_CREACION]"
-                      dataType="wstr"
-                      length="10"
-                      name="FEC_CREACION" />
-                    <externalMetadataColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USU_CREACION]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="USU_CREACION" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Carga DIM_HORA\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Carga DIM_HORA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Carga DIM_HORA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Carga DIM_HORA.Paths[Data Conversion Output]"
-              endId="Package\Carga DIM_HORA\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Data Conversion Output"
-              startId="Package\Carga DIM_HORA\Data Conversion.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Carga DIM_HORA.Paths[Derived Column Output]"
-              endId="Package\Carga DIM_HORA\Data Conversion.Inputs[Data Conversion Input]"
-              name="Derived Column Output"
-              startId="Package\Carga DIM_HORA\Derived Column.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Carga DIM_HORA.Paths[Excel Source Output]"
-              endId="Package\Carga DIM_HORA\Derived Column.Inputs[Derived Column Input]"
-              name="Excel Source Output"
-              startId="Package\Carga DIM_HORA\Excel Source.Outputs[Excel Source Output]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Limpiar dimensiones"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{A96D0E7A-DC2D-4FA7-9658-C54BE7813794}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Limpiar dimensiones"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{447FE81E-8B87-40B3-99B6-7388B6A76550}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE DIM_CATEGORIA;&#xA;TRUNCATE TABLE DIM_CLIENTE;&#xA;TRUNCATE TABLE DIM_FECHA;&#xA;TRUNCATE TABLE DIM_HORA;&#xA;TRUNCATE TABLE DIM_PROMOTOR;&#xA;TRUNCATE TABLE DIM_TIPOPAGO;&#xA;&#xA;TRUNCATE TABLE FACT_VENTAS;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Para cada página del excel,,,"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Contenedor de bucles Foreach"
-      DTS:DTSID="{369584B3-4034-4B18-8C78-80CCC820A4F5}"
+      DTS:DTSID="{9D146673-A48E-4DAE-8438-5216E954E40F}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Para cada página del excel,,,">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachSchemaRowsetEnumerator"
-        DTS:DTSID="{072ECF75-93F4-492E-AF86-EFFDEADA104C}"
-        DTS:ObjectName="{072ECF75-93F4-492E-AF86-EFFDEADA104C}">
+        DTS:DTSID="{E030DDF2-9F00-48F0-AECD-081BCCE932DA}"
+        DTS:ObjectName="{E030DDF2-9F00-48F0-AECD-081BCCE932DA}">
         <DTS:ObjectData>
           <FEESchemaRowset
-            Connection="Conector OLE.DB para Excel spreadsheets"
+            Connection="Conector OLE.DB 2024"
             Schema="c8b52229-5cf3-11ce-ade5-00aa0044773d" />
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -2410,7 +812,7 @@
           DTS:refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{d545227a-23de-4c8f-aaa2-3596fb53e42a}"
+          DTS:DTSID="{6E0CCFDE-81EF-4F82-96FD-B94A3EE2AB2B}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Carga DIM_CATEGORIA"
@@ -3212,7 +1614,7 @@
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      connectionManagerRefId="Project.ConnectionManagers[SQLSERVER.STAGE_VENTAS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3333,7 +1735,7 @@
           DTS:refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{928679DA-E5BF-4F96-B7F9-791A99E48F08}"
+          DTS:DTSID="{A5732BDE-3E84-416C-AE13-D9A46EE5D99C}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Carga DIM_CLIENTE"
@@ -4245,7 +2647,7 @@
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      connectionManagerRefId="Project.ConnectionManagers[SQLSERVER.STAGE_VENTAS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4298,7 +2700,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE]"
                           codePage="1252"
                           dataType="str"
-                          length="99"
+                          length="120"
                           name="NOMBRE" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DNI]"
@@ -4380,7 +2782,7 @@
           DTS:refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{71215f22-143f-4a70-8d15-b9278bd19f55}"
+          DTS:DTSID="{D9F1CEF2-5BF8-423B-82F4-67160D5B83A5}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Carga DIM_PROMOTOR"
@@ -5230,7 +3632,7 @@
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      connectionManagerRefId="Project.ConnectionManagers[SQLSERVER.STAGE_VENTAS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -5356,7 +3758,7 @@
           DTS:refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{d1709dca-ed43-467d-9d86-875184e9171a}"
+          DTS:DTSID="{4D3EBBDF-BEC7-49AA-B04E-BB9B443899AE}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Carga DIM_TIPOPAGO"
@@ -6102,7 +4504,7 @@
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Connections[OleDbConnection]"
                       connectionManagerID="{447FE81E-8B87-40B3-99B6-7388B6A76550}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[LOCALHOST.STAGE_VENTAS.sa]"
+                      connectionManagerRefId="Project.ConnectionManagers[SQLSERVER.STAGE_VENTAS]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -6223,39 +4625,13 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{7C6FB83F-DB39-40D1-8E06-2EE504D07E48}"
-          DTS:ObjectName="{7C6FB83F-DB39-40D1-8E06-2EE504D07E48}"
+          DTS:DTSID="{FE2AB3A9-07EA-449D-BD2D-870305E3BCB8}"
+          DTS:ObjectName="{FE2AB3A9-07EA-449D-BD2D-870305E3BCB8}"
           DTS:ValueIndex="2"
           DTS:VariableName="User::SheetName" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
   </DTS:Executables>
-  <DTS:PrecedenceConstraints>
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción]"
-      DTS:CreationName=""
-      DTS:DTSID="{7EE1B2FC-9842-4638-87C8-455571E9E6DC}"
-      DTS:From="Package\Limpiar dimensiones"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción"
-      DTS:To="Package\Carga DIM_FECHA" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{21F86BBD-7137-4FDB-9A93-4DA9FCEAAD0D}"
-      DTS:From="Package\Limpiar dimensiones"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Para cada página del excel,,," />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{78A4415B-DA08-4EA4-A6AF-12D41FA6771F}"
-      DTS:From="Package\Limpiar dimensiones"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción 2"
-      DTS:To="Package\Carga DIM_HORA" />
-  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
 <!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
@@ -6267,451 +4643,40 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="166.4,41.6"
-          Id="Package\Carga DIM_FECHA"
-          TopLeft="955,377" />
-        <NodeLayout
-          Size="163.2,41.6"
-          Id="Package\Carga DIM_HORA"
-          TopLeft="1157,380" />
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Limpiar dimensiones"
-          TopLeft="822,242" />
-        <NodeLayout
-          Size="192,41.6"
+          Size="192,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA"
           TopLeft="316,39" />
         <NodeLayout
-          Size="176,41.6"
+          Size="176,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE"
           TopLeft="109,38" />
         <NodeLayout
-          Size="191.2,41.6"
+          Size="191,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR"
           TopLeft="107,110" />
         <NodeLayout
-          Size="185.6,41.6"
+          Size="186,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO"
           TopLeft="313,111" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="680.8,232.8"
-          Size="680.8,276"
+          PanelSize="681,233"
+          Size="681,276"
           Id="Package\Para cada página del excel,,,"
           TopLeft="140,372" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="909.5,284">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="128.5,93"
-              Start="0,0"
-              End="128.5,85.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,42.5"
-                    Point2="0,46.5"
-                    Point3="4,46.5" />
-                  <mssgle:LineSegment
-                    End="124.5,46.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="124.5,46.5"
-                    Point2="128.5,46.5"
-                    Point3="128.5,50.5" />
-                  <mssgle:LineSegment
-                    End="128.5,85.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="867.75,284">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-387.25,88"
-              Start="0,0"
-              End="-387.25,80.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.2138836772983" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.2138836772983"
-                    Point2="0,30.2138836772983"
-                    Point3="-4,30.2138836772983" />
-                  <mssgle:LineSegment
-                    End="-383.25,30.2138836772983" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-383.25,30.2138836772983"
-                    Point2="-387.25,30.2138836772983"
-                    Point3="-387.25,34.2138836772983" />
-                  <mssgle:LineSegment
-                    End="-387.25,80.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="951.25,284">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="287.25,96"
-              Start="0,0"
-              End="287.25,88.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.9606003752345" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.9606003752345"
-                    Point2="0,32.9606003752345"
-                    Point3="4,32.9606003752345" />
-                  <mssgle:LineSegment
-                    End="283.25,32.9606003752345" />
-                  <mssgle:CubicBezierSegment
-                    Point1="283.25,32.9606003752345"
-                    Point2="287.25,32.9606003752345"
-                    Point3="287.25,36.9606003752345" />
-                  <mssgle:LineSegment
-                    End="287.25,88.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <AnnotationLayout
+          Text="FLUJO DE DATOS PARA AÑO 2024&#xA;"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="209,56"
+          Id="96f11228-ed45-43c7-87a3-1ec31cf4e7d3"
+          TopLeft="413,219" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
-  <TaskHost
-    design-time-name="Package\Carga DIM_FECHA">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139.2,41.6"
-          Id="Package\Carga DIM_FECHA\Excel Source"
-          TopLeft="267,67" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga DIM_FECHA\OLE DB Destination"
-          TopLeft="629,424" />
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Carga DIM_FECHA\Derived Column"
-          TopLeft="363,175" />
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Carga DIM_FECHA\Data Conversion"
-          TopLeft="476,294" />
-        <EdgeLayout
-          Id="Package\Carga DIM_FECHA.Paths[Excel Source Output]"
-          TopLeft="336.5,109">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="103.5,66"
-              Start="0,0"
-              End="103.5,58.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29"
-                    Point2="0,33"
-                    Point3="4,33" />
-                  <mssgle:LineSegment
-                    End="99.5,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="99.5,33"
-                    Point2="103.5,33"
-                    Point3="103.5,37" />
-                  <mssgle:LineSegment
-                    End="103.5,58.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga DIM_FECHA.Paths[Derived Column Output]"
-          TopLeft="440,217">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="114,77"
-              Start="0,0"
-              End="114,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="110,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="110,38.5"
-                    Point2="114,38.5"
-                    Point3="114,42.5" />
-                  <mssgle:LineSegment
-                    End="114,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga DIM_FECHA.Paths[Data Conversion Output]"
-          TopLeft="554,336">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="160.5,88"
-              Start="0,0"
-              End="160.5,80.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40"
-                    Point2="0,44"
-                    Point3="4,44" />
-                  <mssgle:LineSegment
-                    End="156.5,44" />
-                  <mssgle:CubicBezierSegment
-                    Point1="156.5,44"
-                    Point2="160.5,44"
-                    Point3="160.5,48" />
-                  <mssgle:LineSegment
-                    End="160.5,80.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga DIM_FECHA\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga DIM_FECHA\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Carga DIM_HORA">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="139.2,41.6"
-          Id="Package\Carga DIM_HORA\Excel Source"
-          TopLeft="333,69" />
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Carga DIM_HORA\Derived Column"
-          TopLeft="454,239" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Carga DIM_HORA\OLE DB Destination"
-          TopLeft="386,497" />
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Carga DIM_HORA\Data Conversion"
-          TopLeft="319,346" />
-        <EdgeLayout
-          Id="Package\Carga DIM_HORA.Paths[Excel Source Output]"
-          TopLeft="402.5,111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="128.5,128"
-              Start="0,0"
-              End="128.5,120.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,60"
-                    Point2="0,64"
-                    Point3="4,64" />
-                  <mssgle:LineSegment
-                    End="124.5,64" />
-                  <mssgle:CubicBezierSegment
-                    Point1="124.5,64"
-                    Point2="128.5,64"
-                    Point3="128.5,68" />
-                  <mssgle:LineSegment
-                    End="128.5,120.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga DIM_HORA.Paths[Derived Column Output]"
-          TopLeft="531,281">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-134,65"
-              Start="0,0"
-              End="-134,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.5"
-                    Point2="0,32.5"
-                    Point3="-4,32.5" />
-                  <mssgle:LineSegment
-                    End="-130,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-130,32.5"
-                    Point2="-134,32.5"
-                    Point3="-134,36.5" />
-                  <mssgle:LineSegment
-                    End="-134,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga DIM_HORA.Paths[Data Conversion Output]"
-          TopLeft="397,388">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="74.5,109"
-              Start="0,0"
-              End="74.5,101.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,50.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,50.5"
-                    Point2="0,54.5"
-                    Point3="4,54.5" />
-                  <mssgle:LineSegment
-                    End="70.5,54.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="70.5,54.5"
-                    Point2="74.5,54.5"
-                    Point3="74.5,58.5" />
-                  <mssgle:LineSegment
-                    End="74.5,101.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga DIM_HORA\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga DIM_HORA\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA">
     <LayoutInfo>
@@ -6844,7 +4809,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6878,7 +4845,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6912,7 +4881,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6945,27 +4916,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Derived Column"
           TopLeft="448,327" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Conditional Split"
           TopLeft="237,189" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination"
           TopLeft="835,637" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion"
           TopLeft="574,431" />
         <EdgeLayout
@@ -7071,7 +5042,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7105,7 +5078,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7139,7 +5114,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7302,7 +5279,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7324,7 +5303,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7346,7 +5327,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7380,7 +5363,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
