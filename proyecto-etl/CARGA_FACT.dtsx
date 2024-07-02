@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="130"
-  DTS:VersionGUID="{196ACA33-6635-445B-A1C1-1630A378788F}">
+  DTS:VersionBuild="133"
+  DTS:VersionGUID="{0B2230EE-8526-4087-B763-7296A1EB0116}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4008,7 +4008,7 @@ where [refTable].[PK_FECHA] = ?</property>
                     <output
                       refId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       exclusionGroup="1"
                       name="Lookup Match Output"
                       synchronousInputId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha.Inputs[Lookup Input]">
@@ -9937,7 +9937,7 @@ where [refTable].[PK_FECHA] = ?</property>
                     <output
                       refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup fecha.Outputs[Lookup Match Output]"
                       errorOrTruncationOperation="Lookup"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       exclusionGroup="1"
                       name="Lookup Match Output"
                       synchronousInputId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup fecha.Inputs[Lookup Input]">
@@ -12329,17 +12329,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="160,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor"
+          TopLeft="375,515" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria"
+          TopLeft="208,617" />
+        <NodeLayout
           Size="215,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino"
           TopLeft="905,626" />
         <NodeLayout
-          Size="157,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup tipopago"
-          TopLeft="546,625" />
+          Size="193,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Remover filas no válidas"
+          TopLeft="69,172" />
         <NodeLayout
-          Size="147,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup cliente"
-          TopLeft="67,517" />
+          Size="231,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Preparación de vars para lookup"
+          TopLeft="67,284" />
         <NodeLayout
           Size="219,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Cleansing de division de pago"
@@ -12349,13 +12357,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Parseo de types"
           TopLeft="894,286" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Obtencion de fecha"
-          TopLeft="687,286" />
+          Size="157,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup tipopago"
+          TopLeft="546,625" />
         <NodeLayout
-          Size="142,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha"
-          TopLeft="742,520" />
+          Size="147,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup cliente"
+          TopLeft="67,517" />
         <NodeLayout
           Size="233,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX)"
@@ -12365,17 +12373,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Base de datos LAOS 2023"
           TopLeft="76,54" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor"
-          TopLeft="375,515" />
+          Size="142,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha"
+          TopLeft="742,520" />
         <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria"
-          TopLeft="208,617" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Remover filas no válidas"
-          TopLeft="69,172" />
+          Size="170,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Obtencion de fecha"
+          TopLeft="687,286" />
         <NodeLayout
           Size="209,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Conversion de hora a string"
@@ -12384,10 +12388,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Size="246,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Artificio de conversion alfanumerica"
           TopLeft="370,286" />
-        <NodeLayout
-          Size="231,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Preparación de vars para lookup"
-          TopLeft="67,284" />
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Data Conversion Output]"
+          TopLeft="971,328">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-369.5,69"
+              Start="0,0"
+              End="-369.5,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.5"
+                    Point2="0,34.5"
+                    Point3="-4,34.5" />
+                  <mssgle:LineSegment
+                    End="-365.5,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-365.5,34.5"
+                    Point2="-369.5,34.5"
+                    Point3="-369.5,38.5" />
+                  <mssgle:LineSegment
+                    End="-369.5,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[valido1]"
           TopLeft="935.5,213">
@@ -12784,43 +12818,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Data Conversion Output]"
-          TopLeft="971,328">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-369.5,69"
-              Start="0,0"
-              End="-369.5,61.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.5"
-                    Point2="0,34.5"
-                    Point3="-4,34.5" />
-                  <mssgle:LineSegment
-                    End="-365.5,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-365.5,34.5"
-                    Point2="-369.5,34.5"
-                    Point3="-369.5,38.5" />
-                  <mssgle:LineSegment
-                    End="-369.5,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino">
     <Properties>
@@ -12840,7 +12860,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -12858,12 +12878,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha">
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup cliente">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -12876,22 +12896,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor">
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -13426,6 +13436,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup fecha">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
