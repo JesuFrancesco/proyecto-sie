@@ -11,735 +11,10 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS_2024"
   DTS:PackageType="5"
-  DTS:VersionBuild="322"
-  DTS:VersionGUID="{EB2973E1-6964-42C9-BF4E-A38282489512}">
+  DTS:VersionBuild="324"
+  DTS:VersionGUID="{4A1CCDF9-A168-4EE6-A870-5A6DAB6A57CD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Conector OLE.DB 2024]"
-      DTS:CreationName="ADO.NET:OLEDB"
-      DTS:DTSID="{17E58BE3-2128-4CF3-A6CB-C6277D493F7F}"
-      DTS:ObjectName="Conector OLE.DB 2024">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=C:\Users\h04433\Downloads\proyecto-sie-main\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ERROR_CATEGORIA]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{4D7464BE-FC46-4CA7-9EEF-821CCA76C315}"
-      DTS:ObjectName="ERROR_CATEGORIA">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="10250"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_categoria.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="init"
-              DTS:DTSID="{E27F4C04-F773-4D69-94F3-067F473F4399}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{1ECA2D0F-BCFC-487A-933C-0E77E11FA7FB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{25AAFFCE-9960-4F47-9C67-A6EDBB809A33}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CATEGORIA"
-              DTS:DTSID="{6F61A792-BFB0-4177-8C6F-403A7A037A94}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="133"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{00448D68-526E-4881-ADC6-62F5780B6704}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{165A7E5F-7DC8-4C02-AE14-0275753AA400}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{F57D4FE5-F7AC-4DAB-ABF0-F116037E6E70}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{DDEAA9A1-F09D-4668-BE91-4C2A3FF16B80}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{B5EA7341-8737-4875-BFF0-4EEA6B2A97FF}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ERROR_CLIENTE]"
-      DTS:CreationName="FLATFILE"
-      DTS:Description="output para filas no validas"
-      DTS:DTSID="{0111FD31-ADC6-4885-8620-D712C73B161A}"
-      DTS:ObjectName="ERROR_CLIENTE">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="10250"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_cliente.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="init"
-              DTS:DTSID="{955F71E0-677E-4073-A754-B4A69FD7C722}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DNI"
-              DTS:DTSID="{6BC76C92-9378-4511-ABA0-BA25C84D9076}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="N°"
-              DTS:DTSID="{DC3CCEE7-3A7D-4C34-B5BE-B0D8EECBAE08}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="F2"
-              DTS:DTSID="{031E0EFA-C3D8-4772-914F-B01E69CDAA7C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_DNI"
-              DTS:DTSID="{297F6C74-B9B3-4E71-A26E-81CCE0241CA4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_NOMBRE"
-              DTS:DTSID="{882F72BC-1C36-40CE-9250-2D3202414A5F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{7D785706-4B58-4B74-B24D-B9C6362D4A46}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_USU_CREACION"
-              DTS:DTSID="{5A7DA246-E275-4CF3-BD4B-996C56A6EF19}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{B21A3206-1B02-4A9B-8EC9-FE3CD81E1DA0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{81D1AE6A-340C-4064-806F-C80F1293BAF0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="133"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{324CDCA5-D7E3-45F7-92C1-817F1AD15238}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{66FA4F5D-AA39-44F1-A9A4-1D0421691BF5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{039D733E-E183-4DBB-BC52-E8E1B27E543F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{755DE291-7D65-437B-8931-9C77EEEE9C78}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ERROR_FACT_VENTAS]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{FE25F3B5-EB73-4136-8513-0C3CFE22B57F}"
-      DTS:ObjectName="ERROR_FACT_VENTAS">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="10250"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_fact_ventas.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="init"
-              DTS:DTSID="{F30F5CAA-AABA-4EDC-90E1-204A3E1BE87C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DNI"
-              DTS:DTSID="{BB0B7045-C302-4976-AEB6-942B50BA8B62}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Indice"
-              DTS:DTSID="{E9AD8C82-0A46-47B7-A8AB-A88B1A6D0A06}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Categoria"
-              DTS:DTSID="{5B9486A3-6E3E-4174-9A72-EA8D1BED449E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Pago"
-              DTS:DTSID="{DA8F807A-ABEE-49E4-8AB2-84ABD99CB765}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Promotor"
-              DTS:DTSID="{F2275B0A-9ADF-4C36-937B-E8611A502284}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="HoraInicio"
-              DTS:DTSID="{748EE6F2-7B94-4B78-881B-3E6F800D357D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="HoraFin"
-              DTS:DTSID="{6B7BE302-EDA3-402E-BD23-B84C3A5B10DE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="DummyColumn1"
-              DTS:DTSID="{2290F70C-78F0-4CA9-B213-8634255FE1D6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TipoDePago"
-              DTS:DTSID="{82D342F5-BCA5-484D-86A8-184C28DC2E97}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="MontoPago"
-              DTS:DTSID="{7D957C60-A142-46E0-8F7D-26EF992DEA54}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_DNI"
-              DTS:DTSID="{289CA8FC-B73A-4231-9188-EDDF4F71EFB7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_CATEGORIA"
-              DTS:DTSID="{6195B913-4DAC-465A-8135-3B1BAF189AA9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_PROMOTOR"
-              DTS:DTSID="{86F8176A-CF51-404C-A17E-24002DD1F0FD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{B414BA78-F215-4772-8BF6-E80B56B3E659}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{A043AE96-742E-4D82-9B55-DE80D5D3BC82}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_USU_CREACIOn"
-              DTS:DTSID="{7219A280-6834-4707-B394-BFC56553A826}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{B8B3BCF0-05E8-4EE3-9E91-D27196013124}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{58E5D15B-88DC-4F3C-9D3F-F00CDBA4D64F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{94968A78-930E-4996-9A3B-BA13EED60842}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{2E97B47D-19B5-43C5-9EFF-34FC9879861C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="133"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{0B72CD6D-E2BE-4490-947C-2B7006BF1F06}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{0F86D05F-49C8-4F50-9273-AD85E0651764}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PK_CLIENTE"
-              DTS:DTSID="{37A7736E-D119-48A9-897F-8F250F4BD8B7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PK_CATEGORIA"
-              DTS:DTSID="{BB19B11A-1FF9-4413-8BF5-53B0FDB283A0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PK_PROMOTOR"
-              DTS:DTSID="{42416C1F-09F0-4587-A3F6-43B6D7B16FAA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PK_TIPOPAGO"
-              DTS:DTSID="{7FCFEAFD-45D2-427B-B84D-B1A9FA31042C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{6D06FEEB-9BE0-4E21-B0B3-B8981EF2CAA1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{C8725CA1-C474-41F4-AF3F-278B71609128}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="F2"
-              DTS:DTSID="{E3EDA300-5C25-4352-BC46-333C4F93518F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{4224F2C8-108F-4E41-87F3-5E709C92B75D}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ERROR_PROMOTOR]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{80E97051-10C8-402B-9E35-40628356BE33}"
-      DTS:ObjectName="ERROR_PROMOTOR">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="10250"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_promotor.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="PROMOTOR"
-              DTS:DTSID="{675E9652-A2F4-4D5D-A8E2-DC849F48E426}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{3FBAC3F6-E820-408F-9A8E-264C67D0B2BA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{565013D4-F446-4E04-9AE1-05B66E25926C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="133"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{A98FCB0F-8EB2-4D07-9A77-87DB3815E4ED}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{768C3585-C69B-4FAA-A059-3C618F881480}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{A6320CAC-36C6-4D58-ADB5-E4682B596991}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{F4FB2558-4ACB-4277-80E0-0E06577467F9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{5ABD88D1-F2D3-43B5-8117-1CE6CE72CD5A}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[ERROR_TIPOPAGO]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F6A1407D-F4D1-4A49-B76C-CDEA27E2FBBE}"
-      DTS:ObjectName="ERROR_TIPOPAGO">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="10250"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_tipopago.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="255"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="init"
-              DTS:DTSID="{70324636-EEE6-4A14-848B-E76C5EA4C230}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{77383B92-C018-470B-A4F9-135E1854467F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{5BD99ACB-DE14-45DB-9B8E-C0B3ED530181}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{94DAD335-CC2C-4275-BE42-F69065410B97}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="133"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{F72C496E-9C86-474E-BB46-EFA6C19CA5D8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="11"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{2F9AE29E-AC31-4150-B965-961DC5FFA7F5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="8"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{3DC09DD7-4F17-48A0-9D11-A53F8C356851}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{CB32506E-D7FD-4ECD-8DCC-539C2243C518}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{57C69B3B-1141-4C07-AD21-6BC9BAC186E3}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -766,7 +41,7 @@
         DTS:ObjectName="{E030DDF2-9F00-48F0-AECD-081BCCE932DA}">
         <DTS:ObjectData>
           <FEESchemaRowset
-            Connection="Conector OLE.DB 2024"
+            Connection="OLEDB_2024"
             Schema="c8b52229-5cf3-11ce-ade5-00aa0044773d" />
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
@@ -1379,146 +654,6 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination"
-                  componentClassID="Microsoft.FlatFileDestination"
-                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Flat File Destination"
-                  localeId="10250"
-                  name="Flat File Destination"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Specifies whether the data will overwrite or append to the destination file."
-                      name="Overwrite">true</property>
-                    <property
-                      dataType="System.Null"
-                      description="Specifies the text to write to the destination file before any data is written."
-                      expressionType="Notify"
-                      name="Header" />
-                    <property
-                      dataType="System.Boolean"
-                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
-                      name="EscapeQualifier">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[ERROR_CATEGORIA]"
-                      connectionManagerRefId="Package.ConnectionManagers[ERROR_CATEGORIA]"
-                      name="FlatFileConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input]"
-                      hasSideEffects="true"
-                      name="Flat File Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[FEC_CREACION]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[USU_CREACION]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[D_CATEGORIA]"
-                          cachedDataType="wstr"
-                          cachedLength="255"
-                          cachedName="D_CATEGORIA"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CATEGORIA]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column.Outputs[Derived Column Output].Columns[D_CATEGORIA]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_FEC_CREACION]"
-                          cachedDataType="dbDate"
-                          cachedName="ETL_FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_USU_CREACION]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="11"
-                          cachedName="ETL_USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_CATEGORIA]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="25"
-                          cachedName="ETL_CATEGORIA"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_CATEGORIA]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_CATEGORIA]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
-                          cachedDataType="i4"
-                          cachedName="ErrorCode"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
-                          cachedDataType="i4"
-                          cachedName="ErrorColumn"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
-                          dataType="dbTimeStamp"
-                          name="FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
-                          dataType="wstr"
-                          length="11"
-                          name="USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CATEGORIA]"
-                          dataType="wstr"
-                          length="255"
-                          name="CATEGORIA" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          dataType="dbDate"
-                          name="ETL_FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          codePage="1252"
-                          dataType="str"
-                          length="11"
-                          name="ETL_USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_CATEGORIA]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="ETL_CATEGORIA" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          dataType="i4"
-                          name="ErrorCode" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          dataType="i4"
-                          name="ErrorColumn" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[init]"
-                          dataType="wstr"
-                          length="255"
-                          name="init" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                </component>
-                <component
                   refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -1586,7 +721,7 @@
                     <input
                       refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="IgnoreFailure"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
@@ -1681,11 +816,6 @@
                   endId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Conditional Split.Inputs[Conditional Split Input]"
                   name="Excel Source Output"
                   startId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source.Outputs[Excel Source Output]" />
-                <path
-                  refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA.Paths[OLE DB Destination Error Output]"
-                  endId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination.Inputs[Flat File Destination Input]"
-                  name="OLE DB Destination Error Output"
-                  startId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
                 <path
                   refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA.Paths[valido]"
                   endId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column.Inputs[Derived Column Input]"
@@ -2384,174 +1514,6 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination"
-                  componentClassID="Microsoft.FlatFileDestination"
-                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Flat File Destination"
-                  localeId="10250"
-                  name="Flat File Destination"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Specifies whether the data will overwrite or append to the destination file."
-                      name="Overwrite">true</property>
-                    <property
-                      dataType="System.Null"
-                      description="Specifies the text to write to the destination file before any data is written."
-                      expressionType="Notify"
-                      name="Header" />
-                    <property
-                      dataType="System.Boolean"
-                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
-                      name="EscapeQualifier">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[ERROR_CLIENTE]"
-                      connectionManagerRefId="Package.ConnectionManagers[ERROR_CLIENTE]"
-                      name="FlatFileConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input]"
-                      hasSideEffects="true"
-                      name="Flat File Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[N°]"
-                          cachedDataType="wstr"
-                          cachedLength="255"
-                          cachedName="N°"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[N°]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source.Outputs[Excel Source Output].Columns[N°]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[F2]"
-                          cachedDataType="wstr"
-                          cachedLength="255"
-                          cachedName="F2"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F2]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source.Outputs[Excel Source Output].Columns[F2]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_DNI]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="8"
-                          cachedName="ETL_DNI"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_DNI]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_DNI]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_NOMBRE]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="ETL_NOMBRE"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_NOMBRE]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_NOMBRE]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_FEC_CREACION]"
-                          cachedDataType="dbDate"
-                          cachedName="ETL_FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_USU_CREACION]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="11"
-                          cachedName="ETL_USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
-                          cachedDataType="i4"
-                          cachedName="ErrorCode"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
-                          cachedDataType="i4"
-                          cachedName="ErrorColumn"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[N°]"
-                          dataType="wstr"
-                          length="255"
-                          name="N°" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F2]"
-                          dataType="wstr"
-                          length="255"
-                          name="F2" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_DNI]"
-                          codePage="1252"
-                          dataType="str"
-                          length="8"
-                          name="ETL_DNI" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_NOMBRE]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="ETL_NOMBRE" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          dataType="dbDate"
-                          name="ETL_FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          codePage="1252"
-                          dataType="str"
-                          length="11"
-                          name="ETL_USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          dataType="i4"
-                          name="ErrorCode" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          dataType="i4"
-                          name="ErrorColumn" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[init]"
-                          dataType="wstr"
-                          length="255"
-                          name="init" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DNI]"
-                          dataType="wstr"
-                          length="255"
-                          name="DNI" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_DNI]"
-                          dataType="wstr"
-                          length="8"
-                          name="D_DNI" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_NOMBRE]"
-                          dataType="wstr"
-                          length="255"
-                          name="D_NOMBRE" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_FEC_CREACION]"
-                          dataType="dbTimeStamp"
-                          name="D_FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_USU_CREACION]"
-                          dataType="wstr"
-                          length="11"
-                          name="D_USU_CREACION" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                </component>
-                <component
                   refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -2619,7 +1581,7 @@
                     <input
                       refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="IgnoreFailure"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
@@ -2728,11 +1690,6 @@
                   endId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Conditional Split.Inputs[Conditional Split Input]"
                   name="Excel Source Output"
                   startId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source.Outputs[Excel Source Output]" />
-                <path
-                  refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE.Paths[OLE DB Destination Error Output]"
-                  endId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination.Inputs[Flat File Destination Input]"
-                  name="OLE DB Destination Error Output"
-                  startId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
                 <path
                   refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE.Paths[valido]"
                   endId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Derived Column.Inputs[Derived Column Input]"
@@ -3402,141 +2359,6 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination"
-                  componentClassID="Microsoft.FlatFileDestination"
-                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Flat File Destination"
-                  localeId="10250"
-                  name="Flat File Destination"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Specifies whether the data will overwrite or append to the destination file."
-                      name="Overwrite">true</property>
-                    <property
-                      dataType="System.Null"
-                      description="Specifies the text to write to the destination file before any data is written."
-                      expressionType="Notify"
-                      name="Header" />
-                    <property
-                      dataType="System.Boolean"
-                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
-                      name="EscapeQualifier">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[ERROR_PROMOTOR]"
-                      connectionManagerRefId="Package.ConnectionManagers[ERROR_PROMOTOR]"
-                      name="FlatFileConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input]"
-                      hasSideEffects="true"
-                      name="Flat File Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[FEC_CREACION]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[USU_CREACION]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_FEC_CREACION]"
-                          cachedDataType="dbDate"
-                          cachedName="ETL_FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_USU_CREACION]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="11"
-                          cachedName="ETL_USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
-                          cachedDataType="i4"
-                          cachedName="ErrorCode"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
-                          cachedDataType="i4"
-                          cachedName="ErrorColumn"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_PROMOTOR]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="ETL_PROMOTOR"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_PROMOTOR]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_PROMOTOR]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].Columns[D_PROMOTOR]"
-                          cachedDataType="wstr"
-                          cachedLength="255"
-                          cachedName="D_PROMOTOR"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PROMOTOR]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Outputs[Derived Column Output].Columns[D_PROMOTOR]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
-                          dataType="dbTimeStamp"
-                          name="FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
-                          dataType="wstr"
-                          length="11"
-                          name="USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          dataType="dbDate"
-                          name="ETL_FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          codePage="1252"
-                          dataType="str"
-                          length="11"
-                          name="ETL_USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          dataType="i4"
-                          name="ErrorCode" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          dataType="i4"
-                          name="ErrorColumn" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_PROMOTOR]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="ETL_PROMOTOR" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PROMOTOR]"
-                          dataType="wstr"
-                          length="255"
-                          name="PROMOTOR" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                </component>
-                <component
                   refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -3604,7 +2426,7 @@
                     <input
                       refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="IgnoreFailure"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
@@ -3704,11 +2526,6 @@
                   endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split.Inputs[Conditional Split Input]"
                   name="Excel Source Output"
                   startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Outputs[Excel Source Output]" />
-                <path
-                  refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[OLE DB Destination Error Output]"
-                  endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination.Inputs[Flat File Destination Input]"
-                  name="OLE DB Destination Error Output"
-                  startId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
                 <path
                   refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[valido]"
                   endId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column.Inputs[Derived Column Input]"
@@ -4269,146 +3086,6 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination"
-                  componentClassID="Microsoft.FlatFileDestination"
-                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-                  description="Flat File Destination"
-                  localeId="10250"
-                  name="Flat File Destination"
-                  version="1">
-                  <properties>
-                    <property
-                      dataType="System.Boolean"
-                      description="Specifies whether the data will overwrite or append to the destination file."
-                      name="Overwrite">true</property>
-                    <property
-                      dataType="System.Null"
-                      description="Specifies the text to write to the destination file before any data is written."
-                      expressionType="Notify"
-                      name="Header" />
-                    <property
-                      dataType="System.Boolean"
-                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
-                      name="EscapeQualifier">false</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[ERROR_TIPOPAGO]"
-                      connectionManagerRefId="Package.ConnectionManagers[ERROR_TIPOPAGO]"
-                      name="FlatFileConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input]"
-                      hasSideEffects="true"
-                      name="Flat File Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[FEC_CREACION]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[USU_CREACION]"
-                          cachedDataType="wstr"
-                          cachedLength="11"
-                          cachedName="USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_FEC_CREACION]"
-                          cachedDataType="dbDate"
-                          cachedName="ETL_FEC_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_FEC_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_USU_CREACION]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="11"
-                          cachedName="ETL_USU_CREACION"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_USU_CREACION]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
-                          cachedDataType="i4"
-                          cachedName="ErrorCode"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
-                          cachedDataType="i4"
-                          cachedName="ErrorColumn"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[ETL_TIPOPAGO]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="8"
-                          cachedName="ETL_TIPOPAGO"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_TIPOPAGO]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion.Outputs[Data Conversion Output].Columns[ETL_TIPOPAGO]" />
-                        <inputColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].Columns[D_TIPOPAGO]"
-                          cachedDataType="wstr"
-                          cachedLength="8"
-                          cachedName="D_TIPOPAGO"
-                          externalMetadataColumnId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_TIPOPAGO]"
-                          lineageId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Outputs[Derived Column Output].Columns[D_TIPOPAGO]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FEC_CREACION]"
-                          dataType="dbTimeStamp"
-                          name="FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USU_CREACION]"
-                          dataType="wstr"
-                          length="11"
-                          name="USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_FEC_CREACION]"
-                          dataType="dbDate"
-                          name="ETL_FEC_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_USU_CREACION]"
-                          codePage="1252"
-                          dataType="str"
-                          length="11"
-                          name="ETL_USU_CREACION" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
-                          dataType="i4"
-                          name="ErrorCode" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
-                          dataType="i4"
-                          name="ErrorColumn" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[init]"
-                          dataType="wstr"
-                          length="255"
-                          name="init" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[D_TIPOPAGO]"
-                          dataType="wstr"
-                          length="8"
-                          name="D_TIPOPAGO" />
-                        <externalMetadataColumn
-                          refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ETL_TIPOPAGO]"
-                          codePage="1252"
-                          dataType="str"
-                          length="8"
-                          name="ETL_TIPOPAGO" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                </component>
-                <component
                   refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -4476,7 +3153,7 @@
                     <input
                       refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Inputs[OLE DB Destination Input]"
                       errorOrTruncationOperation="Insert"
-                      errorRowDisposition="RedirectRow"
+                      errorRowDisposition="IgnoreFailure"
                       hasSideEffects="true"
                       name="OLE DB Destination Input">
                       <inputColumns>
@@ -4572,11 +3249,6 @@
                   name="Excel Source Output"
                   startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Outputs[Excel Source Output]" />
                 <path
-                  refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[OLE DB Destination Error Output]"
-                  endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination.Inputs[Flat File Destination Input]"
-                  name="OLE DB Destination Error Output"
-                  startId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination.Outputs[OLE DB Destination Error Output]" />
-                <path
                   refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[valido]"
                   endId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column.Inputs[Derived Column Input]"
                   name="valido"
@@ -4589,53 +3261,53 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{89C16D2A-409E-4195-A87B-886A11025720}"
-          DTS:ObjectName="{89C16D2A-409E-4195-A87B-886A11025720}"
+          DTS:DTSID="{6096B840-6E19-4B64-9043-525C93FFB929}"
+          DTS:ObjectName="{6096B840-6E19-4B64-9043-525C93FFB929}"
           DTS:ValueIndex="2"
           DTS:VariableName="User::SheetName_2024" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
-<!--If you manually edit this section and make a mistake, you can delete it. -->
-<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
 <Objects
   Version="8">
-  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="192,42"
+          Size="192,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA"
           TopLeft="316,39" />
         <NodeLayout
-          Size="176,42"
+          Size="176,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE"
           TopLeft="109,38" />
         <NodeLayout
-          Size="191,42"
+          Size="191.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR"
           TopLeft="107,110" />
         <NodeLayout
-          Size="186,42"
+          Size="185.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO"
           TopLeft="313,111" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="681,233"
-          Size="681,276"
+          PanelSize="680.8,232.8"
+          Size="680.8,276"
           Id="Package\Para cada página del excel,,,"
           TopLeft="140,372" />
         <AnnotationLayout
           Text="FLUJO DE DATOS PARA AÑO 2024&#xA;"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="209,56"
+          Size="208.8,56"
           Id="96f11228-ed45-43c7-87a3-1ec31cf4e7d3"
           TopLeft="413,219" />
       </GraphLayout>
@@ -4647,27 +3319,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="172,42"
-          Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination"
-          TopLeft="886,656" />
-        <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column"
           TopLeft="449,327" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Conditional Split"
           TopLeft="237,189" />
         <EdgeLayout
@@ -4703,42 +3371,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="92.01896484375,53,27.4620703125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA.Paths[OLE DB Destination Error Output]"
-          TopLeft="765.5,579">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="206.5,77"
-              Start="0,0"
-              End="206.5,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="202.5,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="202.5,38.5"
-                    Point2="206.5,38.5"
-                    Point3="206.5,42.5" />
-                  <mssgle:LineSegment
-                    End="206.5,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="30.04109375,43.5,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -4874,27 +3506,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Derived Column"
           TopLeft="448,327" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Conditional Split"
           TopLeft="237,189" />
         <NodeLayout
-          Size="172,42"
-          Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Flat File Destination"
-          TopLeft="835,637" />
-        <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Data Conversion"
           TopLeft="574,431" />
         <EdgeLayout
@@ -4930,42 +3558,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="91.51896484375,53,27.4620703125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,,\Carga DIM_CLIENTE.Paths[OLE DB Destination Error Output]"
-          TopLeft="765.5,579">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="155.5,58"
-              Start="0,0"
-              End="155.5,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="4,29" />
-                  <mssgle:LineSegment
-                    End="151.5,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="151.5,29"
-                    Point2="155.5,29"
-                    Point3="155.5,33" />
-                  <mssgle:LineSegment
-                    End="155.5,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="4.54109375,34,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -5101,31 +3693,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination"
-          TopLeft="886,656" />
-        <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column"
           TopLeft="337,327" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split"
           TopLeft="237,190" />
         <NodeLayout
-          Size="246,42"
+          Size="246.4,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Artificio de conversion alfanumérica"
           TopLeft="522,327" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source"
           TopLeft="114,71" />
         <EdgeLayout
@@ -5161,42 +3749,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="36.01896484375,52.5,27.4620703125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR.Paths[OLE DB Destination Error Output]"
-          TopLeft="765.6,578.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="206.4,77.4"
-              Start="0,0"
-              End="206.4,69.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.7"
-                    Point2="0,38.7"
-                    Point3="4,38.7" />
-                  <mssgle:LineSegment
-                    End="202.4,38.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="202.4,38.7"
-                    Point2="206.4,38.7"
-                    Point3="206.4,42.7" />
-                  <mssgle:LineSegment
-                    End="206.4,69.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="29.99109375,43.7,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -5342,27 +3894,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,42"
-          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Flat File Destination"
-          TopLeft="886,656" />
-        <NodeLayout
-          Size="154,42"
+          Size="153.6,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Derived Column"
           TopLeft="448,327" />
         <NodeLayout
-          Size="156,42"
+          Size="156,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="171,42"
+          Size="171.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="155,42"
+          Size="155.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Conditional Split"
           TopLeft="237,190" />
         <NodeLayout
-          Size="139,42"
+          Size="139.2,41.6"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source"
           TopLeft="112,71" />
         <EdgeLayout
@@ -5398,42 +3946,6 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="91.51896484375,52.5,27.4620703125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[OLE DB Destination Error Output]"
-          TopLeft="765.5,579">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="206.5,77"
-              Start="0,0"
-              End="206.5,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="202.5,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="202.5,38.5"
-                    Point2="206.5,38.5"
-                    Point3="206.5,42.5" />
-                  <mssgle:LineSegment
-                    End="206.5,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="30.04109375,43.5,146.4178125,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

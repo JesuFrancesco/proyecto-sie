@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="OLEDB_2023"
+  DTS:DTSID="{A4ADED2C-A590-422C-8991-3C52F7EF83E3}"
+  DTS:CreationName="ADO.NET:System.Data.OleDb.OleDbConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

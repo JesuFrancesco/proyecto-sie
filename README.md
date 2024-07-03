@@ -31,24 +31,22 @@ Grupo 4 - Integrantes:
 3. Abrir la solución del [proyecto](./proyecto-etl/proyecto-etl.sln) con Visual Studio 2022 (SSIS)
 
 4. Configurar las siguientes conexiones:
-- OLEDB para SQL Server:
-  - Usar la base datos SQL Server previamente creada
+- Excel
+  - [Excel de OLTP_VENTAS_2023](./static/cleansing_laos_ventas_2023.xlsx)
+  - [Excel de OLTP_VENTAS_2024](./static/cleansing_laos_ventas_2024.xlsx)
+  - [Excel de DIM_FECHA](./seeders/dim_fecha.xlsx)
+  - [Excel de DIM_HORA](./seeders/dim_hora.xlsx)
+- OLEDB_*:
+  - Cambiar la dirección del Seridor o Filename por los excels OLTP correspondientes
 
+5. Creacion de conexiones
 - OLEDB para Excel
-  - Clic derecho en bucle for each > Editar > Colección > Conexión > Nueva Conexión > Nueva...
+  - Clic derecho en bucle for each > Editar > Colección > Conexión > OLEDB_2023 o OLEDB_2024
   - Proveedores .NET de OLEDB > Microsoft Office 16.0 Access Database Engine...
     - Pegar la ruta del excel de [OLTP_VENTAS](./static/cleansing_laos_ventas_2024.xlsx) y aceptar
   - Verificar si la variable SheetName ha sido asignada con el valor "2"
 
 - Conexiones con Excel
-  - [Excel de OLTP_VENTAS](./static/cleansing_laos_ventas_2024.xlsx)
-  - [Excel de DIM_FECHA](./seeders/dim_fecha.xlsx)
-  - [Excel de DIM_HORA](./seeders/dim_hora.xlsx)
-
-- Conexiones de texto plano
-  - [ERROR_CATEGORIA](./logs/error_categoria.txt)
-  - [ERROR_CLIENTE](./logs/error_cliente.txt)
-  - [ERROR_PROMOTOR](./logs/error_promotor.txt)
-  - [ERROR_TIPOPAGO](./logs/error_tipopago.txt)
+  - Poner ruta de excel
 
 5. Ejecutar primero el paquete OLTP_VENTAS y luego CARGA_FACT.
