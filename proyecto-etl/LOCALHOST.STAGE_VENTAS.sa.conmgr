@@ -8,10 +8,6 @@
       DTS:Retain="True"
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=LOCALHOST;User ID=sa;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-proyecto-etl-{447FE81E-8B87-40B3-99B6-7388B6A76550}LOCALHOST.STAGE_VENTAS.sa;">
-      <DTS:Password
-        DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvPFgzlIatkSUZNxD4lKH8wAAAAACAAAAAAAQZgAAAAEAACAAAACI5XS4XkJb6kU1Dy6deVlxT3/Iwev2f4Q5zsQ17ZA0hAAAAAAOgAAAAAIAACAAAABtPUsC1xZs8UtCu6FsMf0Pqrj8EphxBU4XkjKn9nhh2oAAAAASDahsoD+BiRICtfFn0IBNWmBKcNtqsz4bmfn/9qGKTzkz40rSmy4c+jfcG7Bl5qSctxqdc2zfVLdknrCx3TjNTNrxWToM91ZQCf6U3OuDvyXyN3M8kdSVfOicmQ1lfRt9+vlQEYyfUZNTjGThBsXKoJ/pDY5Iblfay4ucvAAWW0AAAACPCjcO0NnBJbN0fBiQLF59WVlax9r06BZP1nGMnG0xQCOTP272oo6IKKPLoKcE1X5ZKVXBegi9o91YpkhpPiMX</DTS:Password>
-    </DTS:ConnectionManager>
+      DTS:ConnectionString="Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-proyecto-etl-{447FE81E-8B87-40B3-99B6-7388B6A76550}LOCALHOST.STAGE_VENTAS.sa;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

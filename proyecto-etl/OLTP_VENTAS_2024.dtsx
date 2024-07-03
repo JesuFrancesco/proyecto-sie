@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS_2024"
   DTS:PackageType="5"
-  DTS:VersionBuild="311"
-  DTS:VersionGUID="{44CF80BC-A93F-427E-989C-FDEA6C058C4C}">
+  DTS:VersionBuild="322"
+  DTS:VersionGUID="{EB2973E1-6964-42C9-BF4E-A38282489512}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Conector OLE.DB 2024">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=&quot;E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx&quot;;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
+          DTS:ConnectionString="Data Source=C:\Users\h04433\Downloads\proyecto-sie-main\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 12.0;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -40,7 +40,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_categoria.txt">
+          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_categoria.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +49,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{984F2BA8-C08A-401A-9EF7-F256161D0159}"
+              DTS:DTSID="{E27F4C04-F773-4D69-94F3-067F473F4399}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{4669F831-C481-4E60-8DB1-4784AA8D695F}"
+              DTS:DTSID="{1ECA2D0F-BCFC-487A-933C-0E77E11FA7FB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{604B7453-584E-4EC4-8F4C-FFDF6F4FD3A7}"
+              DTS:DTSID="{25AAFFCE-9960-4F47-9C67-A6EDBB809A33}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CATEGORIA"
-              DTS:DTSID="{F9ECA674-CC6C-4A20-AEEF-1C6709E527E1}"
+              DTS:DTSID="{6F61A792-BFB0-4177-8C6F-403A7A037A94}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{D6F3DCC8-0D1E-4046-9F3F-A92C00A45E46}"
+              DTS:DTSID="{00448D68-526E-4881-ADC6-62F5780B6704}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{81A46B8B-1990-4105-A370-AD1E258E6551}"
+              DTS:DTSID="{165A7E5F-7DC8-4C02-AE14-0275753AA400}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{A2F68D76-5367-4B53-A884-15CEF33BDB74}"
+              DTS:DTSID="{F57D4FE5-F7AC-4DAB-ABF0-F116037E6E70}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{5FB6F92E-17F4-46BE-BF9B-BE1818406D65}"
+              DTS:DTSID="{DDEAA9A1-F09D-4668-BE91-4C2A3FF16B80}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -117,7 +117,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{4EFC6C71-4D20-4483-8D5D-47CCA8D89F0B}"
+              DTS:DTSID="{B5EA7341-8737-4875-BFF0-4EEA6B2A97FF}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -138,7 +138,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_cliente.txt">
+          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_cliente.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{3A0E3E20-B38D-4DE9-8252-46F262EBB7A8}"
+              DTS:DTSID="{955F71E0-677E-4073-A754-B4A69FD7C722}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{61178AF0-76E7-44BA-AAC3-B6AB3F7F3A88}"
+              DTS:DTSID="{6BC76C92-9378-4511-ABA0-BA25C84D9076}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="N°"
-              DTS:DTSID="{8EF389D5-861E-4BBC-A652-53250969C689}"
+              DTS:DTSID="{DC3CCEE7-3A7D-4C34-B5BE-B0D8EECBAE08}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="F2"
-              DTS:DTSID="{0976E566-1FCE-4B49-855B-DDD6B1423704}"
+              DTS:DTSID="{031E0EFA-C3D8-4772-914F-B01E69CDAA7C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +183,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{BA2A6140-A064-441F-998C-16D6786F8FD5}"
+              DTS:DTSID="{297F6C74-B9B3-4E71-A26E-81CCE0241CA4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_NOMBRE"
-              DTS:DTSID="{CF7BFFCD-6742-4872-A47B-23EC392BFD1A}"
+              DTS:DTSID="{882F72BC-1C36-40CE-9250-2D3202414A5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -200,7 +200,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{27F27114-57FA-4F66-9D59-BCCA0E8CB530}"
+              DTS:DTSID="{7D785706-4B58-4B74-B24D-B9C6362D4A46}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -209,7 +209,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACION"
-              DTS:DTSID="{712E28FC-6E96-4A11-B754-C921BBC480E0}"
+              DTS:DTSID="{5A7DA246-E275-4CF3-BD4B-996C56A6EF19}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -218,7 +218,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{90BB881C-9B9C-485C-960B-69E3312549D0}"
+              DTS:DTSID="{B21A3206-1B02-4A9B-8EC9-FE3CD81E1DA0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -227,7 +227,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{971275DB-D200-40BB-8856-1F0143D50F01}"
+              DTS:DTSID="{81D1AE6A-340C-4064-806F-C80F1293BAF0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +235,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{D3F49096-0B74-4AEF-89CD-C2F3306C8B75}"
+              DTS:DTSID="{324CDCA5-D7E3-45F7-92C1-817F1AD15238}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -244,7 +244,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{D72ABF81-8DC9-4541-ACD5-583545330F64}"
+              DTS:DTSID="{66FA4F5D-AA39-44F1-A9A4-1D0421691BF5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -252,7 +252,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{072D514A-53B9-4C54-84DE-C876CDC63899}"
+              DTS:DTSID="{039D733E-E183-4DBB-BC52-E8E1B27E543F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -260,7 +260,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{5A71B6A7-9DC7-4143-8B21-EAF1B447DC38}"
+              DTS:DTSID="{755DE291-7D65-437B-8931-9C77EEEE9C78}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -280,7 +280,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_fact_ventas.txt">
+          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_fact_ventas.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{E1587E10-AC60-40F8-82BB-D5766FC83457}"
+              DTS:DTSID="{F30F5CAA-AABA-4EDC-90E1-204A3E1BE87C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{F000411A-8197-4925-B1EE-3BF5E3B40381}"
+              DTS:DTSID="{BB0B7045-C302-4976-AEB6-942B50BA8B62}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Indice"
-              DTS:DTSID="{A93C30EA-F228-441B-B7EF-80A7A3797009}"
+              DTS:DTSID="{E9AD8C82-0A46-47B7-A8AB-A88B1A6D0A06}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{18B8D986-24BD-4257-B2B2-1E9810C4968A}"
+              DTS:DTSID="{5B9486A3-6E3E-4174-9A72-EA8D1BED449E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -325,7 +325,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Pago"
-              DTS:DTSID="{02AF0018-87C4-408D-B470-07AB69630D55}"
+              DTS:DTSID="{DA8F807A-ABEE-49E4-8AB2-84ABD99CB765}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -334,7 +334,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Promotor"
-              DTS:DTSID="{C58C0B35-4BED-4875-8E2B-150D51156A0D}"
+              DTS:DTSID="{F2275B0A-9ADF-4C36-937B-E8611A502284}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -342,7 +342,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraInicio"
-              DTS:DTSID="{6EAA332F-AF25-4180-8467-B42803171599}"
+              DTS:DTSID="{748EE6F2-7B94-4B78-881B-3E6F800D357D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -350,7 +350,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraFin"
-              DTS:DTSID="{0B510FB9-DA31-48F8-80A4-EC3807997A77}"
+              DTS:DTSID="{6B7BE302-EDA3-402E-BD23-B84C3A5B10DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -359,7 +359,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DummyColumn1"
-              DTS:DTSID="{A8C7C3E4-F977-4535-A951-E707621C6F8D}"
+              DTS:DTSID="{2290F70C-78F0-4CA9-B213-8634255FE1D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -368,7 +368,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TipoDePago"
-              DTS:DTSID="{2E2A8637-86B4-4B95-A5F8-C484F82E7369}"
+              DTS:DTSID="{82D342F5-BCA5-484D-86A8-184C28DC2E97}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -376,7 +376,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="MontoPago"
-              DTS:DTSID="{2AD295E3-3717-4A76-B642-4285F1399DDC}"
+              DTS:DTSID="{7D957C60-A142-46E0-8F7D-26EF992DEA54}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -385,7 +385,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{98CB2551-1298-47F1-85F4-A09AB19736AA}"
+              DTS:DTSID="{289CA8FC-B73A-4231-9188-EDDF4F71EFB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -394,7 +394,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_CATEGORIA"
-              DTS:DTSID="{10E4B52B-E8E5-42C0-BFA3-FB5CA85CCDB2}"
+              DTS:DTSID="{6195B913-4DAC-465A-8135-3B1BAF189AA9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +403,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_PROMOTOR"
-              DTS:DTSID="{2C438830-1DD1-404D-BDED-54AD547F36AC}"
+              DTS:DTSID="{86F8176A-CF51-404C-A17E-24002DD1F0FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -412,7 +412,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{B37FBA63-AD57-4B58-AD73-E7FEF8596D01}"
+              DTS:DTSID="{B414BA78-F215-4772-8BF6-E80B56B3E659}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -420,7 +420,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{10EB2AF8-9555-4D50-926B-A0702A18E6E0}"
+              DTS:DTSID="{A043AE96-742E-4D82-9B55-DE80D5D3BC82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -429,7 +429,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACIOn"
-              DTS:DTSID="{1F81F3C8-E7A6-4313-BD8B-5DF99693DA1A}"
+              DTS:DTSID="{7219A280-6834-4707-B394-BFC56553A826}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -438,7 +438,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{9E30D6DE-4D61-4B23-9BC2-E313279C2322}"
+              DTS:DTSID="{B8B3BCF0-05E8-4EE3-9E91-D27196013124}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -447,7 +447,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{F4574FC4-3870-4E0E-9B58-C7820632AD4A}"
+              DTS:DTSID="{58E5D15B-88DC-4F3C-9D3F-F00CDBA4D64F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -456,7 +456,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{9AE32483-2076-4FB9-B7FA-353C336CDAB6}"
+              DTS:DTSID="{94968A78-930E-4996-9A3B-BA13EED60842}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -465,7 +465,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{B4643A0B-AB6D-4B23-9649-D874A92B2E65}"
+              DTS:DTSID="{2E97B47D-19B5-43C5-9EFF-34FC9879861C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -473,7 +473,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{ADD8B2CE-2388-4138-99F6-D45C30462E45}"
+              DTS:DTSID="{0B72CD6D-E2BE-4490-947C-2B7006BF1F06}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -482,7 +482,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{B49EB9C8-C824-40D3-83E9-E7F29E87B644}"
+              DTS:DTSID="{0F86D05F-49C8-4F50-9273-AD85E0651764}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -490,7 +490,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CLIENTE"
-              DTS:DTSID="{54E60A98-887D-444E-86CC-411E3C261F63}"
+              DTS:DTSID="{37A7736E-D119-48A9-897F-8F250F4BD8B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -498,7 +498,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CATEGORIA"
-              DTS:DTSID="{3844A916-EE1F-4781-959E-1772377EF53B}"
+              DTS:DTSID="{BB19B11A-1FF9-4413-8BF5-53B0FDB283A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -506,7 +506,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_PROMOTOR"
-              DTS:DTSID="{2E6199EF-D05F-41B3-9133-69A4C234F6C0}"
+              DTS:DTSID="{42416C1F-09F0-4587-A3F6-43B6D7B16FAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -514,7 +514,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_TIPOPAGO"
-              DTS:DTSID="{F1936BBB-7FB0-49F3-A8EB-B5CDFBCC11B5}"
+              DTS:DTSID="{7FCFEAFD-45D2-427B-B84D-B1A9FA31042C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -522,7 +522,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{898E0F15-1B8A-4A95-A77A-13302943FBA1}"
+              DTS:DTSID="{6D06FEEB-9BE0-4E21-B0B3-B8981EF2CAA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -530,7 +530,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{B725A594-2C46-46DF-BB66-1186529B71AE}"
+              DTS:DTSID="{C8725CA1-C474-41F4-AF3F-278B71609128}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -539,7 +539,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="F2"
-              DTS:DTSID="{B5BFAC62-D026-44E8-AE5C-80022AC8973C}"
+              DTS:DTSID="{E3EDA300-5C25-4352-BC46-333C4F93518F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -548,7 +548,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_NOMBRE"
-              DTS:DTSID="{33E3728A-6A49-48D5-8D0A-FFDED5630CFE}"
+              DTS:DTSID="{4224F2C8-108F-4E41-87F3-5E709C92B75D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -568,7 +568,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_promotor.txt">
+          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_promotor.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -577,7 +577,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROMOTOR"
-              DTS:DTSID="{540A8FB4-316E-40D1-8458-A0B822514F5F}"
+              DTS:DTSID="{675E9652-A2F4-4D5D-A8E2-DC849F48E426}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -585,7 +585,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{97F2369D-AEF7-49BB-BA9D-4C9294D53C3A}"
+              DTS:DTSID="{3FBAC3F6-E820-408F-9A8E-264C67D0B2BA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -594,7 +594,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{135DCC73-A988-492E-AC79-1550D2CB6805}"
+              DTS:DTSID="{565013D4-F446-4E04-9AE1-05B66E25926C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -602,7 +602,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{CF250F1E-63CE-4158-BA5A-4F6889E7FCFC}"
+              DTS:DTSID="{A98FCB0F-8EB2-4D07-9A77-87DB3815E4ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -611,7 +611,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{596163D1-EC18-4EED-A3EF-0C73FD64FFF4}"
+              DTS:DTSID="{768C3585-C69B-4FAA-A059-3C618F881480}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -620,7 +620,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{0B13CAB8-AD45-47F8-83F4-5BB51B72622E}"
+              DTS:DTSID="{A6320CAC-36C6-4D58-ADB5-E4682B596991}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -628,7 +628,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{850A2A46-77ED-4343-8B95-F4237A61C334}"
+              DTS:DTSID="{F4FB2558-4ACB-4277-80E0-0E06577467F9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -636,7 +636,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{A14EE9B7-782E-4A63-8BBD-B1DC1220C90B}"
+              DTS:DTSID="{5ABD88D1-F2D3-43B5-8117-1CE6CE72CD5A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -656,7 +656,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_tipopago.txt">
+          DTS:ConnectionString="C:\Users\h04433\Downloads\proyecto-sie-main\logs\error_tipopago.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -665,7 +665,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="init"
-              DTS:DTSID="{AC72C75B-47FA-4CA9-81D3-3157F7CB776E}"
+              DTS:DTSID="{70324636-EEE6-4A14-848B-E76C5EA4C230}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -673,7 +673,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="FEC_CREACION"
-              DTS:DTSID="{BDE1950E-F571-4C1C-882B-CEDF507FAC3A}"
+              DTS:DTSID="{77383B92-C018-470B-A4F9-135E1854467F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -682,7 +682,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USU_CREACION"
-              DTS:DTSID="{4D1AEFFC-E68A-42EB-A6DB-4FE5FE0BD902}"
+              DTS:DTSID="{5BD99ACB-DE14-45DB-9B8E-C0B3ED530181}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -691,7 +691,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{364210A1-92DF-4D7B-A8EF-8F45E5C9C359}"
+              DTS:DTSID="{94DAD335-CC2C-4275-BE42-F69065410B97}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -699,7 +699,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{F8BD83F2-F0C5-4F7E-9EB1-63CC568E4C9E}"
+              DTS:DTSID="{F72C496E-9C86-474E-BB46-EFA6C19CA5D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -708,7 +708,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{135F0B97-91C4-4921-9DEA-A85775233C71}"
+              DTS:DTSID="{2F9AE29E-AC31-4150-B965-961DC5FFA7F5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -717,7 +717,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{C8989F52-4502-4F4C-95BF-774552F37652}"
+              DTS:DTSID="{3DC09DD7-4F17-48A0-9D11-A53F8C356851}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -725,7 +725,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{559A42F8-6160-4D4E-9C80-2C7CFC0B40B3}"
+              DTS:DTSID="{CB32506E-D7FD-4ECD-8DCC-539C2243C518}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -733,46 +733,10 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{75A6262A-BD5A-432A-B785-32EB20E94E28}"
+              DTS:DTSID="{57C69B3B-1141-4C07-AD21-6BC9BAC186E3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel_FECHA]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{17C636B6-24BA-428C-B11C-2C904CDFC9DA}"
-      DTS:ObjectName="Excel_FECHA">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel_Hora]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{29299D79-85F9-4990-A7DB-AA75526AEBB1}"
-      DTS:ObjectName="Excel_Hora">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{C81D75B0-F08F-4CF6-A5C9-A4D3820CD26F}"
-      DTS:ObjectName="Excel_OLTP_VENTAS">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -782,7 +746,7 @@
       DTS:DTSID="{FD2A5605-1E59-469F-89D6-E869CCA877E9}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="SheetName">
+      DTS:ObjectName="SheetName_2024">
       <DTS:VariableValue
         DTS:DataType="8">MARTES 02-01-24$</DTS:VariableValue>
     </DTS:Variable>
@@ -1246,7 +1210,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable">User::SheetName</property>
+                      name="OpenRowsetVariable">User::SheetName_2024</property>
                     <property
                       dataType="System.String"
                       description="The SQL command to be executed."
@@ -1269,8 +1233,8 @@
                   <connections>
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      connectionManagerID="{8F9BB587-4A10-416D-8550-E20367037228}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OLTP_VENTAS_2024]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2204,7 +2168,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable">User::SheetName</property>
+                      name="OpenRowsetVariable">User::SheetName_2024</property>
                     <property
                       dataType="System.String"
                       description="The SQL command to be executed."
@@ -2227,8 +2191,8 @@
                   <connections>
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\Excel Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      connectionManagerID="{8F9BB587-4A10-416D-8550-E20367037228}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OLTP_VENTAS_2024]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2700,7 +2664,7 @@
                           refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE]"
                           codePage="1252"
                           dataType="str"
-                          length="120"
+                          length="99"
                           name="NOMBRE" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,,\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DNI]"
@@ -3269,7 +3233,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable">User::SheetName</property>
+                      name="OpenRowsetVariable">User::SheetName_2024</property>
                     <property
                       dataType="System.String"
                       description="The SQL command to be executed."
@@ -3292,8 +3256,8 @@
                   <connections>
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      connectionManagerID="{8F9BB587-4A10-416D-8550-E20367037228}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OLTP_VENTAS_2024]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4136,7 +4100,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable">User::SheetName</property>
+                      name="OpenRowsetVariable">User::SheetName_2024</property>
                     <property
                       dataType="System.String"
                       description="The SQL command to be executed."
@@ -4159,8 +4123,8 @@
                   <connections>
                     <connection
                       refId="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
-                      connectionManagerRefId="Package.ConnectionManagers[Excel_OLTP_VENTAS]"
+                      connectionManagerID="{8F9BB587-4A10-416D-8550-E20367037228}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[OLTP_VENTAS_2024]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4625,20 +4589,20 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{FE2AB3A9-07EA-449D-BD2D-870305E3BCB8}"
-          DTS:ObjectName="{FE2AB3A9-07EA-449D-BD2D-870305E3BCB8}"
+          DTS:DTSID="{89C16D2A-409E-4195-A87B-886A11025720}"
+          DTS:ObjectName="{89C16D2A-409E-4195-A87B-886A11025720}"
           DTS:ValueIndex="2"
-          DTS:VariableName="User::SheetName" />
+          DTS:VariableName="User::SheetName_2024" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
-<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
-<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
@@ -4683,27 +4647,27 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Flat File Destination"
           TopLeft="886,656" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Derived Column"
           TopLeft="449,327" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_CATEGORIA\Conditional Split"
           TopLeft="237,189" />
         <EdgeLayout
@@ -4809,9 +4773,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4845,9 +4807,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4881,9 +4841,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5042,9 +5000,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5078,9 +5034,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5114,9 +5068,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5149,31 +5101,31 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Flat File Destination"
           TopLeft="886,656" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Derived Column"
           TopLeft="337,327" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Conditional Split"
           TopLeft="237,190" />
         <NodeLayout
-          Size="246.4,41.6"
+          Size="246,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Artificio de conversion alfanumérica"
           TopLeft="522,327" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_PROMOTOR\Excel Source"
           TopLeft="114,71" />
         <EdgeLayout
@@ -5279,9 +5231,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5303,9 +5253,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5327,9 +5275,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5363,9 +5309,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5420,7 +5364,7 @@
         <NodeLayout
           Size="139,42"
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO\Excel Source"
-          TopLeft="114,71" />
+          TopLeft="112,71" />
         <EdgeLayout
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[valido]"
           TopLeft="314.5,232">
@@ -5495,13 +5439,13 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,,\Carga DIM_TIPOPAGO.Paths[Excel Source Output]"
-          TopLeft="183.5,113">
+          TopLeft="181.5,113">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="131,77"
+              EndConnector="133,77"
               Start="0,0"
-              End="131,69.5">
+              End="133,69.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -5512,21 +5456,19 @@
                     Point2="0,38.5"
                     Point3="4,38.5" />
                   <mssgle:LineSegment
-                    End="127,38.5" />
+                    End="129,38.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="127,38.5"
-                    Point2="131,38.5"
-                    Point3="131,42.5" />
+                    Point1="129,38.5"
+                    Point2="133,38.5"
+                    Point3="133,42.5" />
                   <mssgle:LineSegment
-                    End="131,69.5" />
+                    End="133,69.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5560,9 +5502,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5596,9 +5536,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
