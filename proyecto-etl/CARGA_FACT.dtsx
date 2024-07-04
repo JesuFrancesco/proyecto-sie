@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="151"
-  DTS:VersionGUID="{5D1E7304-0486-4352-96FA-548C38042EE1}">
+  DTS:VersionBuild="156"
+  DTS:VersionGUID="{46B06D7B-8FBD-43A9-ADF8-F6236662BF14}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_fact_ventas.txt">
+          DTS:ConnectionString="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_fact_ventas.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ApellidosNombres"
-              DTS:DTSID="{FA0D5A0B-A490-4551-AA6B-7A037D035193}"
+              DTS:DTSID="{B5583169-98B5-4B43-904B-632254C07D5B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DNI"
-              DTS:DTSID="{36A6D2A4-8E33-44F3-B280-982D16144FC9}"
+              DTS:DTSID="{6E0DAD6D-C3B5-4EBC-907A-0E3DBB632319}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Indice"
-              DTS:DTSID="{C8E1E8B5-E1B1-4A1D-B1C9-DAB8FE8D6DCE}"
+              DTS:DTSID="{374599F5-CC72-4D2E-8AB2-E3002D5EE717}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Categoria"
-              DTS:DTSID="{DD68F997-75E9-41B6-AA5E-027021AE1148}"
+              DTS:DTSID="{63195E3C-4D06-4300-8859-40E7B88FACCD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Pago"
-              DTS:DTSID="{A2D7D91E-A9DD-44B7-A0F1-2AAB470AE3BA}"
+              DTS:DTSID="{E384A50B-F6C1-4D2F-82B4-A6D93E061057}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Promotor"
-              DTS:DTSID="{037E74D0-DA5F-4E6F-993C-765E387A94A7}"
+              DTS:DTSID="{15ACA018-9B9B-41F5-9BE4-7C4408824C6A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraInicio"
-              DTS:DTSID="{CADA771C-546B-4441-9E80-55D9BFC8FFA5}"
+              DTS:DTSID="{226DB892-FF30-41ED-A877-DAA73406D678}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -100,7 +100,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraFin"
-              DTS:DTSID="{16F96EBF-EE67-46C3-8A4D-A07B4C7A6D4E}"
+              DTS:DTSID="{AF23B662-8159-4B21-82B2-F3A7C4D33D9F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TipoDePago"
-              DTS:DTSID="{CE01378C-1E27-48DB-B20E-AB9767F1B92E}"
+              DTS:DTSID="{81BCFDE4-F278-4D3C-97D4-56F81FC74D34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -117,7 +117,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="MontoPago"
-              DTS:DTSID="{E5CF9650-84DA-4238-9D49-C392EFE73B39}"
+              DTS:DTSID="{504639DF-B9B4-4B5A-8EDB-DFC6F6D98913}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -126,7 +126,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_DNI"
-              DTS:DTSID="{60E78B16-18D0-4431-9575-F8004D87D840}"
+              DTS:DTSID="{B13056AC-10C0-44F7-B487-78F356BB21DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -135,7 +135,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_CATEGORIA"
-              DTS:DTSID="{52A6F334-38CF-420A-A1F7-CEF0816CF14F}"
+              DTS:DTSID="{BF811F41-5A56-45E8-969F-687DFA9A4D99}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -144,7 +144,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_PROMOTOR"
-              DTS:DTSID="{85D42738-B992-47BA-B0B0-4CABD9ADCBAA}"
+              DTS:DTSID="{24A9AA3C-37B7-4037-8BEB-4B2A12D4E82A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -153,7 +153,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_TIPOPAGO"
-              DTS:DTSID="{F5477F3B-F9E8-4364-A56D-68D4813D9E71}"
+              DTS:DTSID="{61341BF1-2D44-4E7C-89A1-A37760C45746}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -161,7 +161,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="D_FEC_CREACION"
-              DTS:DTSID="{6EFE3167-3116-40BF-8DE9-0408F776757F}"
+              DTS:DTSID="{0DB7BA0F-5C97-4681-8BC1-37E36589B54E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -170,7 +170,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="D_USU_CREACION"
-              DTS:DTSID="{72D1617C-ABD3-4AC9-9337-6EC4B271C04C}"
+              DTS:DTSID="{B7E4DA5F-8344-4D13-B5C0-6F6B08E1728C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -179,7 +179,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALORFECHA"
-              DTS:DTSID="{135073BF-06E4-4CEC-8A36-157953576483}"
+              DTS:DTSID="{DEE14605-33CF-46B3-9E90-C697856E8692}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -187,7 +187,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="D_HORAINI"
-              DTS:DTSID="{59C6417B-1506-4D3B-9B99-201A639779D9}"
+              DTS:DTSID="{79D74DE7-B12D-40BF-9384-22827FAD4890}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -195,7 +195,7 @@
               DTS:DataType="7"
               DTS:TextQualified="True"
               DTS:ObjectName="D_HORAFIN"
-              DTS:DTSID="{E5DE8082-DE47-4AC6-8DBF-05E8133878D0}"
+              DTS:DTSID="{9AC814EA-3C65-4A26-842A-304752233BC0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -204,7 +204,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHAPARSEADA"
-              DTS:DTSID="{A1475B49-A9C4-45DC-8A52-3996D90538C6}"
+              DTS:DTSID="{879336AD-0EAC-435D-9396-02E510D0FAAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -213,7 +213,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_DNI"
-              DTS:DTSID="{57750A35-89F9-4338-BF32-F33297F08CCE}"
+              DTS:DTSID="{B5DCB548-5A1B-4EF6-B9B7-BB8911B51069}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_CATEGORIA"
-              DTS:DTSID="{6201DD49-5EC6-4154-82D7-1F4F663879E5}"
+              DTS:DTSID="{25AF8E48-6C60-4D06-B148-E1545E7AB55C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -231,7 +231,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_PROMOTOR"
-              DTS:DTSID="{3017F865-80FF-4580-AAF3-2B69B24A354D}"
+              DTS:DTSID="{2203CE66-BE3F-4780-9E44-B46CB0366784}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +240,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_TIPOPAGO"
-              DTS:DTSID="{71E085D0-799B-4D2A-B46A-5A6A67739C05}"
+              DTS:DTSID="{9D435C9A-0EDC-4B4B-BA25-98A1B2F07DF7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FEC_CREACION"
-              DTS:DTSID="{0F1BF215-2560-43D8-8753-00FDC0230DCC}"
+              DTS:DTSID="{5FE35D5E-4F6C-4FDD-B25D-A3EBD74F8B7A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_USU_CREACION"
-              DTS:DTSID="{486736C4-6EAE-450E-A71C-DB9A6868DE47}"
+              DTS:DTSID="{14D7195D-1F91-4587-99F8-5B9797A594D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -266,7 +266,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_FECHA"
-              DTS:DTSID="{867729C4-8333-4738-A136-A51E2D79E28A}"
+              DTS:DTSID="{B8BE293D-6A06-4F30-87D8-6A8114346ABE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -274,7 +274,7 @@
               DTS:DataType="134"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_HORAINI"
-              DTS:DTSID="{4084DE4A-4375-458F-949C-FDADBC3B35AE}"
+              DTS:DTSID="{35F30A67-3B9E-4E7C-A2C0-8B03A4468325}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -282,7 +282,7 @@
               DTS:DataType="134"
               DTS:TextQualified="True"
               DTS:ObjectName="ETL_HORAFIN"
-              DTS:DTSID="{E767D785-5E12-4260-AC08-89D06D65CC30}"
+              DTS:DTSID="{5C095ED2-2C02-46A2-8602-5D8FD98911DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -291,7 +291,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="HORAINI_STR"
-              DTS:DTSID="{DA864192-AA9D-4811-80E9-96D0AFE4198E}"
+              DTS:DTSID="{8212AF35-0992-4F89-9F45-9A94E50CBBF0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -300,7 +300,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="HORAFIN_STR"
-              DTS:DTSID="{0566801F-9EA4-473D-80BA-C0C85E4A17DC}"
+              DTS:DTSID="{A1C93F2B-96A7-4FB2-B2AA-0FDA0D199177}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -308,7 +308,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CLIENTE"
-              DTS:DTSID="{4F34BF82-94E1-4643-9DCB-DB4388EE083F}"
+              DTS:DTSID="{0EA80DAB-13A5-4EDC-8260-B8024590BF7F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_CATEGORIA"
-              DTS:DTSID="{E199C951-4717-468D-BFE3-4F2C86A17845}"
+              DTS:DTSID="{5B084F69-9922-45B8-9641-91A986A3BF5F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -324,7 +324,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_PROMOTOR"
-              DTS:DTSID="{16A0A828-4D1F-4981-94B3-FDF94EDC986C}"
+              DTS:DTSID="{21D3522D-0892-4A9C-997A-8D2E4C0C4161}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -332,7 +332,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_TIPOPAGO"
-              DTS:DTSID="{90F581CA-8FEB-4CF1-B82A-951AAA76A66F}"
+              DTS:DTSID="{2C16B163-AC0E-4D23-A1B8-09A7360C931B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -341,7 +341,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PK_FECHA"
-              DTS:DTSID="{D99C4481-8CBD-44AD-9D31-B657F74DBA19}"
+              DTS:DTSID="{869A1FAA-65F4-4A01-A95C-3EA59A601945}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -349,7 +349,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{7162B6FC-FD82-4B11-8988-ADA2DC5BB335}"
+              DTS:DTSID="{9F621A03-25CF-44E7-B2BB-C9932609EA8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -357,7 +357,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{ECDD4C46-183A-4766-8BDF-CBD5071964CF}"
+              DTS:DTSID="{A1EC9071-1152-4814-AFF0-9CEA0FDD0BA9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -846,7 +846,7 @@
                           lineageId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[TipoDePago]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Cleansing de division de pago.Inputs[Conditional Split Input].Columns[MontoPago]"
-                          cachedDataType="i4"
+                          cachedDataType="decimal"
                           cachedName="MontoPago"
                           lineageId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
                       </inputColumns>
@@ -2065,7 +2065,7 @@ public class ScriptMain : UserComponent
     {
         // Default values
         Row.TipoDePago = "EFECTIVO";
-        Row.MontoPago = 100;
+        Row.MontoPago = (decimal) 78.78;
 
         string input = Row.Pago;
         var validTypes = new Dictionary<string, string>
@@ -2093,7 +2093,7 @@ public class ScriptMain : UserComponent
         // results
         if (amount != null)
         {
-             Row.MontoPago = int.Parse(amount);
+             Row.MontoPago = decimal.Parse(amount);
         }
 
         if (type != null && validTypes.TryGetValue(type, out string tipoDePago))
@@ -2399,7 +2399,7 @@ public class Entrada0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 MontoPago
+    public Decimal MontoPago
     {
         set
         {
@@ -2549,7 +2549,7 @@ public class Variables
     <msb:CodeName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:DisplayName>
-    <msb:ProjectId>{492E0D77-FBE7-4A6F-AEC1-456D724FCE15}</msb:ProjectId>
+    <msb:ProjectId>{A38E142E-766C-49F3-A69B-8B7E4DCC8A75}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_8b6283ab8c2d4157a05721470b51fe02.csproj" />
@@ -2696,114 +2696,114 @@ namespace SC_8b6283ab8c2d4157a05721470b51fe02.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[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
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDACKxgGYAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAAHjYA
+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
-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
+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
-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
+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
-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
-Bg4AyQQtBg4ACQEtBgYAOgPjAw4AWAYtBgYAgQDjAwYAJQDjAwYASwTjAwYAZQTjAwYA3ADjAwYA
-jQDjAwYAYgcrBAAAAAA4AAAAAAABAAEAAQAQAPYDAAAQAAEAAQABABAAzwQAAEkAAQAFAAEAEACg
-BgAAVQABABAAAQAQAEwGAABZAAMAFAABABAA7gUAAFkABAAVAAAAEABjBb8FWQAFABYAAAEQAB0G
-vwVxAAcAGgAGAEwG7wAGAO4F8wABAK4G9wABAK4G9wARAOoD+wARAPkA/wARAHEAAwFQIAAAAADG
-AOoCBgABAFggAAAAAMYA9QIGAAEAYCAAAAAAxgA3BwcBAQB0IQAAAACGGBwFBgACAHwhAAAAAIYY
-HAWWAAIAhyEAAAAAhgiCBEsABQCcIQAAAACGCIsEEAAFAKYhAAAAAIYIhwNHAAYAryEAAAAAhgiX
-Aw0BBgDGIQAAAACGCJQEEAAHANAhAAAAAIYIpwMNAQgA5yEAAAAAhgijBAEACQD2IQAAAACGCL0D
-DQEKAA0iAAAAAIYAUAdHAAsAFSIAAAAAhgCIBkcACwAdIgAAAACGGBwFBgALAD0iAAAAAMYAIQcS
-AQsAYiIAAAAAxgEYBwcBDwB1IgAAAADGATcHBwEQAHciAAAAAIYYHAUcAREAhiIAAAAAhhgcBRwB
-EgCVIgAAAACDGBwFBgATAJ0iAAAAAJMI+gQiARMAySIAAAAAkwjhACcBEwDQIgAAAACTCO0ALAET
-ANgiAAAAAJYIlAYyARQA3yIAAAAAhhgcBQYAFADnIgAAAACRGCIFNwEUAAAAAQBUBwAAAQDzBAAA
-AgD4BQAAAwC/BAAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQBBAAAAAgCx
-AAAAAwDzBAAABAC/BAAAAQDzBAAAAQBUBwAAAQDEBgAAAQDEBgAAAQAXAwkAHAUBABEAHAUGABkA
-HAUKACkAHAUQADEAHAUQADkAHAUQAEEAHAUQAEkAHAUQAFEAHAUQAFkAHAUQAGEAHAUQAGkAHAUG
-ALkAHAUGANkAHAUVAOkAHAUGAKkA6gIGAKkA9QIGAAwAHAUGAAwAbQA4APEAQwNAAPkAZQZHAAEB
-AQNLAAwAcQZPABQADgVhABwAzgZzAAkBegZ4APEAQQN/ABwALgdHABkBKQEGACEBMQGIAAwACwON
-AJEAHAWWAJEA8wSgAJEA+AWkAJkANwOoAJEA2gOtAJEAywOzAJEA0gMBACkBHAUQAJEAUAdHAJEA
-iAZHAKkAHAUGAAkBJga4AKkADAbAALEAHAUGADkBnwDGADkBXgfPAMEAHAXVAOEAHAUGAC4ACwBW
-AS4AEwBfAS4AGwB+AS4AIwCHAS4AKwCwAS4AMwCwAS4AOwCwAS4AQwCHAS4ASwC2AS4AUwCwAS4A
-WwDNAUMAYwAXAuEAewAXAuMAawAXAukAcwB+AQkBcwB+ARsAAwABAAcABwAIAAkAAACsBDsBAADG
-Az8BAACYBDsBAACrAz8BAACnBEMBAADBAz8BAAD+BEcBAAABAUwBAACYBlEBAgAGAAMAAQAHAAMA
-AgAIAAUAAQAJAAUAAQAKAAcAAQALAAkAAQAMAAsAAQANAA0AAgAXAA8AAgAYABEAAQAZABEAAgAa
-ABMAMQBaAGwABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAN0ASQAAAAAAEAAAAAAA
-AAAAAAAA5gDaBgAAAAAEAAAAAAAAAAAAAADdAOMDAAAAABAAAAAAAAAAAAAAAOYA9wYAAAAAAAAA
-AAEAAABtBQAAAAAAU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIASW50MzIARGlj
-dGlvbmFyeWAyADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIAU3lzdGVtLkNvbGxlY3Rpb25zLkdl
-bmVyaWMAQWRkAGRlZmF1bHRJbnN0YW5jZQBJRGlzcG9zYWJsZQBSdW50aW1lVHlwZUhhbmRsZQBH
-ZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxp
-bmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQ2FwdHVyZQBB
-cHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAFBhcnNlAEVkaXRvckJyb3dzYWJsZVN0YXRl
-AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
-RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
-ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
-aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
-dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
-dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
-dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
-YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAZ2V0X1ZhbHVlAFRyeUdldFZh
-bHVlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAElzTWF0Y2gAU3lz
-dGVtLkNvbXBvbmVudE1vZGVsAFNDXzhiNjI4M2FiOGMyZDQxNTdhMDU3MjE0NzBiNTFmZTAyLmRs
-bABnZXRfUGFnb19Jc051bGwAc2V0X1BhZ29fSXNOdWxsAHNldF9UaXBvRGVQYWdvX0lzTnVsbABz
-ZXRfTW9udG9QYWdvX0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNvdXJjZU1hbgBT
-Y3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3Rl
-bS5SZWZsZWN0aW9uAEtleUNvbGxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJp
-bmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAGdldF9QYWdvAHNldF9QYWdvAHNldF9UaXBvRGVQYWdv
-AHNldF9Nb250b1BhZ28AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAAR3JvdXAARW50cmFkYTBCdWZm
-ZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAR2V0RW51
-bWVyYXRvcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNv
-bXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ184YjYyODNhYjhjMmQ0MTU3YTA1NzIx
-NDcwYjUxZmUwMi5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMA
-U0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIuUHJvcGVydGllcwBWYXJpYWJsZXMA
-QnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBTeXN0
-ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnMAQ29ubmVjdGlvbnMAUmVnZXhPcHRpb25zAGdldF9T
-dWNjZXNzAGdldF9LZXlzAENvbmNhdABPYmplY3QARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNl
-ckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AGdldF9DdXJyZW50AE1p
-Y3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhv
-c3QARW50cmFkYTBfUHJvY2Vzc0lucHV0AE1vdmVOZXh0AEVudHJhZGEwX1Byb2Nlc3NJbnB1dFJv
-dwBOZXh0Um93AFJlZ2V4AGdldF9Bc3NlbWJseQAAABFFAEYARQBDAFQASQBWAE8AAAV5AGEAAAlZ
-AEEAUABFAAAFcABsAAAJUABMAEkATgAAB2UAZgBlAAAPXABiAFwAZAArAFwAYgAABVwAYgAAC1wA
-dwAqAFwAYgAAgL1MAGEAIABwAHIAbwBwAGkAZQBkAGEAZAAgAEkAcwBOAHUAbABsACAAbgBvACAA
-cAB1AGUAZABlACAAZQBzAHQAYQBiAGwAZQBjAGUAcgBzAGUAIABlAG4AIABGAGEAbABzAGUALgAg
-AEUAbgAgAHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkAZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIA
-IABhACAAbABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBuAHQAcgBhAGQAYQAgADAAAHFTAEMAXwA4
-AGIANgAyADgAMwBhAGIAOABjADIAZAA0ADEANQA3AGEAMAA1ADcAMgAxADQANwAwAGIANQAxAGYA
-ZQAwADIALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAA1JySW59o
-q0K1dn6Z0DuZHAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERaRUHCA4VEjkCDg4SPQ4ODhURRQIO
-Dg4GFRI5Ag4OByACARMAEwEGAAISPQ4OAyAAAgMgAA4KIAAVEkECEwATAQYVEkECDg4KIAAVEUUC
-EwATAQYVEUUCDg4EIAATAAYAAw4ODg4IAAMCDg4RgIkEAAEIDgggAgITABATAQkgAwESTR0IElED
-BhJNAwYdCAQgAQ4IBSACAQgcBCABAggHIAICDhGAmQUgAR0ICAgAARKAnRGAoQUgABKApQcgAgEO
-EoClCLd6XFYZNOCJCImEXc2AgMyRAwYSFAMGEhgDBhJVAwYSYQMGEmUDBhIgBSABARIMBCABAQIJ
-IAQBCA4STRJRBSABARJVBAAAEmEEAAASZQUAAQESZQQAABIgAwAAAQMoAA4DKAACAygACAQIABJh
-BAgAEmUECAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAA
-AAAoAQAjU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIAAAUBAAAAABYBABFDb3B5
-cmlnaHQgQCAgMjAyNAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdv
-cmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAALQAAADOyu++AQAAAJEAAABsU3lz
-dGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwg
-Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5S
-ZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAD0NQAAAAAA
-AAAAAAAONgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAABfQ29yRGxsTWFp
-bgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-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
+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
+IgAAAACTCOcAPAETAOQiAAAAAJYIlgZCARQA6yIAAAAAhhgeBQYAFADzIgAAAACRGCQFRwEUAAAA
+AQBWBwAAAQD1BAAAAgD6BQAAAwDBBAAAAQARAwAAAQARAwAAAQARAwAAAQARAwAAAQARAwAAAQAR
+AwAAAQA7AAAAAgCrAAAAAwD1BAAABADBBAAAAQD1BAAAAQBWBwAAAQDGBgAAAQDGBgAAAQARAwkA
+HgUBABEAHgUGABkAHgUKACkAHgUQADEAHgUQADkAHgUQAEEAHgUQAEkAHgUQAFEAHgUQAFkAHgUQ
+AGEAHgUQAGkAHgUGAMEAHgUGAOEAHgUVAPEAHgUGALEA5AIGALEA7wIGAKkAHgUxAAwAHgUGAAwA
+ZwBBAPkAPQNJAAEBZwZQAAkB+wJUAAwAcwZYABQAEAVqABwA0AZ8ABEBfAaBAPkAOwOIABwAMAdQ
+ACEBIwEGAKkAKwGRAAwABQOXAJEAHgWgAJEA9QSqAJEA+gWuAJkAMQOyAJEA3AO3AJEAzQO9AJEA
+1AMBACkBHgUQAJEAUgdQAJEAigZQALEAHgUGABEBKAbCALEADgbKALkAHgUGADkBmQDQADkBYAfZ
+AMkAHgXfAOkAHgUGAC4ACwBnAS4AEwBwAS4AGwCPAS4AIwCYAS4AKwDBAS4AMwDBAS4AOwDBAS4A
+QwCYAS4ASwDHAS4AUwDBAS4AWwDeAUMAYwAoAuEAewAoAuMAawAoAukAcwCPAQkBcwCPARsAAwAB
+AAcABwAIAAkAAACuBEsBAADIA08BAACaBEsBAACtA08BAACpBFMBAADDA08BAAAABVgBAAD7AF0B
+AACaBmIBAgAGAAMAAQAHAAMAAgAIAAUAAQAJAAUAAQAKAAcAAQALAAkAAQAMAAsAAQANAA0AAgAX
+AA8AAgAYABEAAQAZABEAAgAaABMAOgBjAHUABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAA
+AAAAAOcAQwAAAAAAEAAAAAAAAAAAAAAA8ADcBgAAAAAEAAAAAAAAAAAAAADnAOUDAAAAABAAAAAA
+AAAAAAAAAPAA+QYAAAAAAAAAAAEAAABvBQAAAAAAAABTQ184YjYyODNhYjhjMmQ0MTU3YTA1NzIx
+NDcwYjUxZmUwMgBEaWN0aW9uYXJ5YDIAPE1vZHVsZT4ASW5wdXRJRABtc2NvcmxpYgBTeXN0ZW0u
+Q29sbGVjdGlvbnMuR2VuZXJpYwBBZGQAZGVmYXVsdEluc3RhbmNlAElEaXNwb3NhYmxlAFJ1bnRp
+bWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAElucHV0TmFtZQBNaWNyb3NvZnQuU3FsU2Vy
+dmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3Vs
+dHVyZQBDYXB0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAERpc3Bvc2UAUGFyc2UARWRpdG9y
+QnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2Vy
+Q29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0
+ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdl
+dEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1i
+bHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFz
+c2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2Ny
+aXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUA
+UnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRf
+VmFsdWUAVHJ5R2V0VmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBHZXRTdHJp
+bmcASXNNYXRjaABEZWNpbWFsAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ184YjYyODNhYjhjMmQ0
+MTU3YTA1NzIxNDcwYjUxZmUwMi5kbGwAZ2V0X1BhZ29fSXNOdWxsAHNldF9QYWdvX0lzTnVsbABz
+ZXRfVGlwb0RlUGFnb19Jc051bGwAc2V0X01vbnRvUGFnb19Jc051bGwAU2V0TnVsbABzZXRfSXRl
+bQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0
+ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBLZXlDb2xsZWN0aW9uAEludmFsaWRP
+cGVyYXRpb25FeGNlcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBnZXRfUGFnbwBz
+ZXRfUGFnbwBzZXRfVGlwb0RlUGFnbwBzZXRfTW9udG9QYWdvAE91dHB1dE5hbWVNYXAAT3V0cHV0
+TWFwAEdyb3VwAEVudHJhZGEwQnVmZmVyAFBpcGVsaW5lQnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRf
+UmVzb3VyY2VNYW5hZ2VyAEdldEVudW1lcmF0b3IALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9z
+dGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU0Nf
+OGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIuUHJvcGVydGllcy5SZXNvdXJjZXMucmVz
+b3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDXzhiNjI4M2FiOGMyZDQxNTdhMDU3MjE0NzBiNTFmZTAy
+LlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0Q29sdW1uSW5kZXhl
+cwBTZXR0aW5ncwBFcXVhbHMAU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zAENvbm5lY3Rp
+b25zAFJlZ2V4T3B0aW9ucwBnZXRfU3VjY2VzcwBnZXRfS2V5cwBDb25jYXQAT2JqZWN0AEVuZE9m
+Um93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENv
+bXBvbmVudABnZXRfQ3VycmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AEVudHJhZGEwX1Byb2Nlc3NJbnB1dABNb3ZlTmV4dABF
+bnRyYWRhMF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBSZWdleABnZXRfQXNzZW1ibHkAAAAAABFF
+AEYARQBDAFQASQBWAE8AAAV5AGEAAAlZAEEAUABFAAAFcABsAAAJUABMAEkATgAAB2UAZgBlAAAP
+XABiAFwAZAArAFwAYgAABVwAYgAAC1wAdwAqAFwAYgAAgL1MAGEAIABwAHIAbwBwAGkAZQBkAGEA
+ZAAgAEkAcwBOAHUAbABsACAAbgBvACAAcAB1AGUAZABlACAAZQBzAHQAYQBiAGwAZQBjAGUAcgBz
+AGUAIABlAG4AIABGAGEAbABzAGUALgAgAEUAbgAgAHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkA
+ZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIAIABhACAAbABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBu
+AHQAcgBhAGQAYQAgADAAAHFTAEMAXwA4AGIANgAyADgAMwBhAGIAOABjADIAZAA0ADEANQA3AGEA
+MAA1ADcAMgAxADQANwAwAGIANQAxAGYAZQAwADIALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBl
+AHMAbwB1AHIAYwBlAHMAAAAA5wixpjB1zEyw2AR4XM9eSQAEIAEBCAMgAAEFIAEBEREEIAEBDgUg
+AQERbRUHCA4VEjkCDg4SPQ4ODhURRQIODg4IIAUBCAgIAgUGFRI5Ag4OByACARMAEwEGAAISPQ4O
+AyAAAgMgAA4KIAAVEkECEwATAQYVEkECDg4KIAAVEUUCEwATAQYVEUUCDg4EIAATAAYAAw4ODg4I
+AAMCDg4RgI0FAAERVQ4IIAICEwAQEwEJIAMBEk0dCBJRAwYSTQMGHQgEIAEOCAUgAgEIHAQgAQII
+ByACAg4RgJkFIAEdCAgIAAESgJ0RgKEFIAASgKUHIAIBDhKApQi3elxWGTTgiQiJhF3NgIDMkQMG
+EhQDBhIYAwYSWQMGEmUDBhJpAwYSIAUgAQESDAQgAQECBSABARFVCSAEAQgOEk0SUQUgAQESWQQA
+ABJlBAAAEmkFAAEBEmkEAAASIAMAAAEDKAAOAygAAgQoABFVBAgAEmUECAASaQQIABIgCAEACAAA
+AAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ184YjYyODNh
+YjhjMmQ0MTU3YTA1NzIxNDcwYjUxZmUwMgAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJ
+AQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5O
+RVQgRnJhbWV3b3JrIDQuNwQBAAAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2Vz
+LlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRy
+YWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50
+aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAACA2AAAAAAAAAAAAADo2AAAAIAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAsNgAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxs
+AAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2837,7 +2837,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAACA2AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAEw2AAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2919,7 +2919,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           name="TipoDePago" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]"
-                          dataType="i4"
+                          dataType="decimal"
                           lineageId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]"
                           name="MontoPago" />
                       </outputColumns>
@@ -3019,7 +3019,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           lineageId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup tipopago.Outputs[Lookup Match Output].Columns[PK_TIPOPAGO]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[MontoPago]"
-                          cachedDataType="i4"
+                          cachedDataType="decimal"
                           cachedName="MontoPago"
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
                           lineageId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
@@ -3107,8 +3107,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           name="PK_FECHA" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
-                          dataType="i4"
-                          name="MONTO" />
+                          dataType="numeric"
+                          name="MONTO"
+                          precision="6"
+                          scale="2" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA_INICIO]"
                           codePage="1252"
@@ -5846,8 +5848,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{C8F0063D-32E1-4BA3-A7BD-90CB9C80E591}"
-          DTS:ObjectName="{C8F0063D-32E1-4BA3-A7BD-90CB9C80E591}"
+          DTS:DTSID="{2449C517-324E-4C98-82F5-C73DE70CA823}"
+          DTS:ObjectName="{2449C517-324E-4C98-82F5-C73DE70CA823}"
           DTS:ValueIndex="2"
           DTS:VariableName="User::Sheetname_FACT_2023" />
       </DTS:ForEachVariableMappings>
@@ -6285,7 +6287,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[TipoDePago]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Cleansing de division de pago.Inputs[Conditional Split Input].Columns[MontoPago]"
-                          cachedDataType="i4"
+                          cachedDataType="decimal"
                           cachedName="MontoPago"
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
                       </inputColumns>
@@ -7504,7 +7506,7 @@ public class ScriptMain : UserComponent
     {
         // Default values
         Row.TipoDePago = "EFECTIVO";
-        Row.MontoPago = 100;
+        Row.MontoPago = (decimal) 78.78;
 
         string input = Row.Pago;
         var validTypes = new Dictionary<string, string>
@@ -7532,7 +7534,7 @@ public class ScriptMain : UserComponent
         // results
         if (amount != null)
         {
-             Row.MontoPago = int.Parse(amount);
+             Row.MontoPago = decimal.Parse(amount);
         }
 
         if (type != null && validTypes.TryGetValue(type, out string tipoDePago))
@@ -7838,7 +7840,7 @@ public class Entrada0Buffer: ScriptBuffer
         }
     }
 
-    public Int32 MontoPago
+    public Decimal MontoPago
     {
         set
         {
@@ -7988,7 +7990,7 @@ public class Variables
     <msb:CodeName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:DisplayName>
-    <msb:ProjectId>{492E0D77-FBE7-4A6F-AEC1-456D724FCE15}</msb:ProjectId>
+    <msb:ProjectId>{B071FFE8-25A7-4B9A-A0A4-6FB588C24718}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_8b6283ab8c2d4157a05721470b51fe02.csproj" />
@@ -8135,114 +8137,114 @@ namespace SC_8b6283ab8c2d4157a05721470b51fe02.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[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
-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
+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
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMw1AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPg1AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-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
+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
-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
-Bg4AyQQtBg4ACQEtBgYAOgPjAw4AWAYtBgYAgQDjAwYAJQDjAwYASwTjAwYAZQTjAwYA3ADjAwYA
-jQDjAwYAYgcrBAAAAAA4AAAAAAABAAEAAQAQAPYDAAAQAAEAAQABABAAzwQAAEkAAQAFAAEAEACg
-BgAAVQABABAAAQAQAEwGAABZAAMAFAABABAA7gUAAFkABAAVAAAAEABjBb8FWQAFABYAAAEQAB0G
-vwVxAAcAGgAGAEwG7wAGAO4F8wABAK4G9wABAK4G9wARAOoD+wARAPkA/wARAHEAAwFQIAAAAADG
-AOoCBgABAFggAAAAAMYA9QIGAAEAYCAAAAAAxgA3BwcBAQB0IQAAAACGGBwFBgACAHwhAAAAAIYY
-HAWWAAIAhyEAAAAAhgiCBEsABQCcIQAAAACGCIsEEAAFAKYhAAAAAIYIhwNHAAYAryEAAAAAhgiX
-Aw0BBgDGIQAAAACGCJQEEAAHANAhAAAAAIYIpwMNAQgA5yEAAAAAhgijBAEACQD2IQAAAACGCL0D
-DQEKAA0iAAAAAIYAUAdHAAsAFSIAAAAAhgCIBkcACwAdIgAAAACGGBwFBgALAD0iAAAAAMYAIQcS
-AQsAYiIAAAAAxgEYBwcBDwB1IgAAAADGATcHBwEQAHciAAAAAIYYHAUcAREAhiIAAAAAhhgcBRwB
-EgCVIgAAAACDGBwFBgATAJ0iAAAAAJMI+gQiARMAySIAAAAAkwjhACcBEwDQIgAAAACTCO0ALAET
-ANgiAAAAAJYIlAYyARQA3yIAAAAAhhgcBQYAFADnIgAAAACRGCIFNwEUAAAAAQBUBwAAAQDzBAAA
-AgD4BQAAAwC/BAAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQAXAwAAAQBBAAAAAgCx
-AAAAAwDzBAAABAC/BAAAAQDzBAAAAQBUBwAAAQDEBgAAAQDEBgAAAQAXAwkAHAUBABEAHAUGABkA
-HAUKACkAHAUQADEAHAUQADkAHAUQAEEAHAUQAEkAHAUQAFEAHAUQAFkAHAUQAGEAHAUQAGkAHAUG
-ALkAHAUGANkAHAUVAOkAHAUGAKkA6gIGAKkA9QIGAAwAHAUGAAwAbQA4APEAQwNAAPkAZQZHAAEB
-AQNLAAwAcQZPABQADgVhABwAzgZzAAkBegZ4APEAQQN/ABwALgdHABkBKQEGACEBMQGIAAwACwON
-AJEAHAWWAJEA8wSgAJEA+AWkAJkANwOoAJEA2gOtAJEAywOzAJEA0gMBACkBHAUQAJEAUAdHAJEA
-iAZHAKkAHAUGAAkBJga4AKkADAbAALEAHAUGADkBnwDGADkBXgfPAMEAHAXVAOEAHAUGAC4ACwBW
-AS4AEwBfAS4AGwB+AS4AIwCHAS4AKwCwAS4AMwCwAS4AOwCwAS4AQwCHAS4ASwC2AS4AUwCwAS4A
-WwDNAUMAYwAXAuEAewAXAuMAawAXAukAcwB+AQkBcwB+ARsAAwABAAcABwAIAAkAAACsBDsBAADG
-Az8BAACYBDsBAACrAz8BAACnBEMBAADBAz8BAAD+BEcBAAABAUwBAACYBlEBAgAGAAMAAQAHAAMA
-AgAIAAUAAQAJAAUAAQAKAAcAAQALAAkAAQAMAAsAAQANAA0AAgAXAA8AAgAYABEAAQAZABEAAgAa
-ABMAMQBaAGwABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAN0ASQAAAAAAEAAAAAAA
-AAAAAAAA5gDaBgAAAAAEAAAAAAAAAAAAAADdAOMDAAAAABAAAAAAAAAAAAAAAOYA9wYAAAAAAAAA
-AAEAAABtBQAAAAAAU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIASW50MzIARGlj
-dGlvbmFyeWAyADxNb2R1bGU+AElucHV0SUQAbXNjb3JsaWIAU3lzdGVtLkNvbGxlY3Rpb25zLkdl
-bmVyaWMAQWRkAGRlZmF1bHRJbnN0YW5jZQBJRGlzcG9zYWJsZQBSdW50aW1lVHlwZUhhbmRsZQBH
-ZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxp
-bmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQ2FwdHVyZQBB
-cHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAFBhcnNlAEVkaXRvckJyb3dzYWJsZVN0YXRl
-AENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUA
-RGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRs
-ZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRy
-aWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25B
-dHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RB
-dHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVu
-dHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRp
-YmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAZ2V0X1ZhbHVlAFRyeUdldFZh
-bHVlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAElzTWF0Y2gAU3lz
-dGVtLkNvbXBvbmVudE1vZGVsAFNDXzhiNjI4M2FiOGMyZDQxNTdhMDU3MjE0NzBiNTFmZTAyLmRs
-bABnZXRfUGFnb19Jc051bGwAc2V0X1BhZ29fSXNOdWxsAHNldF9UaXBvRGVQYWdvX0lzTnVsbABz
-ZXRfTW9udG9QYWdvX0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNvdXJjZU1hbgBT
-Y3JpcHRNYWluAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3Rl
-bS5SZWZsZWN0aW9uAEtleUNvbGxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJp
-bmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAGdldF9QYWdvAHNldF9QYWdvAHNldF9UaXBvRGVQYWdv
-AHNldF9Nb250b1BhZ28AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAAR3JvdXAARW50cmFkYTBCdWZm
-ZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAR2V0RW51
-bWVyYXRvcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNv
-bXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ184YjYyODNhYjhjMmQ0MTU3YTA1NzIx
-NDcwYjUxZmUwMi5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMA
-U0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIuUHJvcGVydGllcwBWYXJpYWJsZXMA
-QnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBTeXN0
-ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnMAQ29ubmVjdGlvbnMAUmVnZXhPcHRpb25zAGdldF9T
-dWNjZXNzAGdldF9LZXlzAENvbmNhdABPYmplY3QARW5kT2ZSb3dzZXQAZ2V0X0RlZmF1bHQAVXNl
-ckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AGdldF9DdXJyZW50AE1p
-Y3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhv
-c3QARW50cmFkYTBfUHJvY2Vzc0lucHV0AE1vdmVOZXh0AEVudHJhZGEwX1Byb2Nlc3NJbnB1dFJv
-dwBOZXh0Um93AFJlZ2V4AGdldF9Bc3NlbWJseQAAABFFAEYARQBDAFQASQBWAE8AAAV5AGEAAAlZ
-AEEAUABFAAAFcABsAAAJUABMAEkATgAAB2UAZgBlAAAPXABiAFwAZAArAFwAYgAABVwAYgAAC1wA
-dwAqAFwAYgAAgL1MAGEAIABwAHIAbwBwAGkAZQBkAGEAZAAgAEkAcwBOAHUAbABsACAAbgBvACAA
-cAB1AGUAZABlACAAZQBzAHQAYQBiAGwAZQBjAGUAcgBzAGUAIABlAG4AIABGAGEAbABzAGUALgAg
-AEUAbgAgAHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkAZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIA
-IABhACAAbABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBuAHQAcgBhAGQAYQAgADAAAHFTAEMAXwA4
-AGIANgAyADgAMwBhAGIAOABjADIAZAA0ADEANQA3AGEAMAA1ADcAMgAxADQANwAwAGIANQAxAGYA
-ZQAwADIALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAA1JySW59o
-q0K1dn6Z0DuZHAAEIAEBCAMgAAEFIAEBEREEIAEBDgUgAQERaRUHCA4VEjkCDg4SPQ4ODhURRQIO
-Dg4GFRI5Ag4OByACARMAEwEGAAISPQ4OAyAAAgMgAA4KIAAVEkECEwATAQYVEkECDg4KIAAVEUUC
-EwATAQYVEUUCDg4EIAATAAYAAw4ODg4IAAMCDg4RgIkEAAEIDgggAgITABATAQkgAwESTR0IElED
-BhJNAwYdCAQgAQ4IBSACAQgcBCABAggHIAICDhGAmQUgAR0ICAgAARKAnRGAoQUgABKApQcgAgEO
-EoClCLd6XFYZNOCJCImEXc2AgMyRAwYSFAMGEhgDBhJVAwYSYQMGEmUDBhIgBSABARIMBCABAQIJ
-IAQBCA4STRJRBSABARJVBAAAEmEEAAASZQUAAQESZQQAABIgAwAAAQMoAA4DKAACAygACAQIABJh
-BAgAEmUECAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAA
-AAAoAQAjU0NfOGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIAAAUBAAAAABYBABFDb3B5
-cmlnaHQgQCAgMjAyNAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdv
-cmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAALQAAADOyu++AQAAAJEAAABsU3lz
-dGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwg
-Q3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5S
-ZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAD0NQAAAAAA
-AAAAAAAONgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAABfQ29yRGxsTWFp
-bgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-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
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAs
+NgAAAAAAAEgAAAACAAUAACMAAEASAAABAAAAAAAAAEA1AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAYAAgEAAAEAABEDcgEAAHBv
+CgAABgMgxh4AABYWFhhzEgAACm8MAAAGA28GAAAGCnMTAAAKJXITAABwchkAAHBvFAAACiVyIwAA
+cHIpAABwbxQAAAolcjMAAHByAQAAcG8UAAAKCwZyOwAAcCgVAAAKDAhvFgAACi0DFCsGCG8XAAAK
+DRQTBAdvGAAACm8ZAAAKEwYrKRIGKBoAAAoTBwZySwAAcBEHclEAAHAoGwAAChcoHAAACiwGEQcT
+BN4ZEgYoHQAACi3O3g4SBv4WAwAAG28eAAAK3AksDAMJKB8AAApvDAAABhEELBUHEQQSBW8gAAAK
+LAkDEQVvCgAABioDcgEAAHBvCgAABioAAAEQAAACAIoANsAADgAAAAAeAigQAAAGKioCAwQFKCEA
+AAoqUgJ7IgAACgJ7IwAAChaUbyQAAAoqJgIWAyglAAAKKiICFigmAAAKKloDLAgCFignAAAKKnJd
+AABwcygAAAp6JgIXAyglAAAKKloDLAgCFygnAAAKKnJdAABwcygAAAp6OgIYA4wVAAABKCUAAAoq
+WgMsCAIYKCcAAAoqcl0AAHBzKAAACnoeAigpAAAKKh4CKCoAAAoqfgIoKwAACgICcxQAAAZ9AQAA
+BAICcxUAAAZ9AgAABCqSBHIcAQBwGm8sAAAKLBUCBQIDKC0AAAoOBHMFAAAGbxIAAAYqSisHAgNv
+EwAABgNvDgAABi3xKgYqOgIoLgAACgIDfQMAAAQqOgIoLgAACgIDfQQAAAQqHgIoLgAACiqufgUA
+AAQtHnIwAQBw0AcAAAIoLwAACm8wAAAKczEAAAqABQAABH4FAAAEKhp+BgAABCoeAoAGAAAEKhp+
+BwAABCoeAigyAAAKKi5zGwAABoAHAAAEKgBCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAF
+AGwAAACABgAAI34AAOwGAABwBwAAI1N0cmluZ3MAAAAAXA4AAKQBAAAjVVMAABAAABAAAAAjR1VJ
+RAAAABAQAAAwAgAAI0Jsb2IAAAAAAAAAAgAAAVcVogkJAQAAAPoBMwAWAAABAAAAKQAAAAgAAAAH
+AAAAHAAAABMAAAAyAAAAEAAAAAEAAAADAAAACQAAAAwAAAADAAAAAQAAAAQAAAABAAAAAABhAwEA
+AAAAAAYAMgI+BQYAxgI+BQYAfgErBQ8AsgUAAAYAqwEtBAYAFQItBAYA9gEtBAYArQItBAYAUgIt
+BAYAawItBAYAwgEtBAYA3QEXAwoAhgK1AAYAJQBMAA4APQMvBjsAPwQAAEMAEwUAAAoA7wS1ABIA
+4AS1AAoAswS1AAYAQwPlAwoAwAa1AAYAgwblAwYAYQErBQYAAAVeBQYAeAQYBA4AMQFLAw4AkgFL
+Aw4ACwEDBAYARgE+BQ4AWgcvBg4AywQvBg4AAwEvBgYANAPlAw4AWgYvBgYAewDlAwYATQTlAwYA
+ZwTlAwYA1gDlAwYAhwDlAwYAZActBAAAAAAyAAAAAAABAAEAAQAQAPgDAAAQAAEAAQABABAA0QQA
+AEkAAQAFAAEAEACiBgAAWQABABAAAQAQAE4GAABdAAMAFAABABAA8AUAAF0ABAAVAAAAEABlBcEF
+XQAFABYAAAEQAB8GwQV1AAcAGgAGAE4G+QAGAPAF/QABALAGAQEBALAGAQERAOwDBQERAPMACQER
+AGsADQFQIAAAAADGAOQCBgABAFggAAAAAMYA7wIGAAEAYCAAAAAAxgA5BxEBAQCAIQAAAACGGB4F
+BgACAIghAAAAAIYYHgWgAAIAkyEAAAAAhgiEBFQABQCoIQAAAACGCI0EEAAFALIhAAAAAIYIiQNQ
+AAYAuyEAAAAAhgiZAxcBBgDSIQAAAACGCJYEEAAHANwhAAAAAIYIqQMXAQgA8yEAAAAAhgilBBwB
+CQACIgAAAACGCL8DFwEKABkiAAAAAIYAUgdQAAsAISIAAAAAhgCKBlAACwApIgAAAACGGB4FBgAL
+AEkiAAAAAMYAIwciAQsAbiIAAAAAxgEaBxEBDwCBIgAAAADGATkHEQEQAIMiAAAAAIYYHgUsAREA
+kiIAAAAAhhgeBSwBEgChIgAAAACDGB4FBgATAKkiAAAAAJMI/AQyARMA1SIAAAAAkwjbADcBEwDc
+IgAAAACTCOcAPAETAOQiAAAAAJYIlgZCARQA6yIAAAAAhhgeBQYAFADzIgAAAACRGCQFRwEUAAAA
+AQBWBwAAAQD1BAAAAgD6BQAAAwDBBAAAAQARAwAAAQARAwAAAQARAwAAAQARAwAAAQARAwAAAQAR
+AwAAAQA7AAAAAgCrAAAAAwD1BAAABADBBAAAAQD1BAAAAQBWBwAAAQDGBgAAAQDGBgAAAQARAwkA
+HgUBABEAHgUGABkAHgUKACkAHgUQADEAHgUQADkAHgUQAEEAHgUQAEkAHgUQAFEAHgUQAFkAHgUQ
+AGEAHgUQAGkAHgUGAMEAHgUGAOEAHgUVAPEAHgUGALEA5AIGALEA7wIGAKkAHgUxAAwAHgUGAAwA
+ZwBBAPkAPQNJAAEBZwZQAAkB+wJUAAwAcwZYABQAEAVqABwA0AZ8ABEBfAaBAPkAOwOIABwAMAdQ
+ACEBIwEGAKkAKwGRAAwABQOXAJEAHgWgAJEA9QSqAJEA+gWuAJkAMQOyAJEA3AO3AJEAzQO9AJEA
+1AMBACkBHgUQAJEAUgdQAJEAigZQALEAHgUGABEBKAbCALEADgbKALkAHgUGADkBmQDQADkBYAfZ
+AMkAHgXfAOkAHgUGAC4ACwBnAS4AEwBwAS4AGwCPAS4AIwCYAS4AKwDBAS4AMwDBAS4AOwDBAS4A
+QwCYAS4ASwDHAS4AUwDBAS4AWwDeAUMAYwAoAuEAewAoAuMAawAoAukAcwCPAQkBcwCPARsAAwAB
+AAcABwAIAAkAAACuBEsBAADIA08BAACaBEsBAACtA08BAACpBFMBAADDA08BAAAABVgBAAD7AF0B
+AACaBmIBAgAGAAMAAQAHAAMAAgAIAAUAAQAJAAUAAQAKAAcAAQALAAkAAQAMAAsAAQANAA0AAgAX
+AA8AAgAYABEAAQAZABEAAgAaABMAOgBjAHUABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAA
+AAAAAOcAQwAAAAAAEAAAAAAAAAAAAAAA8ADcBgAAAAAEAAAAAAAAAAAAAADnAOUDAAAAABAAAAAA
+AAAAAAAAAPAA+QYAAAAAAAAAAAEAAABvBQAAAAAAAABTQ184YjYyODNhYjhjMmQ0MTU3YTA1NzIx
+NDcwYjUxZmUwMgBEaWN0aW9uYXJ5YDIAPE1vZHVsZT4ASW5wdXRJRABtc2NvcmxpYgBTeXN0ZW0u
+Q29sbGVjdGlvbnMuR2VuZXJpYwBBZGQAZGVmYXVsdEluc3RhbmNlAElEaXNwb3NhYmxlAFJ1bnRp
+bWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAElucHV0TmFtZQBNaWNyb3NvZnQuU3FsU2Vy
+dmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3Vs
+dHVyZQBDYXB0dXJlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAERpc3Bvc2UAUGFyc2UARWRpdG9y
+QnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2Vy
+Q29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0
+ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdl
+dEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1i
+bHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFz
+c2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2Ny
+aXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUA
+UnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRf
+VmFsdWUAVHJ5R2V0VmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBHZXRTdHJp
+bmcASXNNYXRjaABEZWNpbWFsAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ184YjYyODNhYjhjMmQ0
+MTU3YTA1NzIxNDcwYjUxZmUwMi5kbGwAZ2V0X1BhZ29fSXNOdWxsAHNldF9QYWdvX0lzTnVsbABz
+ZXRfVGlwb0RlUGFnb19Jc051bGwAc2V0X01vbnRvUGFnb19Jc051bGwAU2V0TnVsbABzZXRfSXRl
+bQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0
+ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBLZXlDb2xsZWN0aW9uAEludmFsaWRP
+cGVyYXRpb25FeGNlcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBnZXRfUGFnbwBz
+ZXRfUGFnbwBzZXRfVGlwb0RlUGFnbwBzZXRfTW9udG9QYWdvAE91dHB1dE5hbWVNYXAAT3V0cHV0
+TWFwAEdyb3VwAEVudHJhZGEwQnVmZmVyAFBpcGVsaW5lQnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRf
+UmVzb3VyY2VNYW5hZ2VyAEdldEVudW1lcmF0b3IALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9z
+dGljcwBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU0Nf
+OGI2MjgzYWI4YzJkNDE1N2EwNTcyMTQ3MGI1MWZlMDIuUHJvcGVydGllcy5SZXNvdXJjZXMucmVz
+b3VyY2VzAERlYnVnZ2luZ01vZGVzAFNDXzhiNjI4M2FiOGMyZDQxNTdhMDU3MjE0NzBiNTFmZTAy
+LlByb3BlcnRpZXMAVmFyaWFibGVzAEJ1ZmZlckNvbHVtbkluZGV4ZXMAR2V0Q29sdW1uSW5kZXhl
+cwBTZXR0aW5ncwBFcXVhbHMAU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zAENvbm5lY3Rp
+b25zAFJlZ2V4T3B0aW9ucwBnZXRfU3VjY2VzcwBnZXRfS2V5cwBDb25jYXQAT2JqZWN0AEVuZE9m
+Um93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENv
+bXBvbmVudABnZXRfQ3VycmVudABNaWNyb3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29m
+dC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0AEVudHJhZGEwX1Byb2Nlc3NJbnB1dABNb3ZlTmV4dABF
+bnRyYWRhMF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBSZWdleABnZXRfQXNzZW1ibHkAAAAAABFF
+AEYARQBDAFQASQBWAE8AAAV5AGEAAAlZAEEAUABFAAAFcABsAAAJUABMAEkATgAAB2UAZgBlAAAP
+XABiAFwAZAArAFwAYgAABVwAYgAAC1wAdwAqAFwAYgAAgL1MAGEAIABwAHIAbwBwAGkAZQBkAGEA
+ZAAgAEkAcwBOAHUAbABsACAAbgBvACAAcAB1AGUAZABlACAAZQBzAHQAYQBiAGwAZQBjAGUAcgBz
+AGUAIABlAG4AIABGAGEAbABzAGUALgAgAEUAbgAgAHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkA
+ZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIAIABhACAAbABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBu
+AHQAcgBhAGQAYQAgADAAAHFTAEMAXwA4AGIANgAyADgAMwBhAGIAOABjADIAZAA0ADEANQA3AGEA
+MAA1ADcAMgAxADQANwAwAGIANQAxAGYAZQAwADIALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBl
+AHMAbwB1AHIAYwBlAHMAAAAA44yDgVQOzEKW64x85wYkmQAEIAEBCAMgAAEFIAEBEREEIAEBDgUg
+AQERbRUHCA4VEjkCDg4SPQ4ODhURRQIODg4IIAUBCAgIAgUGFRI5Ag4OByACARMAEwEGAAISPQ4O
+AyAAAgMgAA4KIAAVEkECEwATAQYVEkECDg4KIAAVEUUCEwATAQYVEUUCDg4EIAATAAYAAw4ODg4I
+AAMCDg4RgI0FAAERVQ4IIAICEwAQEwEJIAMBEk0dCBJRAwYSTQMGHQgEIAEOCAUgAgEIHAQgAQII
+ByACAg4RgJkFIAEdCAgIAAESgJ0RgKEFIAASgKUHIAIBDhKApQi3elxWGTTgiQiJhF3NgIDMkQMG
+EhQDBhIYAwYSWQMGEmUDBhJpAwYSIAUgAQESDAQgAQECBSABARFVCSAEAQgOEk0SUQUgAQESWQQA
+ABJlBAAAEmkFAAEBEmkEAAASIAMAAAEDKAAOAygAAgQoABFVBAgAEmUECAASaQQIABIgCAEACAAA
+AAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ184YjYyODNh
+YjhjMmQ0MTU3YTA1NzIxNDcwYjUxZmUwMgAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJ
+AQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5O
+RVQgRnJhbWV3b3JrIDQuNwQBAAAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2Vz
+LlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRy
+YWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50
+aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAACA2AAAAAAAAAAAAADo2AAAAIAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAsNgAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxs
+AAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -8276,7 +8278,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAACA2AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAEw2AAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -8358,7 +8360,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           name="TipoDePago" />
                         <outputColumn
                           refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]"
-                          dataType="i4"
+                          dataType="decimal"
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]"
                           name="MontoPago" />
                       </outputColumns>
@@ -8458,7 +8460,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup tipopago.Outputs[Lookup Match Output].Columns[PK_TIPOPAGO]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Instancia SQL Server destino.Inputs[OLE DB Destination Input].Columns[MontoPago]"
-                          cachedDataType="i4"
+                          cachedDataType="decimal"
                           cachedName="MontoPago"
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
@@ -8546,8 +8548,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           name="PK_FECHA" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
-                          dataType="i4"
-                          name="MONTO" />
+                          dataType="numeric"
+                          name="MONTO"
+                          precision="6"
+                          scale="2" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Instancia SQL Server destino.Inputs[OLE DB Destination Input].ExternalColumns[PK_HORA_INICIO]"
                           codePage="1252"
@@ -8688,7 +8692,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[TipoDePago]" />
                         <inputColumn
                           refId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\log de errores 2024.Inputs[Flat File Destination Input].Columns[MontoPago]"
-                          cachedDataType="i4"
+                          cachedDataType="decimal"
                           cachedName="MontoPago"
                           externalMetadataColumnId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\log de errores 2024.Inputs[Flat File Destination Input].ExternalColumns[MontoPago]"
                           lineageId="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX).Outputs[Salida 0].Columns[MontoPago]" />
@@ -11819,29 +11823,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="184.8,41.6"
+          Size="185,42"
           Id="Package\Limpiar FACT_VENTAS"
           TopLeft="322,104" />
         <NodeLayout
-          Size="204.8,41.6"
+          Size="205,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023"
           TopLeft="62,39" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="315.2,139.2"
-          Size="315.2,182.4"
+          PanelSize="315,139"
+          Size="315,182"
           Id="Package\Para cada página del excel,,, 2023"
           TopLeft="251,220" />
         <NodeLayout
-          Size="204.8,41.6"
+          Size="205,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024"
           TopLeft="62,39" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="315.2,139.2"
-          Size="315.2,182.4"
+          PanelSize="315,139"
+          Size="315,182"
           Id="Package\Para cada página del excel,,, 2024"
           TopLeft="251,462" />
         <EdgeLayout
@@ -11987,9 +11991,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12083,9 +12085,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12107,9 +12107,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12131,9 +12129,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12347,9 +12343,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12371,9 +12365,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12395,9 +12387,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12493,67 +12483,67 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Parseo de types"
           TopLeft="894,286" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\log de errores 2024"
           TopLeft="927.958286948297,725.166662131581" />
         <NodeLayout
-          Size="215.2,41.6"
+          Size="215,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Instancia SQL Server destino"
           TopLeft="905,626" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="157,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup tipopago"
           TopLeft="546,625" />
         <NodeLayout
-          Size="147.2,41.6"
+          Size="147,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup cliente"
           TopLeft="67,517" />
         <NodeLayout
-          Size="219.2,41.6"
+          Size="219,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Cleansing de division de pago"
           TopLeft="826,171" />
         <NodeLayout
-          Size="169.6,41.6"
+          Size="170,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Obtencion de fecha"
           TopLeft="687,286" />
         <NodeLayout
-          Size="232.8,41.6"
+          Size="233,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Division de pago mediante Expresiones Regulares (REGEX)"
           TopLeft="465,173" />
         <NodeLayout
-          Size="192.8,41.6"
+          Size="193,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Remover filas no válidas"
           TopLeft="69,172" />
         <NodeLayout
-          Size="200,41.6"
+          Size="200,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Base de datos LAOS 2024"
           TopLeft="76,54" />
         <NodeLayout
-          Size="142.4,41.6"
+          Size="142,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup fecha"
           TopLeft="742,520" />
         <NodeLayout
-          Size="160,41.6"
+          Size="160,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup promotor"
           TopLeft="375,515" />
         <NodeLayout
-          Size="160,41.6"
+          Size="160,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Lookup categoria"
           TopLeft="208,617" />
         <NodeLayout
-          Size="246.4,41.6"
+          Size="246,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Artificio de conversion alfanumerica"
           TopLeft="370,286" />
         <NodeLayout
-          Size="208.8,41.6"
+          Size="209,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Conversion de hora a string"
           TopLeft="497,397" />
         <NodeLayout
-          Size="231.2,41.6"
+          Size="231,42"
           Id="Package\Para cada página del excel,,, 2024\Carga FACT_VENTAS 2024\Preparación de vars para lookup"
           TopLeft="67,283" />
         <EdgeLayout

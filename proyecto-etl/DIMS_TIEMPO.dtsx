@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="DIMS_TIEMPO"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{F91B504D-61C0-4FE6-B38D-059C56877011}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{2725F468-78BD-4269-906C-58C2D0800DCD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1673,15 +1673,15 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="166.4,41.6"
+          Size="166,42"
           Id="Package\Carga DIM_FECHA"
           TopLeft="448,218" />
         <NodeLayout
-          Size="163.2,41.6"
+          Size="163,42"
           Id="Package\Carga DIM_HORA"
           TopLeft="650,221" />
         <NodeLayout
-          Size="224.8,41.6"
+          Size="225,42"
           Id="Package\Limpiar dimensiones de tiempo"
           TopLeft="520,80" />
         <EdgeLayout

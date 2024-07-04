@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS_2023"
   DTS:PackageType="5"
-  DTS:VersionBuild="361"
-  DTS:VersionGUID="{7599A236-D594-4138-B88F-387982FF115D}">
+  DTS:VersionBuild="362"
+  DTS:VersionGUID="{137EE3CD-EB0C-4BB8-9483-83BE90EA80DE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -1631,7 +1631,7 @@
                           refId="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE]"
                           codePage="1252"
                           dataType="str"
-                          length="99"
+                          length="120"
                           name="NOMBRE" />
                         <externalMetadataColumn
                           refId="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DNI]"
@@ -3306,33 +3306,33 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="192,41.6"
+          Size="192,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CATEGORIA"
           TopLeft="316,39" />
         <NodeLayout
-          Size="176,41.6"
+          Size="176,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CLIENTE"
           TopLeft="109,38" />
         <NodeLayout
-          Size="191.2,41.6"
+          Size="191,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_PROMOTOR"
           TopLeft="107,110" />
         <NodeLayout
-          Size="185.6,41.6"
+          Size="186,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO"
           TopLeft="313,111" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="680.8,232.8"
-          Size="680.8,276"
+          PanelSize="681,233"
+          Size="681,276"
           Id="Package\Para cada página del excel 2023"
           TopLeft="140,372" />
         <AnnotationLayout
           Text="FLUJO DE DATOS PARA AÑO 2023&#xA;"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="208.8,56"
+          Size="209,56"
           Id="921c7f26-1907-417d-809c-3ddf0ec22410"
           TopLeft="378,269" />
       </GraphLayout>
@@ -3363,6 +3363,42 @@
           Size="155.2,41.6"
           Id="Package\Para cada página del excel 2023\Carga DIM_CATEGORIA\Conditional Split"
           TopLeft="237,189" />
+        <EdgeLayout
+          Id="Package\Para cada página del excel 2023\Carga DIM_CATEGORIA.Paths[Data Conversion Output]"
+          TopLeft="652,473">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113.5,64"
+              Start="0,0"
+              End="113.5,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="109.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="109.5,32"
+                    Point2="113.5,32"
+                    Point3="113.5,36" />
+                  <mssgle:LineSegment
+                    End="113.5,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel 2023\Carga DIM_CATEGORIA.Paths[valido]"
           TopLeft="314.5,231">
@@ -3430,7 +3466,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3464,41 +3502,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel 2023\Carga DIM_CATEGORIA.Paths[Data Conversion Output]"
-          TopLeft="652,473">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="113.5,64"
-              Start="0,0"
-              End="113.5,56.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28"
-                    Point2="0,32"
-                    Point3="4,32" />
-                  <mssgle:LineSegment
-                    End="109.5,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="109.5,32"
-                    Point2="113.5,32"
-                    Point3="113.5,36" />
-                  <mssgle:LineSegment
-                    End="113.5,56.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3531,23 +3537,23 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\Excel Source"
           TopLeft="114,71" />
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\Derived Column"
           TopLeft="448,327" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="155,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\Conditional Split"
           TopLeft="237,189" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\OLE DB Destination"
           TopLeft="680,537" />
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\Para cada página del excel 2023\Carga DIM_CLIENTE\Data Conversion"
           TopLeft="574,431" />
         <EdgeLayout
@@ -3723,6 +3729,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Para cada página del excel 2023\Carga DIM_PROMOTOR\OLE DB Destination"
+          TopLeft="680,537" />
+        <NodeLayout
           Size="153.6,41.6"
           Id="Package\Para cada página del excel 2023\Carga DIM_PROMOTOR\Derived Column"
           TopLeft="337,327" />
@@ -3734,10 +3744,6 @@
           Size="155.2,41.6"
           Id="Package\Para cada página del excel 2023\Carga DIM_PROMOTOR\Conditional Split"
           TopLeft="237,190" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Para cada página del excel 2023\Carga DIM_PROMOTOR\OLE DB Destination"
-          TopLeft="680,537" />
         <NodeLayout
           Size="246.4,41.6"
           Id="Package\Para cada página del excel 2023\Carga DIM_PROMOTOR\Artificio de conversion alfanumérica"
@@ -3813,7 +3819,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3835,7 +3843,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3857,7 +3867,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3891,7 +3903,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3936,47 +3950,13 @@
           Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO\Data Conversion"
           TopLeft="574,431" />
         <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO\OLE DB Destination"
-          TopLeft="680,537" />
-        <NodeLayout
           Size="155.2,41.6"
           Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO\Conditional Split"
           TopLeft="237,190" />
-        <EdgeLayout
-          Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO.Paths[Excel Source Output]"
-          TopLeft="183.5,113">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="131,77"
-              Start="0,0"
-              End="131,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="4,38.5" />
-                  <mssgle:LineSegment
-                    End="127,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="127,38.5"
-                    Point2="131,38.5"
-                    Point3="131,42.5" />
-                  <mssgle:LineSegment
-                    End="131,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO\OLE DB Destination"
+          TopLeft="680,537" />
         <EdgeLayout
           Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO.Paths[Derived Column Output]"
           TopLeft="525,369">
@@ -4008,7 +3988,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4042,7 +4024,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4078,6 +4062,42 @@
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="91.51896484375,52.5,27.4620703125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel 2023\Carga DIM_TIPOPAGO.Paths[Excel Source Output]"
+          TopLeft="183.5,113">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="131,77"
+              Start="0,0"
+              End="131,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="4,38.5" />
+                  <mssgle:LineSegment
+                    End="127,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="127,38.5"
+                    Point2="131,38.5"
+                    Point3="131,42.5" />
+                  <mssgle:LineSegment
+                    End="131,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

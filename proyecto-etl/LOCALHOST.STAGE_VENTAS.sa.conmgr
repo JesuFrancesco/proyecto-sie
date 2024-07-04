@@ -8,6 +8,10 @@
       DTS:Retain="True"
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-proyecto-etl-{447FE81E-8B87-40B3-99B6-7388B6A76550}LOCALHOST.STAGE_VENTAS.sa;" />
+      DTS:ConnectionString="Data Source=LOCALHOST;User ID=sa;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-proyecto-etl-{447FE81E-8B87-40B3-99B6-7388B6A76550}LOCALHOST.STAGE_VENTAS.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvPFgzlIatkSUZNxD4lKH8wAAAAACAAAAAAAQZgAAAAEAACAAAAB1hUfqXHJ2ZMRtzpveA72AKIfcUbI9DtEiNJHQ+FpQgAAAAAAOgAAAAAIAACAAAAD3/uBYxv5nOA9V1VAGKOAUeVWp67AvAt6EsEfTZ3avdIAAAAAP7f/cLsDC6pNmdP3HOeeRZWZ4VUZNrNcGZ1Ecb1OYmcCRmlA8Tx4zwxLIqzRy/MEQNbDQk9fBF2adOxCHatxC8NGf6w29ELvlZ+PCifzOhBMkrWBtww8jHvufPctBqnpYEbzqb4+66yMw0EfffFBnxGhpsdW+dYv/kStn4mq5skAAAABnQM8dylZEEKXIREZlsFjX7dIJmVBuK2Zk2R/KpfkbWMIdA7p19+9kvG9NztSKXgSqmbDrwzCDuCs7qGK1Xslx</DTS:Password>
+    </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

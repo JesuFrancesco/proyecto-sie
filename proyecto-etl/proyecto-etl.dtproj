@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">PC-JESU</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACcIEI7iPOE+Zoz16mQ08UAAAAAACAAAAAAAQZgAAAAEAACAAAACpnwuWO0+vasiIBeRMb2nwFAdrAgQsPFF+Kd9gUpuxggAAAAAOgAAAAAIAACAAAABTv6t9pIHHJ5tJUD7ue3bNhj8awm1GKx8o53QBMKipeJAAAAA+3KoldoXv+4aueeWuTKI46pXHJP4xJvC/zRWFs488GTRBywznwB4tnzW26swdgmnyLeDkBM3PLtNLJW1xZSfhiyuKRY/v1q44ZHlOWENH0ePYI/i5TNGdJGXtnpl5CqC4aVa3dcBn8ZL0ILW2f/wPpwGw17cfsH6g5HxIygxry/+tgS/vr/B1knNNQ7smJuNAAAAArG4xaeSyfohlF5GIxEaaMviHPLvfFBlPEo5RwpW7WsTyRfI324P0SSr8Rl1daAYPKRbhogWJ+S2v3w7QQC8wFg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvPFgzlIatkSUZNxD4lKH8wAAAAACAAAAAAAQZgAAAAEAACAAAAAK/nPRrIR3/ej4vEtY9UDPiFjghAQu0f+Be6SrsmsIhAAAAAAOgAAAAAIAACAAAAC8pFb9zEbA2FLa98TGfK0SZ59/1ZYicMfjNxqWm3oYPZAAAACApygdhdPbdw8WzBjrR3/Q42ESzE/1Y2quFd+mmfVWjsXgnpAGY8l+MGACLPg/Sx1+KoODgScIdllk/5i2f0mbKI7lt8qzQhk7lDNwYVSOl3nuYSoblYapDnClf1y7ECtBRta6EvOCbwkTsqBX2RWwLtfmWUC5IWJBJuTGs5fecm37iYv0yC54BpGxhq6UIMZAAAAAsHi9p8WW2rTdcJAXzB5VbYKMm0z7hulLCu3m6z+Lc/OXU8f2xh8y3xUw9ESxPoOs4F/8zfT7cHn0hAZG5hwOJw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -72,7 +72,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=LOCALHOST\SQLEXPRESS;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-proyecto-etl-{447FE81E-8B87-40B3-99B6-7388B6A76550}LOCALHOST.STAGE_VENTAS.sa;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=LOCALHOST;User ID=sa;Initial Catalog=STAGE_VENTAS;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-proyecto-etl-{447FE81E-8B87-40B3-99B6-7388B6A76550}LOCALHOST.STAGE_VENTAS.sa;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -176,7 +176,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">LOCALHOST\SQLEXPRESS</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">LOCALHOST</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -191,6 +191,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">sa</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -220,7 +221,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2023.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -235,7 +236,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2023.xlsx</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -308,7 +309,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2023.xlsx</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -352,7 +353,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -367,7 +368,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -440,7 +441,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -484,7 +485,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2023.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -557,7 +558,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2023.xlsx</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -601,7 +602,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx;Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source="E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx";Provider=Microsoft.ACE.OLEDB.16.0;Extended Properties=Excel 8.0;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -674,7 +675,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2024.xlsx</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">"E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2024.xlsx"</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -717,10 +718,10 @@
                 <SSIS:Property SSIS:Name="Name">CARGA_FACT</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">151</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">153</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{5D1E7304-0486-4352-96FA-548C38042EE1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D9B110A0-5C8D-4F72-BA54-A4B1C77B2B43}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -798,7 +799,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\logs\error_fact_ventas.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\logs\error_fact_ventas.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -966,10 +967,10 @@
                 <SSIS:Property SSIS:Name="Name">DIMS_TIEMPO</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">25</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">26</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F91B504D-61C0-4FE6-B38D-059C56877011}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2725F468-78BD-4269-906C-58C2D0800DCD}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1002,7 +1003,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_fecha.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1017,7 +1018,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_fecha.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1090,7 +1091,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_fecha.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_fecha.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1134,7 +1135,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_hora.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1149,7 +1150,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_hora.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1222,7 +1223,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\jesu\Downloads\ul\proyecto-sie\seeders\dim_hora.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\seeders\dim_hora.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1248,10 +1249,10 @@
                 <SSIS:Property SSIS:Name="Name">Package2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E0B7D15C-CDA5-476D-B692-6A9C904E7850}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FF8D388F-282D-4C7E-8BCC-BA7ACFE34DDB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="0"
       DTS:ConnectRetryInterval="0"
-      DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\jesu\Downloads\ul\proyecto-sie\static\cleansing_laos_ventas_2023.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=E:\Academicos\ULIMA\ULIMA (2024-I y 2024-II)\2.2024-1\3.sist.intel.empresarial\proyecto-integrador\static\cleansing_laos_ventas_2023.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
