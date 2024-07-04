@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="169"
-  DTS:VersionGUID="{F9DA2031-F528-4AA2-B1B5-7ADBA8D346D0}">
+  DTS:VersionBuild="171"
+  DTS:VersionGUID="{85669F40-BCD8-4F55-BEA0-EDF419DAF5D9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1464,8 +1464,7 @@ namespace SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties {
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1547,7 +1546,7 @@ namespace SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties {
     <msb:CodeName>SC_9db192d70e564e3b9f9a8e3b5e49df3b</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_9db192d70e564e3b9f9a8e3b5e49df3b</msb:DisplayName>
-    <msb:ProjectId>{67C67E25-BC1A-4DF5-B629-D079E3C4AA5B}</msb:ProjectId>
+    <msb:ProjectId>{62354277-3E53-4331-8554-F7D89E73D95F}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_9db192d70e564e3b9f9a8e3b5e49df3b.csproj" />
@@ -1694,7 +1693,7 @@ namespace SC_9db192d70e564e3b9f9a8e3b5e49df3b.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJi/gGYAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAAgjQA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAI0Dh2YAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAAgjQA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAADA0AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1780,7 +1779,7 @@ AHIAcwBlACAAZQBuACAARgBhAGwAcwBlAC4AIABFAG4AIABzAHUAIABsAHUAZwBhAHIALAAgAGEA
 cwBpAGcAbgBlACAAdQBuACAAdgBhAGwAbwByACAAYQAgAGwAYQAgAGMAbwBsAHUAbQBuAGEALgAA
 E0UAbgB0AHIAYQBkAGEAIAAwAABxUwBDAF8AOQBkAGIAMQA5ADIAZAA3ADAAZQA1ADYANABlADMA
 YgA5AGYAOQBhADgAZQAzAGIANQBlADQAOQBkAGYAMwBiAC4AUAByAG8AcABlAHIAdABpAGUAcwAu
-AFIAZQBzAG8AdQByAGMAZQBzAADF8qUPMSmVTIsVg/t9z03PAAQgAQEIAyAAAQUgAQEREQQgAQEO
+AFIAZQBzAG8AdQByAGMAZQBzAAAQ7wkgeGaTR6BuFsYs1T8VAAQgAQEIAyAAAQUgAQEREQQgAQEO
 BSABARFhBgcCETkROQQgAQ4OCSADARJFHQgSSQMGEkUDBh0IBSABETkIBSACAQgcBCABAggDIAAC
 BiACAg4ReQUgAR0ICAcAARJ9EYCBBSAAEoCFByACAQ4SgIUIt3pcVhk04IkIiYRdzYCAzJEDBhIU
 AwYSGAMGEk0DBhJZAwYSXQMGEiAFIAEBEgwEIAAROQUgAQEROQQgAQECCSAEAQgOEkUSSQUgAQES
@@ -2549,7 +2548,7 @@ public class Variables
     <msb:CodeName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_8b6283ab8c2d4157a05721470b51fe02</msb:DisplayName>
-    <msb:ProjectId>{A38E142E-766C-49F3-A69B-8B7E4DCC8A75}</msb:ProjectId>
+    <msb:ProjectId>{6451384F-28C3-4FCD-A0F5-B88AB287697D}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_8b6283ab8c2d4157a05721470b51fe02.csproj" />
@@ -2696,7 +2695,7 @@ namespace SC_8b6283ab8c2d4157a05721470b51fe02.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDADOvhmYAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAASjYA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAPMCh2YAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAASjYA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPg1AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -2788,7 +2787,7 @@ AGUAIABlAG4AIABGAGEAbABzAGUALgAgAEUAbgAgAHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkA
 ZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIAIABhACAAbABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBu
 AHQAcgBhAGQAYQAgADAAAHFTAEMAXwA4AGIANgAyADgAMwBhAGIAOABjADIAZAA0ADEANQA3AGEA
 MAA1ADcAMgAxADQANwAwAGIANQAxAGYAZQAwADIALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBl
-AHMAbwB1AHIAYwBlAHMAAAAA5wixpjB1zEyw2AR4XM9eSQAEIAEBCAMgAAEFIAEBEREEIAEBDgUg
+AHMAbwB1AHIAYwBlAHMAAAAA/Mj58oeztUuMTpbY3wqU5AAEIAEBCAMgAAEFIAEBEREEIAEBDgUg
 AQERbRUHCA4VEjkCDg4SPQ4ODhURRQIODg4IIAUBCAgIAgUGFRI5Ag4OByACARMAEwEGAAISPQ4O
 AyAAAgMgAA4KIAAVEkECEwATAQYVEkECDg4KIAAVEUUCEwATAQYVEUUCDg4EIAATAAYAAw4ODg4I
 AAMCDg4RgI0FAAERVQ4IIAICEwAQEwEJIAMBEk0dCBJRAwYSTQMGHQgEIAEOCAUgAgEIHAQgAQII
@@ -5485,7 +5484,7 @@ public class Variables
     <msb:CodeName>SC_228b2e2ff88b4593bb57c6d1c63c82af</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_228b2e2ff88b4593bb57c6d1c63c82af</msb:DisplayName>
-    <msb:ProjectId>{B1F1C3BD-623B-4BDF-85E5-2BDF8F2DADAF}</msb:ProjectId>
+    <msb:ProjectId>{92BAFE26-8AB0-4319-AA9D-50D79A47C223}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_228b2e2ff88b4593bb57c6d1c63c82af.csproj" />
@@ -5723,7 +5722,7 @@ namespace SC_228b2e2ff88b4593bb57c6d1c63c82af.Properties {
                         <arrayElement
                           dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGGigGYAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAABjQA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDADEDh2YAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAABjQA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALQzAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -5806,8 +5805,8 @@ ZABlACAAZQBzAHQAYQBiAGwAZQBjAGUAcgBzAGUAIABlAG4AIABGAGEAbABzAGUALgAgAEUAbgAg
 AHMAdQAgAGwAdQBnAGEAcgAsACAAYQBzAGkAZwBuAGUAIAB1AG4AIAB2AGEAbABvAHIAIABhACAA
 bABhACAAYwBvAGwAdQBtAG4AYQAuAAATRQBuAHQAcgBhAGQAYQAgADAAAHFTAEMAXwAyADIAOABi
 ADIAZQAyAGYAZgA4ADgAYgA0ADUAOQAzAGIAYgA1ADcAYwA2AGQAMQBjADYAMwBjADgAMgBhAGYA
-LgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAGmiLHIn7ilPnKBoY3Ns
-t4wABCABAQgDIAABBSABARERBCABAQ4FIAEBEV0JBwYOEjkODg4OBgACEjkODgMgAAIEIAASdQUg
+LgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAMq8llTl2ipFmoW8bUZA
+OnMABCABAQgDIAABBSABARERBCABAQ4FIAEBEV0JBwYOEjkODg4OBgACEjkODgMgAAIEIAASdQUg
 ARJxCAMgAA4DIAAIBQACDg4OBgADDg4ODgkgAwESQR0IEkUDBhJBAwYdCAQgAQ4IBSACAQgcBCAB
 AggHIAICDhGAhQUgAR0ICAgAARKAiRGAjQUgABKAkQcgAgEOEoCRCLd6XFYZNOCJCImEXc2AgMyR
 AwYSFAMGEhgDBhJJAwYSVQMGElkDBhIgBSABARIMBCABAQIJIAQBCA4SQRJFBSABARJJBAAAElUE
@@ -13505,33 +13504,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor"
-          TopLeft="316,654" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria"
-          TopLeft="151,569" />
+          Size="193,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Remover filas no válidas"
+          TopLeft="69,172" />
         <NodeLayout
           Size="1029,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino"
           TopLeft="53,757" />
         <NodeLayout
-          Size="193,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Remover filas no válidas"
-          TopLeft="69,172" />
-        <NodeLayout
-          Size="231,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Preparación de vars para lookup"
-          TopLeft="67,284" />
+          Size="154,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Parseo de types"
+          TopLeft="894,286" />
         <NodeLayout
           Size="219,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Cleansing de division de pago"
           TopLeft="826,171" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Parseo de types"
-          TopLeft="894,286" />
         <NodeLayout
           Size="157,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup tipopago"
@@ -13541,21 +13528,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup cliente"
           TopLeft="32,493" />
         <NodeLayout
+          Size="231,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Preparación de vars para lookup"
+          TopLeft="67,284" />
+        <NodeLayout
           Size="233,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX)"
           TopLeft="465,173" />
         <NodeLayout
-          Size="984,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Base de datos LAOS 2023"
-          TopLeft="64,54" />
+          Size="170,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Obtencion de fecha"
+          TopLeft="674,286" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup ubicacion"
+          TopLeft="790,552" />
         <NodeLayout
           Size="142,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha"
           TopLeft="930,645" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Obtencion de fecha"
-          TopLeft="674,286" />
+          Size="984,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Base de datos LAOS 2023"
+          TopLeft="64,54" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Mock de dim_local"
+          TopLeft="214,393" />
         <NodeLayout
           Size="209,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Conversion de hora a string"
@@ -13564,40 +13563,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           Size="246,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Artificio de conversion alfanumerica"
           TopLeft="370,286" />
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Data Conversion Output]"
-          TopLeft="971,328">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-262.5,67"
-              Start="0,0"
-              End="-262.5,59.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="-4,33.5" />
-                  <mssgle:LineSegment
-                    End="-258.5,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-258.5,33.5"
-                    Point2="-262.5,33.5"
-                    Point3="-262.5,37.5" />
-                  <mssgle:LineSegment
-                    End="-262.5,59.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor"
+          TopLeft="316,654" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria"
+          TopLeft="151,569" />
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[valido1]"
           TopLeft="935.5,213">
@@ -13659,6 +13632,62 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 03]"
+          TopLeft="297,435">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-191.5,58"
+              Start="0,0"
+              End="-191.5,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
+                  <mssgle:LineSegment
+                    End="-187.5,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-187.5,29"
+                    Point2="-191.5,29"
+                    Point3="-191.5,33" />
+                  <mssgle:LineSegment
+                    End="-191.5,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 02]"
+          TopLeft="604,415">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-224,0"
+              Start="0,0"
+              End="-216.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-216.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 01]"
           TopLeft="844,307">
           <EdgeLayout.Curve>
@@ -13700,6 +13729,72 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output5]"
+          TopLeft="870,594">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="131,51"
+              Start="0,0"
+              End="131,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="4,25.5" />
+                  <mssgle:LineSegment
+                    End="127,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="127,25.5"
+                    Point2="131,25.5"
+                    Point3="131,29.5" />
+                  <mssgle:LineSegment
+                    End="131,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="17.30861328125,30.5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output4]"
+          TopLeft="780,514">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90,38"
+              Start="0,0"
+              End="90,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="86,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86,0"
+                    Point2="90,0"
+                    Point3="90,4" />
+                  <mssgle:LineSegment
+                    End="90,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="41.80861328125,-17.609375,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13924,159 +14019,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Mock de dim_local"
-          TopLeft="214,393" />
         <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 02]"
-          TopLeft="604,415">
+          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Data Conversion Output]"
+          TopLeft="971,328">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-224,0"
+              EndConnector="-262.5,67"
               Start="0,0"
-              End="-216.5,0">
+              End="-262.5,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-216.5,0" />
+                    End="0,29.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.5"
+                    Point2="0,33.5"
+                    Point3="-4,33.5" />
+                  <mssgle:LineSegment
+                    End="-258.5,33.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-258.5,33.5"
+                    Point2="-262.5,33.5"
+                    Point3="-262.5,37.5" />
+                  <mssgle:LineSegment
+                    End="-262.5,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 03]"
-          TopLeft="297,435">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-191.5,58"
-              Start="0,0"
-              End="-191.5,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="-4,29" />
-                  <mssgle:LineSegment
-                    End="-187.5,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-187.5,29"
-                    Point2="-191.5,29"
-                    Point3="-191.5,33" />
-                  <mssgle:LineSegment
-                    End="-191.5,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup ubicacion"
-          TopLeft="790,552" />
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output4]"
-          TopLeft="780,514">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="90,38"
-              Start="0,0"
-              End="90,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="86,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="86,0"
-                    Point2="90,0"
-                    Point3="90,4" />
-                  <mssgle:LineSegment
-                    End="90,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="41.80861328125,-17.609375,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output5]"
-          TopLeft="870,594">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="131,51"
-              Start="0,0"
-              End="131,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5"
-                    Point2="0,25.5"
-                    Point3="4,25.5" />
-                  <mssgle:LineSegment
-                    End="127,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="127,25.5"
-                    Point2="131,25.5"
-                    Point3="131,29.5" />
-                  <mssgle:LineSegment
-                    End="131,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="17.30861328125,30.5,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino">
     <Properties>
@@ -14124,8 +14103,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Base de datos LAOS 2023">
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup ubicacion">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DIM_LOCAL]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -14142,25 +14136,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup ubicacion">
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Base de datos LAOS 2023">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria">
+    <Properties>
       <Property>
-        <Name>UsedTableName</Name>
+        <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q3:string">[dbo].[DIM_LOCAL]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
