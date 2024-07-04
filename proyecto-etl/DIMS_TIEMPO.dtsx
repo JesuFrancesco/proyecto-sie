@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="DIMS_TIEMPO"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{2725F468-78BD-4269-906C-58C2D0800DCD}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{DCE8DEBB-7238-45D8-A10C-5306F50F9E6D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1675,18 +1675,18 @@
         <NodeLayout
           Size="166,42"
           Id="Package\Carga DIM_FECHA"
-          TopLeft="448,218" />
+          TopLeft="403,363" />
         <NodeLayout
           Size="163,42"
           Id="Package\Carga DIM_HORA"
-          TopLeft="650,221" />
+          TopLeft="605,366" />
         <NodeLayout
           Size="225,42"
           Id="Package\Limpiar dimensiones de tiempo"
-          TopLeft="520,80" />
+          TopLeft="475,225" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="596.333333333333,122">
+          TopLeft="551.333333333333,267">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1720,7 +1720,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="668.666666666667,122">
+          TopLeft="623.666666666667,267">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1752,6 +1752,13 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Paquete para poblar las dimensiones de fecha y hora"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="308,60"
+          Id="3e70dafd-9f1c-433e-8ce8-e6e5aeb5c0aa"
+          TopLeft="435,161" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1765,17 +1772,17 @@
           Id="Package\Carga DIM_FECHA\Excel Source"
           TopLeft="267,67" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Carga DIM_FECHA\Data Conversion"
-          TopLeft="476,294" />
+          Size="171,42"
+          Id="Package\Carga DIM_FECHA\OLE DB Destination"
+          TopLeft="629,424" />
         <NodeLayout
           Size="154,42"
           Id="Package\Carga DIM_FECHA\Derived Column"
           TopLeft="355,203" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Carga DIM_FECHA\OLE DB Destination"
-          TopLeft="629,424" />
+          Size="156,42"
+          Id="Package\Carga DIM_FECHA\Data Conversion"
+          TopLeft="476,294" />
         <EdgeLayout
           Id="Package\Carga DIM_FECHA.Paths[Excel Source Output]"
           TopLeft="336.5,109">

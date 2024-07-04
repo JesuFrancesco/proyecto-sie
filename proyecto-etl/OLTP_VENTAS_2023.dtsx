@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="OLTP_VENTAS_2023"
   DTS:PackageType="5"
-  DTS:VersionBuild="362"
-  DTS:VersionGUID="{137EE3CD-EB0C-4BB8-9483-83BE90EA80DE}">
+  DTS:VersionBuild="363"
+  DTS:VersionGUID="{1536E879-B351-4C92-A47D-75FA97C5C45A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -3329,12 +3329,12 @@
           Id="Package\Para cada página del excel 2023"
           TopLeft="140,372" />
         <AnnotationLayout
-          Text="FLUJO DE DATOS PARA AÑO 2023&#xA;"
+          Text="Flujo de datos para las ventas en el año 2023"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="209,56"
+          Size="266,40"
           Id="921c7f26-1907-417d-809c-3ddf0ec22410"
-          TopLeft="378,269" />
+          TopLeft="352,296" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

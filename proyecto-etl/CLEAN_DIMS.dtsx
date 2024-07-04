@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{FF8D388F-282D-4C7E-8BCC-BA7ACFE34DDB}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{7AB08904-1617-4F2B-AC77-91EBC7CFF7E8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -38,6 +38,7 @@
       DTS:refId="Package\Limpiar tabla de hechos"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{9775D4BD-196A-421A-B63B-D8A561A6ED4A}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -77,25 +78,37 @@
         <NodeLayout
           Size="175,42"
           Id="Package\Limpiar dimensiones"
-          TopLeft="277,234" />
+          TopLeft="278,231" />
         <NodeLayout
           Size="191,42"
           Id="Package\Limpiar tabla de hechos"
-          TopLeft="522,238" />
+          TopLeft="462,344" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="452,257">
+          TopLeft="365.5,273">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="70,0"
+              EndConnector="192,71"
               Start="0,0"
-              End="62.5,0">
+              End="192,63.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="62.5,0" />
+                    End="0,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="4,35.5" />
+                  <mssgle:LineSegment
+                    End="188,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="188,35.5"
+                    Point2="192,35.5"
+                    Point3="192,39.5" />
+                  <mssgle:LineSegment
+                    End="192,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -104,6 +117,13 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <AnnotationLayout
+          Text="Paquete para la limpieza de dimensiones y tabla de hechos (opcional)"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="397,60"
+          Id="1221e067-30c4-4b60-889a-8f0e0c2a4bc3"
+          TopLeft="287,144" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
