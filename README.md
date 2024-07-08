@@ -20,6 +20,7 @@ Grupo 4 - Integrantes:
 
 ## Schema SSIS
 ![](./images/ssis.png)
+(outdated)
 
 ## Quickstart
 1. Crear una base de datos SQL Server con los siguientes parámetros: 
