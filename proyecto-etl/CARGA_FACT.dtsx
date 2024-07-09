@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="CARGA_FACT"
   DTS:PackageType="5"
-  DTS:VersionBuild="171"
-  DTS:VersionGUID="{85669F40-BCD8-4F55-BEA0-EDF419DAF5D9}">
+  DTS:VersionBuild="172"
+  DTS:VersionGUID="{23BDE325-8B61-4DFE-A5C3-1CB7DE335EC7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -13506,74 +13506,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         <NodeLayout
           Size="193,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Remover filas no válidas"
-          TopLeft="69,172" />
+          TopLeft="83,185" />
         <NodeLayout
           Size="1029,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Instancia SQL Server destino"
-          TopLeft="53,757" />
+          TopLeft="67,770" />
         <NodeLayout
           Size="154,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Parseo de types"
-          TopLeft="894,286" />
+          TopLeft="908,299" />
         <NodeLayout
           Size="219,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Cleansing de division de pago"
-          TopLeft="826,171" />
+          TopLeft="840,184" />
         <NodeLayout
           Size="157,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup tipopago"
-          TopLeft="623,493" />
+          TopLeft="637,506" />
         <NodeLayout
           Size="147,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup cliente"
-          TopLeft="32,493" />
+          TopLeft="46,506" />
         <NodeLayout
           Size="231,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Preparación de vars para lookup"
-          TopLeft="67,284" />
+          TopLeft="81,297" />
         <NodeLayout
           Size="233,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Division de pago mediante Expresiones Regulares (REGEX)"
-          TopLeft="465,173" />
+          TopLeft="479,186" />
         <NodeLayout
           Size="170,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Obtencion de fecha"
-          TopLeft="674,286" />
+          TopLeft="688,299" />
         <NodeLayout
           Size="160,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup ubicacion"
-          TopLeft="790,552" />
+          TopLeft="804,565" />
         <NodeLayout
           Size="142,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup fecha"
-          TopLeft="930,645" />
+          TopLeft="944,658" />
         <NodeLayout
           Size="984,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Base de datos LAOS 2023"
-          TopLeft="64,54" />
+          TopLeft="78,67" />
         <NodeLayout
           Size="166,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Mock de dim_local"
-          TopLeft="214,393" />
+          TopLeft="228,406" />
         <NodeLayout
           Size="209,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Conversion de hora a string"
-          TopLeft="604,395" />
+          TopLeft="618,408" />
         <NodeLayout
           Size="246,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Artificio de conversion alfanumerica"
-          TopLeft="370,286" />
+          TopLeft="384,299" />
         <NodeLayout
           Size="160,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup promotor"
-          TopLeft="316,654" />
+          TopLeft="330,667" />
         <NodeLayout
           Size="160,42"
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023\Lookup categoria"
-          TopLeft="151,569" />
+          TopLeft="165,582" />
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[valido1]"
-          TopLeft="935.5,213">
+          TopLeft="949.5,226">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13609,7 +13609,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[valido]"
-          TopLeft="262,193.5">
+          TopLeft="276,206.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13633,7 +13633,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 03]"
-          TopLeft="297,435">
+          TopLeft="311,448">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13667,7 +13667,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 02]"
-          TopLeft="604,415">
+          TopLeft="618,428">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13689,7 +13689,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 01]"
-          TopLeft="844,307">
+          TopLeft="858,320">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13711,7 +13711,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Salida 0]"
-          TopLeft="698,193">
+          TopLeft="712,206">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13733,7 +13733,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output5]"
-          TopLeft="870,594">
+          TopLeft="884,607">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13769,7 +13769,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output4]"
-          TopLeft="780,514">
+          TopLeft="794,527">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13799,7 +13799,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output3]"
-          TopLeft="1001,687">
+          TopLeft="1015,700">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13835,7 +13835,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output2]"
-          TopLeft="421.333333333333,654">
+          TopLeft="435.333333333333,667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13865,13 +13865,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="91.8919466145833,-43.3069306930693,96.3827734375,11.609375"
+              BoundingBox="91.8919466145835,-43.3069306930693,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output1]"
-          TopLeft="231,611">
+          TopLeft="245,624">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13907,7 +13907,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Lookup Match Output]"
-          TopLeft="105.5,535">
+          TopLeft="119.5,548">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13943,7 +13943,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Excel Source Output]"
-          TopLeft="556,96">
+          TopLeft="570,109">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13977,7 +13977,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Derived Column Output1]"
-          TopLeft="298,306">
+          TopLeft="312,319">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -13999,7 +13999,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Derived Column Output]"
-          TopLeft="616,307">
+          TopLeft="630,320">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14021,7 +14021,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Para cada página del excel,,, 2023\Carga FACT_VENTAS 2023.Paths[Data Conversion Output]"
-          TopLeft="971,328">
+          TopLeft="985,341">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

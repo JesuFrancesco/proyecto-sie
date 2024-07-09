@@ -18,9 +18,16 @@ Grupo 4 - Integrantes:
 ## Schema
 ![](./images/schema.png)
 
-## Schema SSIS
-![](./images/ssis.png)
-(outdated)
+## Schemas del proyecto-etl (SSIS)
+
+### Carga de dimensiones
+![](./images/ssis_1.png)
+
+### Flujo de control de fact_ventas
+![](./images/ssis_2.png)
+
+### Flujo de datos de fact_ventas
+![](./images/ssis_3.png)
 
 ## Quickstart
 1. Crear una base de datos SQL Server con los siguientes parámetros: 
@@ -31,16 +38,22 @@ Grupo 4 - Integrantes:
 
 3. Abrir la solución del [proyecto](./proyecto-etl/proyecto-etl.sln) con Visual Studio 2022 (SSIS)
 
-4. Configurar las siguientes conexiones:
-- Excel
-  - [Excel de OLTP_VENTAS_2023](./static/cleansing_laos_ventas_2023.xlsx)
-  - [Excel de OLTP_VENTAS_2024](./static/cleansing_laos_ventas_2024.xlsx)
-  - [Excel de DIM_FECHA](./seeders/dim_fecha.xlsx)
-  - [Excel de DIM_HORA](./seeders/dim_hora.xlsx)
-- OLEDB_*:
-  - Cambiar la dirección del Seridor o Filename por los excels OLTP correspondientes
+---
 
-5. Creacion de conexiones
+4. Configurar las siguientes conexiones:
+
+- LOCALHOST.STAGE_VENTAS.sa.conmgr: dirección de base de datos creada
+- OLTP_VENTAS_2023.conmgr: [Excel de OLTP_VENTAS_2023](./static/cleansing_laos_ventas_2023.xlsx)
+- OLTP_VENTAS_2024.conmgr: [Excel de OLTP_VENTAS_2024](./static/cleansing_laos_ventas_2024.xlsx)
+- OLEDB_2023 y OLEDB_2024: Cambiar la dirección del "Servidor o Filename" por los excels OLTP correspondientes.
+
+- Excel (paquete DIMS_TIEMPO)
+  - DIM_FECHA: [Excel de DIM_FECHA](./seeders/dim_fecha.xlsx)
+  - DIM_HORA: [Excel de DIM_HORA](./seeders/dim_hora.xlsx)
+
+---
+
+<!-- 5. Creacion de conexiones
 - OLEDB para Excel
   - Clic derecho en bucle for each > Editar > Colección > Conexión > OLEDB_2023 o OLEDB_2024
   - Proveedores .NET de OLEDB > Microsoft Office 16.0 Access Database Engine...
@@ -48,6 +61,6 @@ Grupo 4 - Integrantes:
   - Verificar si la variable SheetName ha sido asignada con el valor "2"
 
 - Conexiones con Excel
-  - Poner ruta de excel
+  - Poner ruta de excel -->
 
 5. Ejecutar primero el paquete OLTP_VENTAS y luego CARGA_FACT.
