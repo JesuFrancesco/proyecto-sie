@@ -43,8 +43,8 @@ Grupo 4 - Integrantes:
 4. Configurar las siguientes conexiones:
 
 - LOCALHOST.STAGE_VENTAS.sa.conmgr: dirección de base de datos creada
-- OLTP_VENTAS_2023.conmgr: [Excel de OLTP_VENTAS_2023](./static/cleansing_laos_ventas_2023.xlsx)
-- OLTP_VENTAS_2024.conmgr: [Excel de OLTP_VENTAS_2024](./static/cleansing_laos_ventas_2024.xlsx)
+- OLTP_VENTAS_2023.conmgr: Excel de OLTP_VENTAS_2023 (secret*)
+- OLTP_VENTAS_2024.conmgr: Excel de OLTP_VENTAS_2024 (secret*)
 - OLEDB_2023 y OLEDB_2024: Cambiar la dirección del "Servidor o Filename" por los excels OLTP correspondientes.
 
 - Excel (paquete DIMS_TIEMPO)
@@ -53,14 +53,14 @@ Grupo 4 - Integrantes:
 
 ---
 
-<!-- 5. Creacion de conexiones
+5. Creacion de conexiones
 - OLEDB para Excel
   - Clic derecho en bucle for each > Editar > Colección > Conexión > OLEDB_2023 o OLEDB_2024
   - Proveedores .NET de OLEDB > Microsoft Office 16.0 Access Database Engine...
-    - Pegar la ruta del excel de [OLTP_VENTAS](./static/cleansing_laos_ventas_2024.xlsx) y aceptar
+    - Pegar la ruta del excel de OLTP_VENTAS y aceptar
   - Verificar si la variable SheetName ha sido asignada con el valor "2"
 
 - Conexiones con Excel
-  - Poner ruta de excel -->
+  - Poner ruta de excel
 
-5. Ejecutar primero el paquete OLTP_VENTAS y luego CARGA_FACT.
+5. Ejecutar primero los paquetes de DIMS_TIEMPO, OLTP_VENTAS y finalmente CARGA_FACT.
